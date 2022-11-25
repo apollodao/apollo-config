@@ -1,0 +1,26 @@
+{
+  "name": "apollo-network-config",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "json": "npx ts-node generate_json.ts",
+    "schema": "npx ts-node generate_schema.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-othermike:apollodao/apollo-config.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@keplr-wallet/types": "0.11.17",
+    "nodemon": "2.0.20",
+    "ts-node": "10.9.1",
+    "typescript": "4.9.3"
+  },
+  "dependencies": {
+    "ts-json-schema-generator": "^1.1.2"
+  }
+}

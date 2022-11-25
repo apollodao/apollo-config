@@ -1,0 +1,255 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/NetworkConfig",
+  "definitions": {
+    "NetworkConfig": {
+      "type": "object",
+      "properties": {
+        "osmo-test-4": {
+          "$ref": "#/definitions/Network"
+        },
+        "osmosis-1": {
+          "$ref": "#/definitions/Network"
+        },
+        "pulsar-2": {
+          "$ref": "#/definitions/Network"
+        },
+        "injective-888": {
+          "$ref": "#/definitions/Network"
+        },
+        "injective-1": {
+          "$ref": "#/definitions/Network"
+        }
+      },
+      "required": [
+        "osmo-test-4",
+        "osmosis-1",
+        "pulsar-2",
+        "injective-888",
+        "injective-1"
+      ],
+      "additionalProperties": false
+    },
+    "Network": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "chain_id": {
+          "$ref": "#/definitions/SupportedNetwork"
+        },
+        "nodes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ApolloNode"
+          }
+        },
+        "public_nodes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/PublicNode"
+          }
+        },
+        "supported_wallets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Wallet"
+          }
+        },
+        "supported_apps": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/App"
+          }
+        },
+        "code_ids": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CodeID"
+          }
+        },
+        "contracts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Contract"
+          }
+        }
+      },
+      "required": [
+        "name",
+        "chain_id",
+        "public_nodes",
+        "supported_wallets",
+        "supported_apps",
+        "code_ids",
+        "contracts"
+      ],
+      "additionalProperties": false
+    },
+    "SupportedNetwork": {
+      "type": "string",
+      "enum": [
+        "osmo-test-4",
+        "osmosis-1",
+        "pulsar-2",
+        "injective-888",
+        "injective-1"
+      ]
+    },
+    "ApolloNode": {
+      "type": "object",
+      "properties": {
+        "isValidator": {
+          "type": "boolean"
+        },
+        "walletAddress": {
+          "type": "string"
+        },
+        "valAddress": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "services": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/WebService"
+          }
+        }
+      },
+      "required": [
+        "isValidator",
+        "walletAddress",
+        "valAddress",
+        "id",
+        "services"
+      ],
+      "additionalProperties": false
+    },
+    "WebService": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "url"
+      ],
+      "additionalProperties": false
+    },
+    "PublicNode": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "rpc",
+            "rest",
+            "seed",
+            "peer"
+          ]
+        },
+        "url": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "url"
+      ],
+      "additionalProperties": false
+    },
+    "Wallet": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "config": {}
+      },
+      "required": [
+        "name"
+      ],
+      "additionalProperties": false
+    },
+    "App": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "supportedFeatures": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "name",
+        "supportedFeatures"
+      ],
+      "additionalProperties": false
+    },
+    "CodeID": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "id": {
+          "type": "number"
+        },
+        "checksum": {
+          "type": "string"
+        },
+        "query_messages": {
+          "type": "array",
+          "items": {}
+        },
+        "execution_messages": {
+          "type": "array",
+          "items": {}
+        }
+      },
+      "required": [
+        "label",
+        "id",
+        "checksum"
+      ],
+      "additionalProperties": false
+    },
+    "Contract": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "code_id": {
+          "type": "number"
+        },
+        "address": {
+          "type": "string"
+        },
+        "admin": {
+          "type": [
+            "string",
+            "boolean"
+          ]
+        }
+      },
+      "required": [
+        "label",
+        "address"
+      ],
+      "additionalProperties": false
+    }
+  }
+}
