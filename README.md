@@ -20,4 +20,5 @@ $ yarn install
 - `yarn json`
 
 ### Update Config Schema
-- `yarn schema`
+- update `types.ts`
+- `yarn schema` to generate json schema from types
