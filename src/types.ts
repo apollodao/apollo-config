@@ -68,8 +68,6 @@ export type CodeID = {
   label: string;
   id: number;
   checksum: string;
-  query_messages?: any[];
-  execution_messages?: any[];
 };
 export type AssetInfoBaseForString =
   | {

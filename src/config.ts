@@ -93,15 +93,11 @@ export const config: NetworkConfig = {
         label: "apollo cw3",
         id: 237,
         checksum: "",
-        query_messages: [],
-        execution_messages: [],
       },
       {
         label: "apollo vault",
         id: 4057,
         checksum: "",
-        query_messages: [],
-        execution_messages: [],
       },
     ],
     contracts: [
@@ -212,8 +208,6 @@ export const config: NetworkConfig = {
         label: "apollo cw3",
         id: 1,
         checksum: "",
-        query_messages: [],
-        execution_messages: [],
       },
     ],
     contracts: [
@@ -402,8 +396,6 @@ export const config: NetworkConfig = {
         label: "apollo cw3",
         id: 1,
         checksum: "",
-        query_messages: [],
-        execution_messages: [],
       },
     ],
     contracts: [
@@ -507,8 +499,6 @@ export const config: NetworkConfig = {
         label: "apollo cw3",
         id: 1,
         checksum: "",
-        query_messages: [],
-        execution_messages: [],
       },
     ],
     contracts: [
