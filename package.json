@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "json": "npx ts-node generate_json.ts",
-    "schema": "npx ts-node generate_schema.ts"
+    "json": "npx ts-node src/generate_json.ts",
+    "schema": "npx ts-node src/generate_schema.ts"
   },
   "repository": {
     "type": "git",

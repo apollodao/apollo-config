@@ -8,10 +8,8 @@ const main = () => {
     type: "NetworkConfig",
   };
 
-  if (!tsj) return;
   const generator = tsj.createGenerator(config);
   const schema = generator.createSchema(config.type);
-  console.log("schema", schema);
   const data = JSON.stringify(schema, null, 2);
 
   if (!data) return;

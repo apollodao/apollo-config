@@ -1,4 +1,4 @@
-import { NetworkConfig } from "types";
+import { NetworkConfig } from "./types";
 
 export const config: NetworkConfig = {
   "osmo-test-4": {
@@ -98,7 +98,7 @@ export const config: NetworkConfig = {
       },
       {
         label: "apollo vault",
-        id: 4005,
+        id: 4057,
         checksum: "",
         query_messages: [],
         execution_messages: [],
@@ -116,7 +116,7 @@ export const config: NetworkConfig = {
         address:
           "osmo1lcnpd5000ru7qpd0tz8wnl00rlfvlxvqlw04md9cxsudapd0flvsqke5t5",
         admin: "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
-        code_id: 4005,
+        code_id: 4057,
       },
     ],
   },
