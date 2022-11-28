@@ -209,14 +209,6 @@
         },
         "checksum": {
           "type": "string"
-        },
-        "query_messages": {
-          "type": "array",
-          "items": {}
-        },
-        "execution_messages": {
-          "type": "array",
-          "items": {}
         }
       },
       "required": [

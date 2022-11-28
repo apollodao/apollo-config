@@ -94,16 +94,12 @@
       {
         "label": "apollo cw3",
         "id": 237,
-        "checksum": "",
-        "query_messages": [],
-        "execution_messages": []
+        "checksum": ""
       },
       {
         "label": "apollo vault",
         "id": 4057,
-        "checksum": "",
-        "query_messages": [],
-        "execution_messages": []
+        "checksum": ""
       }
     ],
     "contracts": [
@@ -216,9 +212,7 @@
       {
         "label": "apollo cw3",
         "id": 1,
-        "checksum": "",
-        "query_messages": [],
-        "execution_messages": []
+        "checksum": ""
       }
     ],
     "contracts": [
@@ -412,9 +406,7 @@
       {
         "label": "apollo cw3",
         "id": 1,
-        "checksum": "",
-        "query_messages": [],
-        "execution_messages": []
+        "checksum": ""
       }
     ],
     "contracts": [
@@ -521,9 +513,7 @@
       {
         "label": "apollo cw3",
         "id": 1,
-        "checksum": "",
-        "query_messages": [],
-        "execution_messages": []
+        "checksum": ""
       }
     ],
     "contracts": [
