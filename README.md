@@ -14,11 +14,11 @@ $ yarn install
 ## Usage
 
 ### Update Config
-- Update config.ts
+- Update `src/config.ts`
 
 ### Generate JSON Config
 - `yarn json`
 
 ### Update Config Schema
-- update `types.ts`
+- update `src/types.ts`
 - `yarn schema` to generate json schema from types
