@@ -25,11 +25,11 @@ export const config: NetworkConfig = {
     public_nodes: [
       {
         type: "rpc",
-        url: "https://osmosistest-rpc.quickapi.com",
+        url: "https://rpc.testnet.osmosis.zone",
       },
       {
         type: "rest",
-        url: "https://osmosistest-lcd.quickapi.com",
+        url: "https://lcd.testnet.osmosis.zone",
       },
     ],
     supported_wallets: [
