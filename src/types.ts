@@ -21,30 +21,10 @@ export type NetworkConfig = {
 export type Network = {
   name: string;
   chain_id: SupportedNetwork;
-  nodes?: ApolloNode[];
-  public_nodes: PublicNode[];
   supported_wallets: Wallet[];
   supported_apps: App[];
   code_ids: CodeID[];
   contracts: Contract[];
-};
-
-export type PublicNode = {
-  type: "rpc" | "rest" | "seed" | "peer";
-  url: string;
-};
-
-export type WebService = {
-  type: string;
-  url: string;
-};
-
-export type ApolloNode = {
-  isValidator: boolean;
-  walletAddress: string;
-  valAddress: string;
-  id: string;
-  services: WebService[];
 };
 
 export type Wallet = {
@@ -79,24 +59,3 @@ export type AssetInfoBaseForString =
   | {
       cw1155: [string, string];
     };
-
-export interface ConfigBaseForString {
-  base_token: AssetInfoBaseForString;
-  force_withdraw_whitelist: string[];
-  max_spread: Decimal;
-  performance_fee: Decimal;
-  pool_assets: AssetInfoBaseForString[];
-  reward_assets: AssetInfoBaseForString[];
-  reward_liquidation_target: AssetInfoBaseForString;
-  router: CwDexRouterBaseForString;
-  slippage_tolerance: Decimal;
-  treasury: string;
-}
-
-export type Strategy = {
-  contract_address: Addr;
-  tvl: Decimal;
-  apr: Decimal;
-};
-
-export type Strategies = Strategy[];
