@@ -39,18 +39,6 @@
         "chain_id": {
           "$ref": "#/definitions/SupportedNetwork"
         },
-        "nodes": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/ApolloNode"
-          }
-        },
-        "public_nodes": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/PublicNode"
-          }
-        },
         "supported_wallets": {
           "type": "array",
           "items": {
@@ -79,7 +67,6 @@
       "required": [
         "name",
         "chain_id",
-        "public_nodes",
         "supported_wallets",
         "supported_apps",
         "code_ids",
@@ -96,75 +83,6 @@
         "injective-888",
         "injective-1"
       ]
-    },
-    "ApolloNode": {
-      "type": "object",
-      "properties": {
-        "isValidator": {
-          "type": "boolean"
-        },
-        "walletAddress": {
-          "type": "string"
-        },
-        "valAddress": {
-          "type": "string"
-        },
-        "id": {
-          "type": "string"
-        },
-        "services": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/WebService"
-          }
-        }
-      },
-      "required": [
-        "isValidator",
-        "walletAddress",
-        "valAddress",
-        "id",
-        "services"
-      ],
-      "additionalProperties": false
-    },
-    "WebService": {
-      "type": "object",
-      "properties": {
-        "type": {
-          "type": "string"
-        },
-        "url": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "type",
-        "url"
-      ],
-      "additionalProperties": false
-    },
-    "PublicNode": {
-      "type": "object",
-      "properties": {
-        "type": {
-          "type": "string",
-          "enum": [
-            "rpc",
-            "rest",
-            "seed",
-            "peer"
-          ]
-        },
-        "url": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "type",
-        "url"
-      ],
-      "additionalProperties": false
     },
     "Wallet": {
       "type": "object",
