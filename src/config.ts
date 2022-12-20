@@ -8,8 +8,8 @@ export const config: NetworkConfig = {
       {
         name: "keplr",
         config: {
-          rpc: "https://osmo-test-rpc.apollo.farm",
-          rest: "https://osmo-test-lcd.apollo.farm",
+          rpc: "https://rpc-test.osmosis.zone",
+          rest: "https://lcd-test.osmosis.zone",
           chainId: "osmo-test-4",
           chainName: "osmosistestnet",
           stakeCurrency: {
@@ -68,7 +68,7 @@ export const config: NetworkConfig = {
       },
       {
         label: "apollo vault",
-        id: 4057,
+        id: 4787,
         checksum: "",
       },
     ],
@@ -82,9 +82,9 @@ export const config: NetworkConfig = {
       {
         label: "Osmo/Atom Auto Compound Vault",
         address:
-          "osmo1lcnpd5000ru7qpd0tz8wnl00rlfvlxvqlw04md9cxsudapd0flvsqke5t5",
+          "osmo1v40lnedgvake8p7f49gvqu0q3vc9sx3qpc0jqtyfdyw25d4vg8us38an37",
         admin: "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
-        code_id: 4057,
+        code_id: 4787,
       },
     ],
   },
@@ -95,8 +95,8 @@ export const config: NetworkConfig = {
       {
         name: "keplr",
         config: {
-          rpc: "https://osmo-mainnet-rpc.apollo.farm",
-          rest: "https://osmo-mainnet-lcd.apollo.farm",
+          rpc: "https://rpc.cosmos.directory/osmosis",
+          rest: "https://rest.cosmos.directory/osmosis",
           chainId: "osmosis-1",
           chainName: "osmosis",
           stakeCurrency: {
@@ -170,8 +170,8 @@ export const config: NetworkConfig = {
       {
         name: "keplr",
         config: {
-          rpc: "https://secret-testnet-rpc.apollo.farm",
-          rest: "https://secret-testnet-lcd.apollo.farm",
+          rpc: "https://grpc.testnet.secretsaturn.net",
+          rest: "https://lcd.testnet.secretsaturn.net",
           chainId: "pulsar-2",
           chainName: "secrettestnet",
           stakeCurrency: {
@@ -227,8 +227,8 @@ export const config: NetworkConfig = {
       {
         name: "keplr",
         config: {
-          rpc: "https://injective-testnet-rpc.apollo.farm",
-          rest: "https://injective-testnet-lcd.apollo.farm",
+          rpc: "https://k8s.testnet.chain.grpc-web.injective.network",
+          rest: "https://k8s.testnet.lcd.injective.network",
           chainId: "injective-888",
           chainName: "injective",
           stakeCurrency: {
@@ -302,8 +302,8 @@ export const config: NetworkConfig = {
       {
         name: "keplr",
         config: {
-          rpc: "https://injective-mainnet-rpc.apollo.farm",
-          rest: "https://injective-mainnet-lcd.apollo.farm",
+          rpc: "https://grpc.injective.network",
+          rest: "https://lcd.injective.network",
           chainId: "injective-1",
           chainName: "injective",
           stakeCurrency: {
