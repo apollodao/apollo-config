@@ -71,20 +71,26 @@ export const config: NetworkConfig = {
         id: 4787,
         checksum: "",
       },
+      {
+        label: "apollo zapper",
+        id: 4922,
+        checksum: "",
+      },
     ],
     contracts: [
-      {
-        label: "Apollo Safe CW3",
-        address: "",
-        admin: "",
-        code_id: 237,
-      },
       {
         label: "Osmo/Atom Auto Compound Vault",
         address:
           "osmo1v40lnedgvake8p7f49gvqu0q3vc9sx3qpc0jqtyfdyw25d4vg8us38an37",
         admin: "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
         code_id: 4787,
+      },
+      {
+        label: "Apollo Zapper",
+        address:
+          "osmo1lx2tqad63s7xhchwm60gpk5wssl4jgll0xpp2x8hp9e6dx9c9ztqcmwjzv",
+        admin: "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
+        code_id: 4922,
       },
     ],
   },
