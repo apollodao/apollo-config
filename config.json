@@ -81,8 +81,20 @@
     ],
     "contracts": [
       {
-        "label": "Osmo/Atom Auto Compound Vault",
+        "label": "Osmo/Atom Auto Compound 1d",
         "address": "osmo1v40lnedgvake8p7f49gvqu0q3vc9sx3qpc0jqtyfdyw25d4vg8us38an37",
+        "admin": "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
+        "code_id": 4787
+      },
+      {
+        "label": "Osmo/Atom Auto Compound 7d",
+        "address": "osmo108q2krqr0y9g0rtesenvsw68sap2xefelwwjs0wedyvdl0cmrntqvllfjk",
+        "admin": "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
+        "code_id": 4787
+      },
+      {
+        "label": "Osmo/Atom Auto Compound 14d",
+        "address": "osmo1eht92w5dr0vx8dzl6dn9770yq0ycln50zfhzvz8uc6928mp8vvgqwcram9",
         "admin": "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
         "code_id": 4787
       },
