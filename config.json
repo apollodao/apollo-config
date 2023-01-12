@@ -81,20 +81,65 @@
     ],
     "contracts": [
       {
-        "label": "Osmo/Atom Auto Compound 1d",
+        "label": "Osmo-Atom 1d",
+        "description": "Osmo-Atom Autocompounding Vault 1d",
         "address": "osmo1v40lnedgvake8p7f49gvqu0q3vc9sx3qpc0jqtyfdyw25d4vg8us38an37",
         "admin": "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
         "code_id": 4787
       },
       {
-        "label": "Osmo/Atom Auto Compound 7d",
+        "label": "Osmo-Atom 7d",
+        "description": "Osmo-Atom Autocompounding Vault 7d",
         "address": "osmo108q2krqr0y9g0rtesenvsw68sap2xefelwwjs0wedyvdl0cmrntqvllfjk",
         "admin": "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
         "code_id": 4787
       },
       {
-        "label": "Osmo/Atom Auto Compound 14d",
+        "label": "Osmo-Atom 14d",
+        "description": "Osmo-Atom Autocompounding Vault 14d",
         "address": "osmo1eht92w5dr0vx8dzl6dn9770yq0ycln50zfhzvz8uc6928mp8vvgqwcram9",
+        "admin": "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
+        "code_id": 4787
+      },
+      {
+        "label": "Juno-Osmo 1d",
+        "description": "Juno-Osmo Autocompounding Vault 1d",
+        "address": "osmo1g5hryv0gp9dzlchkp3yxk8fmcf5asjun6cxkvyffetqzkwmvy75qfmeq3f",
+        "admin": "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
+        "code_id": 4787
+      },
+      {
+        "label": "Juno-Osmo 7d",
+        "description": "Juno-Osmo Autocompounding Vault 7d",
+        "address": "osmo1jtuvr47taunfdhwrkns0cufwa3qlsz66qwwa9vvn4cc5eltzrtxs4zkaus",
+        "admin": "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
+        "code_id": 4787
+      },
+      {
+        "label": "Juno-Osmo 14d",
+        "description": "Juno-Osmo Autocompounding Vault 14d",
+        "address": "osmo1rclt7lsfp0c89ydf9umuhwlg28maw6z87jak3ly7u2lefnyzdz2s8gsepe",
+        "admin": "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
+        "code_id": 4787
+      },
+      {
+        "label": "Ion-Osmo 1d",
+        "description": "Ion-Osmo Autocompounding Vault 1d",
+        "address": "osmo1nv2d5tcn3xhfera55swsl20hyymz9wjtl39x2c8tumkj3jzqc7qqvd9max",
+        "admin": "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
+        "code_id": 4787
+      },
+      {
+        "label": "Ion-Osmo 7d",
+        "description": "Ion-Osmo Autocompounding Vault 7d",
+        "address": "osmo1yzrsuck79kynz9yxpawkuppy5cnfv6cdjagtd8daa5dgefj4v6usdvlv0n",
+        "admin": "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
+        "code_id": 4787
+      },
+      {
+        "label": "Ion-Osmo 14d",
+        "description": "Ion-Osmo Autocompounding Vault 14d",
+        "address": "osmo1fzednazwpkjspa39yqsgm8xqmmgls5fe2mesgjmjjmqgtxzhwn8s6v5mmf",
         "admin": "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
         "code_id": 4787
       },

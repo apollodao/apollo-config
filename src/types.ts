@@ -41,6 +41,7 @@ export type Contract = {
   label: string;
   code_id?: CodeID["id"];
   address: string;
+  description?: string;
   admin?: string | boolean;
 };
 

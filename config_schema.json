@@ -148,6 +148,9 @@
         "address": {
           "type": "string"
         },
+        "description": {
+          "type": "string"
+        },
         "admin": {
           "type": [
             "string",
