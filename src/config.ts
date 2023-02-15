@@ -68,7 +68,7 @@ export const config: NetworkConfig = {
       },
       {
         label: "apollo vault",
-        id: 4787,
+        id: 5945,
         checksum: "",
       },
       {
@@ -82,53 +82,53 @@ export const config: NetworkConfig = {
         label: "Osmo-Atom 1d",
         description: "Osmo-Atom Autocompounding Vault 1d",
         address:
-          "osmo1v40lnedgvake8p7f49gvqu0q3vc9sx3qpc0jqtyfdyw25d4vg8us38an37",
+          "osmo1zktjv92f76epswjvyxzzt3yyskpw7k6jsyu0kmq4zzc5fphrjumqlahctp",
         admin: "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
-        code_id: 4787,
+        code_id: 5945,
       },
       {
         label: "Osmo-Atom 7d",
         description: "Osmo-Atom Autocompounding Vault 7d",
         address:
-          "osmo108q2krqr0y9g0rtesenvsw68sap2xefelwwjs0wedyvdl0cmrntqvllfjk",
-        admin: "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
+          "osmo167j3yttwzcm3785tzk4jse2qdkppcy2xxrn5u6srqv7s93wnq6yqw8zhg5",
+        admin: "5945",
         code_id: 4787,
       },
       {
         label: "Osmo-Atom 14d",
         description: "Osmo-Atom Autocompounding Vault 14d",
         address:
-          "osmo1eht92w5dr0vx8dzl6dn9770yq0ycln50zfhzvz8uc6928mp8vvgqwcram9",
+          "osmo1tp2m6g39h8mvhnu3plqjyen5s63023gj8w873l8wvly0cd77l6hsaa73wt",
         admin: "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
-        code_id: 4787,
+        code_id: 5945,
       },
       {
         label: "Juno-Osmo 1d",
         description: "Juno-Osmo Autocompounding Vault 1d",
         address:
-          "osmo1g5hryv0gp9dzlchkp3yxk8fmcf5asjun6cxkvyffetqzkwmvy75qfmeq3f",
+          "osmo1r6h0pafu3wq0kf6yv09qhc8qvuku2d6fua0rpwwv46h7hd8u586scxspjf",
         admin: "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
-        code_id: 4787,
+        code_id: 5945,
       },
       {
         label: "Juno-Osmo 7d",
         description: "Juno-Osmo Autocompounding Vault 7d",
         address:
-          "osmo1jtuvr47taunfdhwrkns0cufwa3qlsz66qwwa9vvn4cc5eltzrtxs4zkaus",
+          "osmo1gr5epxn67q6202l3hy0mcnu7qc039v22pa6x2tsk23zwg235n9jsq6pmes",
         admin: "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
-        code_id: 4787,
+        code_id: 5945,
       },
       {
         label: "Juno-Osmo 14d",
         description: "Juno-Osmo Autocompounding Vault 14d",
         address:
-          "osmo1rclt7lsfp0c89ydf9umuhwlg28maw6z87jak3ly7u2lefnyzdz2s8gsepe",
+          "osmo1d6knwkelyr9eklewnn9htkess4ttpxpf2cze9ec0xfw7e3fj0ggssqzfpp",
         admin: "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
-        code_id: 4787,
+        code_id: 5945,
       },
       {
         label: "Ion-Osmo 1d",
-        description: "Ion-Osmo Autocompounding Vault 1d",
+        description: "Ion-Osmo Autocompounding Vault 1d - 4787",
         address:
           "osmo1nv2d5tcn3xhfera55swsl20hyymz9wjtl39x2c8tumkj3jzqc7qqvd9max",
         admin: "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
@@ -136,7 +136,7 @@ export const config: NetworkConfig = {
       },
       {
         label: "Ion-Osmo 7d",
-        description: "Ion-Osmo Autocompounding Vault 7d",
+        description: "Ion-Osmo Autocompounding Vault 7d - 4787",
         address:
           "osmo1yzrsuck79kynz9yxpawkuppy5cnfv6cdjagtd8daa5dgefj4v6usdvlv0n",
         admin: "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
@@ -144,11 +144,35 @@ export const config: NetworkConfig = {
       },
       {
         label: "Ion-Osmo 14d",
-        description: "Ion-Osmo Autocompounding Vault 14d",
+        description: "Ion-Osmo Autocompounding Vault 14d - 4787",
         address:
           "osmo1fzednazwpkjspa39yqsgm8xqmmgls5fe2mesgjmjjmqgtxzhwn8s6v5mmf",
         admin: "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
         code_id: 4787,
+      },
+      {
+        label: "Tgrade-Osmo 1d",
+        description: "Tgrade-Osmo Autocompounding Vault 1d",
+        address:
+          "osmo1akgu9fd68rf6e6tvatryewxc23t27zvlpfsvgcu9emkgkqcpkz0qz5zlwc",
+        admin: "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
+        code_id: 5945,
+      },
+      {
+        label: "Tgrade-Osmo 7d",
+        description: "Tgrade-Osmo Autocompounding Vault 7d",
+        address:
+          "osmo1497tszvzlt5vgqzcy73ty5gc04ztmvqeaujeefmalq7wcufuf25sxayk3e",
+        admin: "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
+        code_id: 5945,
+      },
+      {
+        label: "Tgrade-Osmo 14d",
+        description: "Tgrade-Osmo Autocompounding Vault 14d",
+        address:
+          "osmo1np5lnwpr3rs4dktvg5qzz7ra8j8pp8yd942qx7qe2298dv3hyfysjlpxkh",
+        admin: "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
+        code_id: 5945,
       },
       {
         label: "Apollo Zapper",
