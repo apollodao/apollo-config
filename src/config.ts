@@ -67,8 +67,13 @@ export const config: NetworkConfig = {
         checksum: "",
       },
       {
-        label: "apollo vault",
+        label: "apollo vault new",
         id: 5945,
+        checksum: "",
+      },
+      {
+        label: "apollo vault old",
+        id: 4787,
         checksum: "",
       },
       {
@@ -92,7 +97,7 @@ export const config: NetworkConfig = {
         address:
           "osmo167j3yttwzcm3785tzk4jse2qdkppcy2xxrn5u6srqv7s93wnq6yqw8zhg5",
         admin: "5945",
-        code_id: 4787,
+        code_id: 5945,
       },
       {
         label: "Osmo-Atom 14d",
