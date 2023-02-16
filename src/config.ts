@@ -258,6 +258,11 @@ export const config: NetworkConfig = {
         id: 17,
         checksum: "",
       },
+      {
+        label: "apollo zapper",
+        id: 4922,
+        checksum: "",
+      },
     ],
     contracts: [
       {
@@ -265,6 +270,13 @@ export const config: NetworkConfig = {
         address: "",
         admin: "",
         code_id: 1,
+      },
+      {
+        label: "Apollo Zapper",
+        address: "",
+        admin:
+          "osmo1wl59k23zngj34l7d42y9yltask7rjlnxgccawc7ltrknp6n52fps94qsjd",
+        code_id: 4922,
       },
       {
         label: "Osmo-Atom 14d",
