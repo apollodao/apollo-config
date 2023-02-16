@@ -195,8 +195,8 @@ export const config: NetworkConfig = {
       {
         name: "keplr",
         config: {
-          rpc: "https://rpc.cosmos.directory/osmosis",
-          rest: "https://rest.cosmos.directory/osmosis",
+          rpc: "https://osmosis-mainnet-rpc.allthatnode.com:26657",
+          rest: "https://osmosis-mainnet-rpc.allthatnode.com:1317",
           chainId: "osmosis-1",
           chainName: "osmosis",
           stakeCurrency: {
@@ -253,6 +253,11 @@ export const config: NetworkConfig = {
         id: 1,
         checksum: "",
       },
+      {
+        label: "apollo vault",
+        id: 17,
+        checksum: "",
+      },
     ],
     contracts: [
       {
@@ -260,6 +265,15 @@ export const config: NetworkConfig = {
         address: "",
         admin: "",
         code_id: 1,
+      },
+      {
+        label: "Osmo-Atom 14d",
+        description: "Osmo-Atom Autocompounding Vault 14d",
+        address:
+          "osmo1g3kmqpp8608szfp0pdag3r6z85npph7wmccat8lgl3mp407kv73qlj7qwp",
+        admin:
+          "osmo1wl59k23zngj34l7d42y9yltask7rjlnxgccawc7ltrknp6n52fps94qsjd",
+        code_id: 17,
       },
     ],
   },
