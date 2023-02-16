@@ -273,7 +273,7 @@ export const config: NetworkConfig = {
       },
       {
         label: "Apollo Zapper",
-        address: "",
+        address: "osmo12",
         admin:
           "osmo1wl59k23zngj34l7d42y9yltask7rjlnxgccawc7ltrknp6n52fps94qsjd",
         code_id: 4922,
