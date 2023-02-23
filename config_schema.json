@@ -39,6 +39,12 @@
         "chain_id": {
           "$ref": "#/definitions/SupportedNetwork"
         },
+        "nodes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Node"
+          }
+        },
         "supported_wallets": {
           "type": "array",
           "items": {
@@ -62,15 +68,23 @@
           "items": {
             "$ref": "#/definitions/Contract"
           }
+        },
+        "tokens": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Token"
+          }
         }
       },
       "required": [
         "name",
         "chain_id",
+        "nodes",
         "supported_wallets",
         "supported_apps",
         "code_ids",
-        "contracts"
+        "contracts",
+        "tokens"
       ],
       "additionalProperties": false
     },
@@ -83,6 +97,26 @@
         "injective-888",
         "injective-1"
       ]
+    },
+    "Node": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "lcd": {
+          "type": "string"
+        },
+        "rpc": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "lcd",
+        "rpc"
+      ],
+      "additionalProperties": false
     },
     "Wallet": {
       "type": "object",
@@ -161,6 +195,114 @@
       "required": [
         "label",
         "address"
+      ],
+      "additionalProperties": false
+    },
+    "Token": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "img_url": {
+          "type": "string"
+        },
+        "asset": {
+          "$ref": "#/definitions/AssetInfo"
+        },
+        "base": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/AssetInfo"
+            },
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/AssetInfo"
+              }
+            },
+            {
+              "type": "string",
+              "const": "USD"
+            }
+          ]
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/DataSource"
+          }
+        },
+        "decimals": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "name",
+        "img_url",
+        "asset",
+        "base",
+        "sources",
+        "decimals"
+      ],
+      "additionalProperties": false
+    },
+    "AssetInfo": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "native": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "native"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "cw20": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "cw20"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "cw1155": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 2,
+              "maxItems": 2
+            }
+          },
+          "required": [
+            "cw1155"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "DataSource": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "params": {}
+      },
+      "required": [
+        "name",
+        "params"
       ],
       "additionalProperties": false
     }
