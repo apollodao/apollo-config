@@ -412,7 +412,7 @@
           {
             "name": "coingecko-api",
             "params": {
-              "coingecko_id": ""
+              "coingecko_id": "tgrade"
             }
           }
         ],
