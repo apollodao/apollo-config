@@ -46,7 +46,7 @@ export const tokens: (Omit<Token, "sources"> & {
         "ibc/1E09CB0F506ACF12FDE4683FB6B34DA62FB4BE122641E0D93AAF98A87675676C",
     },
     base: "USD",
-    sources: [{ name: "coingecko-api", params: { coingecko_id: "" } }],
+    sources: [{ name: "coingecko-api", params: { coingecko_id: "tgrade" } }],
     decimals: 6,
   },
   {
