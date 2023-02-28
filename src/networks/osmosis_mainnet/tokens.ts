@@ -1,10 +1,20 @@
-import { Token } from "../../types";
+import { AssetInfo, Token } from "../../types";
 
 export type supported_data_sources =
-  | { name: "osmosis-1" | "osmo-test-4"; params: { contract_address: string } }
+  | {
+      name: "osmosis-1" | "osmo-test-4";
+      params: {
+        contract_address: string;
+        dex: "osmosis";
+        base_token: AssetInfo;
+      };
+    }
   | {
       name: "osmosis-api";
-      params: { pool_id: number };
+      params: {
+        pool_id: number;
+        underlying_tokens: AssetInfo[];
+      };
     }
   | { name: "coingecko-api"; params: { coingecko_id: string } };
 
@@ -60,7 +70,21 @@ export const tokens: (Omit<Token, "sources"> & {
           "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
       },
     ],
-    sources: [{ name: "osmosis-api", params: { pool_id: 1 } }],
+    sources: [
+      {
+        name: "osmosis-api",
+        params: {
+          pool_id: 1,
+          underlying_tokens: [
+            { native: "uosmo" },
+            {
+              native:
+                "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+            },
+          ],
+        },
+      },
+    ],
     decimals: 6,
   },
   {
@@ -73,7 +97,20 @@ export const tokens: (Omit<Token, "sources"> & {
         native: "uion",
       },
     ],
-    sources: [{ name: "osmosis-api", params: { pool_id: 2 } }],
+    sources: [
+      {
+        name: "osmosis-api",
+        params: {
+          pool_id: 2,
+          underlying_tokens: [
+            { native: "uosmo" },
+            {
+              native: "uion",
+            },
+          ],
+        },
+      },
+    ],
     decimals: 6,
   },
   {
@@ -87,7 +124,21 @@ export const tokens: (Omit<Token, "sources"> & {
           "ibc/46B44899322F3CD854D2D46DEEF881958467CDD4B3B10086DA49296BBED94BED",
       },
     ],
-    sources: [{ name: "osmosis-api", params: { pool_id: 497 } }],
+    sources: [
+      {
+        name: "osmosis-api",
+        params: {
+          pool_id: 497,
+          underlying_tokens: [
+            { native: "uosmo" },
+            {
+              native:
+                "ibc/46B44899322F3CD854D2D46DEEF881958467CDD4B3B10086DA49296BBED94BED",
+            },
+          ],
+        },
+      },
+    ],
     decimals: 6,
   },
   {
@@ -101,7 +152,21 @@ export const tokens: (Omit<Token, "sources"> & {
           "ibc/46B44899322F3CD854D2D46DEEF881958467CDD4B3B10086DA49296BBED94BED",
       },
     ],
-    sources: [{ name: "osmosis-api", params: { pool_id: 769 } }],
+    sources: [
+      {
+        name: "osmosis-api",
+        params: {
+          pool_id: 769,
+          underlying_tokens: [
+            { native: "uosmo" },
+            {
+              native:
+                "ibc/46B44899322F3CD854D2D46DEEF881958467CDD4B3B10086DA49296BBED94BED",
+            },
+          ],
+        },
+      },
+    ],
     decimals: 6,
   },
   {
@@ -115,7 +180,21 @@ export const tokens: (Omit<Token, "sources"> & {
           "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
       },
     ],
-    sources: [{ name: "osmosis-api", params: { pool_id: 678 } }],
+    sources: [
+      {
+        name: "osmosis-api",
+        params: {
+          pool_id: 678,
+          underlying_tokens: [
+            { native: "uosmo" },
+            {
+              native:
+                "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
+            },
+          ],
+        },
+      },
+    ],
     decimals: 6,
   },
   {
@@ -129,7 +208,21 @@ export const tokens: (Omit<Token, "sources"> & {
           "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
       },
     ],
-    sources: [{ name: "osmosis-api", params: { pool_id: 712 } }],
+    sources: [
+      {
+        name: "osmosis-api",
+        params: {
+          pool_id: 712,
+          underlying_tokens: [
+            { native: "uosmo" },
+            {
+              native:
+                "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
+            },
+          ],
+        },
+      },
+    ],
     decimals: 6,
   },
   {
@@ -143,7 +236,21 @@ export const tokens: (Omit<Token, "sources"> & {
           "ibc/0CD3A0285E1341859B5E86B6AB7682F023D03E97607CCC1DC95706411D866DF7",
       },
     ],
-    sources: [{ name: "osmosis-api", params: { pool_id: 674 } }],
+    sources: [
+      {
+        name: "osmosis-api",
+        params: {
+          pool_id: 674,
+          underlying_tokens: [
+            { native: "uosmo" },
+            {
+              native:
+                "ibc/0CD3A0285E1341859B5E86B6AB7682F023D03E97607CCC1DC95706411D866DF7",
+            },
+          ],
+        },
+      },
+    ],
     decimals: 6,
   },
   {
@@ -157,7 +264,21 @@ export const tokens: (Omit<Token, "sources"> & {
           "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
       },
     ],
-    sources: [{ name: "osmosis-api", params: { pool_id: 833 } }],
+    sources: [
+      {
+        name: "osmosis-api",
+        params: {
+          pool_id: 833,
+          underlying_tokens: [
+            { native: "uosmo" },
+            {
+              native:
+                "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+            },
+          ],
+        },
+      },
+    ],
     decimals: 6,
   },
   {
@@ -171,7 +292,21 @@ export const tokens: (Omit<Token, "sources"> & {
           "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
       },
     ],
-    sources: [{ name: "osmosis-api", params: { pool_id: 704 } }],
+    sources: [
+      {
+        name: "osmosis-api",
+        params: {
+          pool_id: 704,
+          underlying_tokens: [
+            { native: "uosmo" },
+            {
+              native:
+                "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
+            },
+          ],
+        },
+      },
+    ],
     decimals: 6,
   },
   {
@@ -188,7 +323,24 @@ export const tokens: (Omit<Token, "sources"> & {
           "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
       },
     ],
-    sources: [{ name: "osmosis-api", params: { pool_id: 803 } }],
+    sources: [
+      {
+        name: "osmosis-api",
+        params: {
+          pool_id: 803,
+          underlying_tokens: [
+            {
+              native:
+                "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+            },
+            {
+              native:
+                "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+            },
+          ],
+        },
+      },
+    ],
     decimals: 6,
   },
   {
@@ -205,6 +357,8 @@ export const tokens: (Omit<Token, "sources"> & {
         params: {
           contract_address:
             "osmo1g3kmqpp8608szfp0pdag3r6z85npph7wmccat8lgl3mp407kv73qlj7qwp",
+          base_token: { native: "gamm/pool/1" },
+          dex: "osmosis",
         },
       },
     ],
@@ -226,6 +380,8 @@ export const tokens: (Omit<Token, "sources"> & {
         params: {
           contract_address:
             "osmo1jfmwayj8jqp9tfy4v4eks5c2jpnqdumn8x8xvfllng0wfes770qqp7jl4j",
+          base_token: { native: "gamm/pool/678" },
+          dex: "osmosis",
         },
       },
     ],
@@ -245,6 +401,8 @@ export const tokens: (Omit<Token, "sources"> & {
         params: {
           contract_address:
             "osmo185gqewrlde8vrqw7j8lpad67v8jfrx9u7770k9q87tqqecctp5tq50wt2c",
+          base_token: { native: "gamm/pool/712" },
+          dex: "osmosis",
         },
       },
     ],
@@ -264,6 +422,8 @@ export const tokens: (Omit<Token, "sources"> & {
         params: {
           contract_address:
             "osmo1lhs6kyuxytu4suua0qf88z5057wzpxs77tyrlgztw2uctcy75hcqf2ajrt",
+          base_token: { native: "gamm/pool/674" },
+          dex: "osmosis",
         },
       },
     ],
@@ -283,6 +443,8 @@ export const tokens: (Omit<Token, "sources"> & {
         params: {
           contract_address:
             "osmo1p4zqs5y2w5srzd2vesznzu5ql8wfq9tpz3e7mf2j3y07nxrtkdes5r5g0t",
+          base_token: { native: "gamm/pool/833" },
+          dex: "osmosis",
         },
       },
     ],
@@ -302,6 +464,8 @@ export const tokens: (Omit<Token, "sources"> & {
         params: {
           contract_address:
             "osmo1r235f4tdkwrsnj3mdm9hf647l754y6g6xsmz0nas5r4vr5tda3qsgtftef",
+          base_token: { native: "gamm/pool/704" },
+          dex: "osmosis",
         },
       },
     ],
@@ -321,6 +485,8 @@ export const tokens: (Omit<Token, "sources"> & {
         params: {
           contract_address:
             "osmo1a6tcf60pyz8qq2n532dzcs7s7sj8klcmra04tvaqympzcvxqg9esn7xz7l",
+          base_token: { native: "gamm/pool/803" },
+          dex: "osmosis",
         },
       },
     ],
