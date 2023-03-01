@@ -85,7 +85,7 @@ export const tokens: (Omit<Token, "sources"> & {
         },
       },
     ],
-    decimals: 6,
+    decimals: 18,
   },
   {
     name: "ION/OSMO LP Token",
@@ -111,7 +111,7 @@ export const tokens: (Omit<Token, "sources"> & {
         },
       },
     ],
-    decimals: 6,
+    decimals: 18,
   },
   {
     name: "JUNO/OSMO LP Token",
@@ -139,7 +139,7 @@ export const tokens: (Omit<Token, "sources"> & {
         },
       },
     ],
-    decimals: 6,
+    decimals: 18,
   },
   {
     name: "TGD/OSMO LP Token",
@@ -167,7 +167,7 @@ export const tokens: (Omit<Token, "sources"> & {
         },
       },
     ],
-    decimals: 6,
+    decimals: 18,
   },
   {
     name: "USDC/OSMO LP Token",
@@ -195,7 +195,7 @@ export const tokens: (Omit<Token, "sources"> & {
         },
       },
     ],
-    decimals: 6,
+    decimals: 18,
   },
   {
     name: "wBTC/OSMO LP Token",
@@ -223,7 +223,7 @@ export const tokens: (Omit<Token, "sources"> & {
         },
       },
     ],
-    decimals: 6,
+    decimals: 18,
   },
   {
     name: "DAI/OSMO LP Token",
@@ -251,7 +251,7 @@ export const tokens: (Omit<Token, "sources"> & {
         },
       },
     ],
-    decimals: 6,
+    decimals: 18,
   },
   {
     name: "stOSMO/OSMO LP Token",
@@ -279,7 +279,7 @@ export const tokens: (Omit<Token, "sources"> & {
         },
       },
     ],
-    decimals: 6,
+    decimals: 18,
   },
   {
     name: "wETH/OSMO LP Token",
@@ -307,7 +307,7 @@ export const tokens: (Omit<Token, "sources"> & {
         },
       },
     ],
-    decimals: 6,
+    decimals: 18,
   },
   {
     name: "stATOM/ATOM LP Token",
@@ -341,7 +341,7 @@ export const tokens: (Omit<Token, "sources"> & {
         },
       },
     ],
-    decimals: 6,
+    decimals: 18,
   },
   {
     name: "OSMO/ATOM Vault Token - 14d",
