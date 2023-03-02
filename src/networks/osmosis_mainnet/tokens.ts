@@ -117,6 +117,19 @@ export const tokens: (Omit<Token, "sources"> & {
     decimals: 6,
   },
   {
+    name: "stOsmo",
+    img_url: "",
+    asset: {
+      native:
+        "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
+    },
+    base: "USD",
+    sources: [
+      { name: "coingecko-api", params: { coingecko_id: "stride-staked-osmo" } },
+    ],
+    decimals: 6,
+  },
+  {
     name: "OSMO/ATOM LP Token",
     img_url: "",
     asset: { native: "gamm/pool/1" },
@@ -491,7 +504,7 @@ export const tokens: (Omit<Token, "sources"> & {
     img_url: "",
     asset: {
       native:
-        "factory/osmo1p4zqs5y2w5srzd2vesznzu5ql8wfq9tpz3e7mf2j3y07nxrtkdes5r5g0t/VaultToken/833/14d/STOSMO/OSMO",
+        "factory/osmo1p4zqs5y2w5srzd2vesznzu5ql8wfq9tpz3e7mf2j3y07nxrtkdes5r5g0t/VaultToken/833/14d/stOSMO/OSMO",
     },
     base: { native: "gamm/pool/833" },
     sources: [
@@ -533,7 +546,7 @@ export const tokens: (Omit<Token, "sources"> & {
     img_url: "",
     asset: {
       native:
-        "factory/osmo1a6tcf60pyz8qq2n532dzcs7s7sj8klcmra04tvaqympzcvxqg9esn7xz7l/VaultToken/803/14d/STATOM/ATOM",
+        "factory/osmo1a6tcf60pyz8qq2n532dzcs7s7sj8klcmra04tvaqympzcvxqg9esn7xz7l/VaultToken/803/14d/ATOM/stATOM",
     },
     base: { native: "gamm/pool/803" },
     sources: [
