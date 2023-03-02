@@ -13,6 +13,12 @@ export type NetworkConfig = {
 
 export type Network = {
   name: string;
+  mainnet?: NetworkData;
+  testnet?: NetworkData;
+  tokens: Token[];
+};
+
+export type NetworkData = {
   chain_id: SupportedNetwork;
   nodes: Node[];
   supported_wallets: Wallet[];

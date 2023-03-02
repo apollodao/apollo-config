@@ -1,6 +1,6 @@
 import { NetworkConfig } from "./types";
-import { osmosis_mainnet_config } from "./networks/osmosis_mainnet/config";
-import { osmosis_testnet_config } from "./networks/osmosis_testnet/config";
+import { osmosis_mainnet_config } from "./networks/osmosis/config";
+import { osmosis_testnet_config } from "./networks/osmosis/testnet/config";
 import { secret_testnet_config } from "./networks/secret_testnet/config";
 import { injective_testnet_config } from "./networks/injective_testnet/config";
 import { injective_mainnet_config } from "./networks/injective_mainnet/config";
