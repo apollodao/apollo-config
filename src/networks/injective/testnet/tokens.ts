@@ -1,4 +1,4 @@
-import { Token } from "../../types";
+import { Token } from "../../../types";
 
 export type supported_data_sources = { name: ""; params: {} };
 

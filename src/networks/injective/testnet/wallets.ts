@@ -1,12 +1,12 @@
-import { Wallet } from "../../types";
+import { Wallet } from "../../../types";
 
 export const supported_wallets: Wallet[] = [
   {
     name: "keplr",
     config: {
-      rpc: "https://grpc.injective.network",
-      rest: "https://lcd.injective.network",
-      chainId: "injective-1",
+      rpc: "https://k8s.testnet.chain.grpc-web.injective.network",
+      rest: "https://k8s.testnet.lcd.injective.network",
+      chainId: "injective-888",
       chainName: "injective",
       stakeCurrency: {
         coinDenom: "INJ",

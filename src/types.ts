@@ -1,24 +1,25 @@
 import { ChainInfo } from "@keplr-wallet/types";
-import { supported_networks } from "./config";
+import { supported_chains, supported_networks } from "./config";
 
 export type Addr = string;
 export type Decimal = string;
 export type CwDexRouterBaseForString = string;
 
+export type SupportedChain = (typeof supported_chains)[number];
 export type SupportedNetwork = (typeof supported_networks)[number];
 
-export type NetworkConfig = {
-  [k in SupportedNetwork]: Network;
+export type ChainConfig = {
+  [k in SupportedChain]: Chain;
 };
 
-export type Network = {
+export type Chain = {
   name: string;
-  mainnet?: NetworkData;
-  testnet?: NetworkData;
+  mainnet?: NetworkConfig;
+  testnet?: NetworkConfig;
   tokens: Token[];
 };
 
-export type NetworkData = {
+export type NetworkConfig = {
   chain_id: SupportedNetwork;
   nodes: Node[];
   supported_wallets: Wallet[];

@@ -5,37 +5,6 @@
     "NetworkConfig": {
       "type": "object",
       "properties": {
-        "osmo-test-4": {
-          "$ref": "#/definitions/Network"
-        },
-        "osmosis-1": {
-          "$ref": "#/definitions/Network"
-        },
-        "pulsar-2": {
-          "$ref": "#/definitions/Network"
-        },
-        "injective-888": {
-          "$ref": "#/definitions/Network"
-        },
-        "injective-1": {
-          "$ref": "#/definitions/Network"
-        }
-      },
-      "required": [
-        "osmo-test-4",
-        "osmosis-1",
-        "pulsar-2",
-        "injective-888",
-        "injective-1"
-      ],
-      "additionalProperties": false
-    },
-    "Network": {
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "string"
-        },
         "chain_id": {
           "$ref": "#/definitions/SupportedNetwork"
         },
@@ -77,7 +46,6 @@
         }
       },
       "required": [
-        "name",
         "chain_id",
         "nodes",
         "supported_wallets",
