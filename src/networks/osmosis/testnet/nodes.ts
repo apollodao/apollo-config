@@ -7,13 +7,8 @@ export const nodes: Node[] = [
     lcd: "",
   },
   {
-    name: "osmosis-1",
+    name: "osmosis",
     rpc: "https://rpc-test.osmosis.zone:443",
-    lcd: "",
-  },
-  {
-    name: "osmosis-2",
-    rpc: "https://testnet-rpc.osmosis.zone:443",
     lcd: "",
   },
 ];
