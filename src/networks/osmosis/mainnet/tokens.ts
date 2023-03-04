@@ -103,7 +103,7 @@ export const tokens: (Omit<Token, "sources"> & {
     img_url: "",
     asset: {
       native:
-        "factory/osmo1p4zqs5y2w5srzd2vesznzu5ql8wfq9tpz3e7mf2j3y07nxrtkdes5r5g0t/VaultToken/833/14d/STOSMO/OSMO",
+        "factory/osmo1p4zqs5y2w5srzd2vesznzu5ql8wfq9tpz3e7mf2j3y07nxrtkdes5r5g0t/VaultToken/833/14d/stOSMO/OSMO",
     },
     base: { native: "gamm/pool/833" },
     sources: [
@@ -145,7 +145,7 @@ export const tokens: (Omit<Token, "sources"> & {
     img_url: "",
     asset: {
       native:
-        "factory/osmo1a6tcf60pyz8qq2n532dzcs7s7sj8klcmra04tvaqympzcvxqg9esn7xz7l/VaultToken/803/14d/STATOM/ATOM",
+        "factory/osmo1a6tcf60pyz8qq2n532dzcs7s7sj8klcmra04tvaqympzcvxqg9esn7xz7l/VaultToken/803/14d/ATOM/stATOM",
     },
     base: { native: "gamm/pool/803" },
     sources: [

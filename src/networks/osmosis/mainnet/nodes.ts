@@ -3,7 +3,7 @@ import { Node } from "../../../types";
 export const nodes: Node[] = [
   {
     name: "osmosis",
-    lcd: "",
+    lcd: "https://lcd.osmosis.zone",
     rpc: "https://rpc.osmosis.zone:443",
   },
   {
@@ -13,17 +13,17 @@ export const nodes: Node[] = [
   },
   {
     name: "polkachu",
-    lcd: "",
+    lcd: "https://osmosis-api.polkachu.com",
     rpc: "https://osmosis-rpc.polkachu.com:443",
   },
   {
     name: "ecostake",
-    lcd: "",
+    lcd: "https://rest-osmosis.ecostake.com",
     rpc: "https://rpc-osmosis.ecostake.com:443",
   },
   {
     name: "chainlayer",
-    lcd: "",
+    lcd: "https://osmosis-lcd.quickapi.com:443",
     rpc: "https://osmosis-rpc.quickapi.com:443",
   },
 ];
