@@ -176,7 +176,18 @@
         "code_id": 4922
       }
     ],
-    "nodes": [],
+    "nodes": [
+      {
+        "name": "allthatnode",
+        "rpc": "https://osmosis-testnet-rpc.allthatnode.com:26657",
+        "lcd": "https://osmosis-testnet-rpc.allthatnode.com:1317"
+      },
+      {
+        "name": "osmosis",
+        "rpc": "https://rpc-test.osmosis.zone:443",
+        "lcd": "https://testnet-rest.osmosis.zone"
+      }
+    ],
     "tokens": []
   },
   "osmosis-1": {
