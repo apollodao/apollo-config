@@ -23,7 +23,7 @@ export const tokens: (Omit<Token, "sources"> & {
   },
   {
     name: "Ion",
-    img_url: "https://stats.apollo.farm/tokens/ion.svg",
+    img_url: "https://stats.apollo.farm/tokens/ion.png",
     asset: { native: "uion" },
     base: "USD",
     sources: [{ name: "coingecko-api", params: { coingecko_id: "ion" } }],

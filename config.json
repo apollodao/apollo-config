@@ -1049,7 +1049,7 @@
       },
       {
         "name": "Ion",
-        "img_url": "https://stats.apollo.farm/tokens/ion.svg",
+        "img_url": "https://stats.apollo.farm/tokens/ion.png",
         "asset": {
           "native": "uion"
         },
