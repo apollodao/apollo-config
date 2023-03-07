@@ -53,7 +53,7 @@ export const tokens: (Omit<Token, "sources"> & {
   },
   {
     name: "USDC",
-    img_url: "",
+    img_url: "https://stats.apollo.farm/tokens/usdc.svg",
     asset: {
       native:
         "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858",
@@ -64,7 +64,7 @@ export const tokens: (Omit<Token, "sources"> & {
   },
   {
     name: "stAtom",
-    img_url: "",
+    img_url: "https://stats.apollo.farm/tokens/statom.svg",
     asset: {
       native:
         "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
@@ -77,7 +77,7 @@ export const tokens: (Omit<Token, "sources"> & {
   },
   {
     name: "wETH",
-    img_url: "",
+    img_url: "https://stats.apollo.farm/tokens/weth.svg",
     asset: {
       native:
         "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5",
@@ -88,7 +88,7 @@ export const tokens: (Omit<Token, "sources"> & {
   },
   {
     name: "wBTC",
-    img_url: "",
+    img_url: "https://stats.apollo.farm/tokens/wbtc.png",
     asset: {
       native:
         "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F",
@@ -99,7 +99,7 @@ export const tokens: (Omit<Token, "sources"> & {
   },
   {
     name: "Dai",
-    img_url: "",
+    img_url: "https://stats.apollo.farm/tokens/dai.svg",
     asset: {
       native:
         "ibc/0CD3A0285E1341859B5E86B6AB7682F023D03E97607CCC1DC95706411D866DF7",
@@ -110,7 +110,7 @@ export const tokens: (Omit<Token, "sources"> & {
   },
   {
     name: "stOsmo",
-    img_url: "",
+    img_url: "https://stats.apollo.farm/tokens/stosmo.svg",
     asset: {
       native:
         "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC",
