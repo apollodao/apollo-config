@@ -122,6 +122,17 @@ export const tokens: (Omit<Token, "sources"> & {
     decimals: 6,
   },
   {
+    name: "Juno",
+    img_url: "https://stats.apollo.farm/tokens/juno.svg",
+    asset: {
+      native:
+        "ibc/46B44899322F3CD854D2D46DEEF881958467CDD4B3B10086DA49296BBED94BED",
+    },
+    base: "USD",
+    sources: [{ name: "coingecko-api", params: { coingecko_id: "juno" } }],
+    decimals: 6,
+  },
+  {
     name: "OSMO/ATOM LP Token",
     img_url: "",
     asset: { native: "gamm/pool/1" },
