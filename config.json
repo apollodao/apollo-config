@@ -1211,7 +1211,7 @@
           {
             "name": "coingecko-api",
             "params": {
-              "coingecko_id": "juno"
+              "coingecko_id": "juno-network"
             }
           }
         ],

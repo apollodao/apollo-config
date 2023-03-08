@@ -129,7 +129,9 @@ export const tokens: (Omit<Token, "sources"> & {
         "ibc/46B44899322F3CD854D2D46DEEF881958467CDD4B3B10086DA49296BBED94BED",
     },
     base: "USD",
-    sources: [{ name: "coingecko-api", params: { coingecko_id: "juno" } }],
+    sources: [
+      { name: "coingecko-api", params: { coingecko_id: "juno-network" } },
+    ],
     decimals: 6,
   },
   {
