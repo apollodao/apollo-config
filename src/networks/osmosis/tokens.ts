@@ -106,7 +106,7 @@ export const tokens: (Omit<Token, "sources"> & {
     },
     base: "USD",
     sources: [{ name: "coingecko-api", params: { coingecko_id: "dai" } }],
-    decimals: 6,
+    decimals: 18,
   },
   {
     name: "stOsmo",
