@@ -1147,7 +1147,7 @@
             }
           }
         ],
-        "decimals": 6
+        "decimals": 18
       },
       {
         "name": "wBTC",
@@ -1164,7 +1164,7 @@
             }
           }
         ],
-        "decimals": 6
+        "decimals": 8
       },
       {
         "name": "Dai",

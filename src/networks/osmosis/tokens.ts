@@ -84,7 +84,7 @@ export const tokens: (Omit<Token, "sources"> & {
     },
     base: "USD",
     sources: [{ name: "coingecko-api", params: { coingecko_id: "axlweth" } }],
-    decimals: 6,
+    decimals: 18,
   },
   {
     name: "wBTC",
@@ -95,7 +95,7 @@ export const tokens: (Omit<Token, "sources"> & {
     },
     base: "USD",
     sources: [{ name: "coingecko-api", params: { coingecko_id: "axlwbtc" } }],
-    decimals: 6,
+    decimals: 8,
   },
   {
     name: "Dai",
