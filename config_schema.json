@@ -77,12 +77,16 @@
         },
         "rpc": {
           "type": "string"
+        },
+        "archive": {
+          "type": "boolean"
         }
       },
       "required": [
         "name",
         "lcd",
-        "rpc"
+        "rpc",
+        "archive"
       ],
       "additionalProperties": false
     },

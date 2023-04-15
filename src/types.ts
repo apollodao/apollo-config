@@ -33,6 +33,7 @@ export type Node = {
   name: string;
   lcd: string;
   rpc: string;
+  archive: boolean;
 };
 
 export type Token = {
