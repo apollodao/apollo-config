@@ -135,6 +135,78 @@ export const tokens: (Omit<Token, "sources"> & {
     decimals: 6,
   },
   {
+    name: "Akash",
+    img_url: "https://stats.apollo.farm/tokens/akt.svg",
+    asset: {
+      native:
+        "ibc/1480B8FD20AD5FCAE81EA87584D269547DD4D436843C1D20F15E00EB64743EF4",
+    },
+    base: "USD",
+    sources: [
+      { name: "coingecko-api", params: { coingecko_id: "akash-network" } },
+    ],
+    decimals: 6,
+  },
+  {
+    name: "Crypto.com",
+    img_url: "https://stats.apollo.farm/tokens/cro.svg",
+    asset: {
+      native:
+        "ibc/E6931F78057F7CC5DA0FD6CEF82FF39373A6E0452BF1FD76910B93292CF356C1",
+    },
+    base: "USD",
+    sources: [
+      { name: "coingecko-api", params: { coingecko_id: "crypto-com-chain" } },
+    ],
+    decimals: 6,
+  },
+  {
+    name: "Axelar",
+    img_url: "https://stats.apollo.farm/tokens/axl.svg",
+    asset: {
+      native:
+        "ibc/903A61A498756EA560B85A85132D3AEE21B5DEDD41213725D22ABF276EA6945E",
+    },
+    base: "USD",
+    sources: [{ name: "coingecko-api", params: { coingecko_id: "axelar" } }],
+    decimals: 6,
+  },
+  {
+    name: "Secret",
+    img_url: "https://stats.apollo.farm/tokens/scrt.svg",
+    asset: {
+      native:
+        "ibc/0954E1C28EB7AF5B72D24F3BC2B47BBB2FDF91BDDFD57B74B99E133AED40972A",
+    },
+    base: "USD",
+    sources: [{ name: "coingecko-api", params: { coingecko_id: "secret" } }],
+    decimals: 6,
+  },
+  {
+    name: "Inter Stable Token",
+    img_url: "https://stats.apollo.farm/tokens/ist.svg",
+    asset: {
+      native:
+        "ibc/92BE0717F4678905E53F4E45B2DED18BC0CB97BF1F8B6A25AFEDF3D5A879B4D5",
+    },
+    base: "USD",
+    sources: [
+      { name: "coingecko-api", params: { coingecko_id: "inter-stable-token" } },
+    ],
+    decimals: 6,
+  },
+  {
+    name: "Evmos",
+    img_url: "https://stats.apollo.farm/tokens/evmos.svg",
+    asset: {
+      native:
+        "ibc/6AE98883D4D5D5FF9E50D7130F1305DA2FFA0C652D1DD9C123657C6B4EB2DF8A",
+    },
+    base: "USD",
+    sources: [{ name: "coingecko-api", params: { coingecko_id: "evmos" } }],
+    decimals: 6,
+  },
+  {
     name: "OSMO/ATOM LP Token",
     img_url: "",
     asset: { native: "gamm/pool/1" },
@@ -224,7 +296,7 @@ export const tokens: (Omit<Token, "sources"> & {
       { native: "uosmo" },
       {
         native:
-          "ibc/46B44899322F3CD854D2D46DEEF881958467CDD4B3B10086DA49296BBED94BED",
+          "ibc/1E09CB0F506ACF12FDE4683FB6B34DA62FB4BE122641E0D93AAF98A87675676C",
       },
     ],
     sources: [
@@ -236,7 +308,7 @@ export const tokens: (Omit<Token, "sources"> & {
             { native: "uosmo" },
             {
               native:
-                "ibc/46B44899322F3CD854D2D46DEEF881958467CDD4B3B10086DA49296BBED94BED",
+                "ibc/1E09CB0F506ACF12FDE4683FB6B34DA62FB4BE122641E0D93AAF98A87675676C",
             },
           ],
         },
@@ -411,6 +483,228 @@ export const tokens: (Omit<Token, "sources"> & {
             {
               native:
                 "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+            },
+          ],
+        },
+      },
+    ],
+    decimals: 18,
+  },
+  {
+    name: "AKT/OSMO LP Token",
+    img_url: "",
+    asset: { native: "gamm/pool/3" },
+    base: [
+      {
+        native: "uosmo",
+      },
+      {
+        native:
+          "ibc/1480B8FD20AD5FCAE81EA87584D269547DD4D436843C1D20F15E00EB64743EF4",
+      },
+    ],
+    sources: [
+      {
+        name: "osmosis-api",
+        params: {
+          pool_id: 3,
+          underlying_tokens: [
+            {
+              native: "uosmo",
+            },
+            {
+              native:
+                "ibc/1480B8FD20AD5FCAE81EA87584D269547DD4D436843C1D20F15E00EB64743EF4",
+            },
+          ],
+        },
+      },
+    ],
+    decimals: 18,
+  },
+  {
+    name: "ION/OSMO LP Token",
+    img_url: "",
+    asset: { native: "gamm/pool/2" },
+    base: [
+      {
+        native: "uosmo",
+      },
+      {
+        native: "uion",
+      },
+    ],
+    sources: [
+      {
+        name: "osmosis-api",
+        params: {
+          pool_id: 2,
+          underlying_tokens: [
+            {
+              native: "uosmo",
+            },
+            {
+              native: "uion",
+            },
+          ],
+        },
+      },
+    ],
+    decimals: 18,
+  },
+  {
+    name: "CRO/OSMO LP Token",
+    img_url: "",
+    asset: { native: "gamm/pool/9" },
+    base: [
+      {
+        native: "uosmo",
+      },
+      {
+        native:
+          "ibc/E6931F78057F7CC5DA0FD6CEF82FF39373A6E0452BF1FD76910B93292CF356C1",
+      },
+    ],
+    sources: [
+      {
+        name: "osmosis-api",
+        params: {
+          pool_id: 9,
+          underlying_tokens: [
+            {
+              native: "uosmo",
+            },
+            {
+              native:
+                "ibc/E6931F78057F7CC5DA0FD6CEF82FF39373A6E0452BF1FD76910B93292CF356C1",
+            },
+          ],
+        },
+      },
+    ],
+    decimals: 18,
+  },
+  {
+    name: "AXL/OSMO LP Token",
+    img_url: "",
+    asset: { native: "gamm/pool/812" },
+    base: [
+      {
+        native: "uosmo",
+      },
+      {
+        native:
+          "ibc/903A61A498756EA560B85A85132D3AEE21B5DEDD41213725D22ABF276EA6945E",
+      },
+    ],
+    sources: [
+      {
+        name: "osmosis-api",
+        params: {
+          pool_id: 812,
+          underlying_tokens: [
+            {
+              native: "uosmo",
+            },
+            {
+              native:
+                "ibc/903A61A498756EA560B85A85132D3AEE21B5DEDD41213725D22ABF276EA6945E",
+            },
+          ],
+        },
+      },
+    ],
+    decimals: 18,
+  },
+  {
+    name: "SCRT/OSMO LP Token",
+    img_url: "",
+    asset: { native: "gamm/pool/584" },
+    base: [
+      {
+        native: "uosmo",
+      },
+      {
+        native:
+          "ibc/0954E1C28EB7AF5B72D24F3BC2B47BBB2FDF91BDDFD57B74B99E133AED40972A",
+      },
+    ],
+    sources: [
+      {
+        name: "osmosis-api",
+        params: {
+          pool_id: 584,
+          underlying_tokens: [
+            {
+              native: "uosmo",
+            },
+            {
+              native:
+                "ibc/0954E1C28EB7AF5B72D24F3BC2B47BBB2FDF91BDDFD57B74B99E133AED40972A",
+            },
+          ],
+        },
+      },
+    ],
+    decimals: 18,
+  },
+  {
+    name: "IST/OSMO LP Token",
+    img_url: "",
+    asset: { native: "gamm/pool/837" },
+    base: [
+      {
+        native: "uosmo",
+      },
+      {
+        native:
+          "ibc/92BE0717F4678905E53F4E45B2DED18BC0CB97BF1F8B6A25AFEDF3D5A879B4D5",
+      },
+    ],
+    sources: [
+      {
+        name: "osmosis-api",
+        params: {
+          pool_id: 837,
+          underlying_tokens: [
+            {
+              native: "uosmo",
+            },
+            {
+              native:
+                "ibc/92BE0717F4678905E53F4E45B2DED18BC0CB97BF1F8B6A25AFEDF3D5A879B4D5",
+            },
+          ],
+        },
+      },
+    ],
+    decimals: 18,
+  },
+  {
+    name: "EVMOS/OSMO LP Token",
+    img_url: "",
+    asset: { native: "gamm/pool/722" },
+    base: [
+      {
+        native: "uosmo",
+      },
+      {
+        native:
+          "ibc/6AE98883D4D5D5FF9E50D7130F1305DA2FFA0C652D1DD9C123657C6B4EB2DF8A",
+      },
+    ],
+    sources: [
+      {
+        name: "osmosis-api",
+        params: {
+          pool_id: 722,
+          underlying_tokens: [
+            {
+              native: "uosmo",
+            },
+            {
+              native:
+                "ibc/6AE98883D4D5D5FF9E50D7130F1305DA2FFA0C652D1DD9C123657C6B4EB2DF8A",
             },
           ],
         },

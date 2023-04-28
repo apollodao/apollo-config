@@ -161,4 +161,172 @@ export const tokens: (Omit<Token, "sources"> & {
     ],
     decimals: 24,
   },
+  {
+    name: "AKT/OSMO Vault Token - 14d",
+    img_url: "",
+    asset: {
+      native:
+        "factory/osmo122ryl7pez7yjprtvjckltu2uvjxrq3kqt4nvclax2la7maj6757qg054ga/VaultToken/3/14d/AKT/OSMO",
+    },
+    base: { native: "gamm/pool/3" },
+    sources: [
+      {
+        name: "osmosis-1",
+        params: {
+          contract_address:
+            "osmo122ryl7pez7yjprtvjckltu2uvjxrq3kqt4nvclax2la7maj6757qg054ga",
+          base_token: { native: "gamm/pool/3" },
+          dex: "osmosis",
+        },
+      },
+    ],
+    decimals: 24,
+  },
+  {
+    name: "ION/OSMO Vault Token - 14d",
+    img_url: "",
+    asset: {
+      native:
+        "factory/osmo1869zena97sctemj78sgjmu737p2g94905hsf3hhkrfgummrfz4tsxj2k6r/VaultToken/2/14d/ION/OSMO",
+    },
+    base: { native: "gamm/pool/2" },
+    sources: [
+      {
+        name: "osmosis-1",
+        params: {
+          contract_address:
+            "osmo1869zena97sctemj78sgjmu737p2g94905hsf3hhkrfgummrfz4tsxj2k6r",
+          base_token: { native: "gamm/pool/2" },
+          dex: "osmosis",
+        },
+      },
+    ],
+    decimals: 24,
+  },
+  {
+    name: "JUNO/OSMO Vault Token - 14d",
+    img_url: "",
+    asset: {
+      native:
+        "factory/osmo1ceku0zks6y43r9l35n7wnv5pf82s6l4k5jhlrhkurakeemey9n4snz3x6z/VaultToken/497/14d/JUNO/OSMO",
+    },
+    base: { native: "gamm/pool/497" },
+    sources: [
+      {
+        name: "osmosis-1",
+        params: {
+          contract_address:
+            "osmo1ceku0zks6y43r9l35n7wnv5pf82s6l4k5jhlrhkurakeemey9n4snz3x6z",
+          base_token: { native: "gamm/pool/497" },
+          dex: "osmosis",
+        },
+      },
+    ],
+    decimals: 24,
+  },
+  {
+    name: "CRO/OSMO Vault Token - 14d",
+    img_url: "",
+    asset: {
+      native:
+        "factory/osmo1gmd2vc4crmv7urlfn3j5avhplfncjf5mg649dkgsu5a0zvd6cgrsn9dq4l/VaultToken/9/14d/CRO/OSMO",
+    },
+    base: { native: "gamm/pool/9" },
+    sources: [
+      {
+        name: "osmosis-1",
+        params: {
+          contract_address:
+            "osmo1gmd2vc4crmv7urlfn3j5avhplfncjf5mg649dkgsu5a0zvd6cgrsn9dq4l",
+          base_token: { native: "gamm/pool/9" },
+          dex: "osmosis",
+        },
+      },
+    ],
+    decimals: 24,
+  },
+  {
+    name: "AXL/OSMO Vault Token - 14d",
+    img_url: "",
+    asset: {
+      native:
+        "factory/osmo1m9e4cks405tvzlppkw64znr35vkvujvptrdqtgu5q6luk4ccw9qqeuenwd/VaultToken/812/14d/AXL/OSMO",
+    },
+    base: { native: "gamm/pool/812" },
+    sources: [
+      {
+        name: "osmosis-1",
+        params: {
+          contract_address:
+            "osmo1m9e4cks405tvzlppkw64znr35vkvujvptrdqtgu5q6luk4ccw9qqeuenwd",
+          base_token: { native: "gamm/pool/812" },
+          dex: "osmosis",
+        },
+      },
+    ],
+    decimals: 24,
+  },
+  {
+    name: "SCRT/OSMO Vault Token - 14d",
+    img_url: "",
+    asset: {
+      native:
+        "factory/osmo1m9hn9sjk3tudx6fmjlefk45eml2exsa2gaa5vpyey82ypms78dnqc235an/VaultToken/584/14d/SCRT/OSMO",
+    },
+    base: { native: "gamm/pool/584" },
+    sources: [
+      {
+        name: "osmosis-1",
+        params: {
+          contract_address:
+            "osmo1m9hn9sjk3tudx6fmjlefk45eml2exsa2gaa5vpyey82ypms78dnqc235an",
+          base_token: { native: "gamm/pool/584" },
+          dex: "osmosis",
+        },
+      },
+    ],
+    decimals: 24,
+  },
+  {
+    name: "IST/OSMO Vault Token - 14d",
+    img_url: "",
+    asset: {
+      native:
+        "factory/osmo1qajgwrcce9srkq370pa9ew96dyk4hajyyk6rfpuexrktm8862xnst443kp/VaultToken/837/14d/IST/OSMO",
+    },
+    base: { native: "gamm/pool/837" },
+    sources: [
+      {
+        name: "osmosis-1",
+        params: {
+          contract_address:
+            "osmo1qajgwrcce9srkq370pa9ew96dyk4hajyyk6rfpuexrktm8862xnst443kp",
+          base_token: { native: "gamm/pool/837" },
+          dex: "osmosis",
+        },
+      },
+    ],
+    decimals: 24,
+  },
+  {
+    name: "EVMOS/OSMO Vault Token - 14d",
+    img_url: "",
+    asset: {
+      native:
+        "factory/osmo1rkv6vcmty4rpypuxp2a6a0y5ze4ztm3y6d6xwy5a7cye85f7reqsm85c5s/VaultToken/722/14d/EVMOS/OSMO",
+    },
+    base: { native: "gamm/pool/722" },
+    sources: [
+      {
+        name: "osmosis-1",
+        params: {
+          contract_address:
+            "osmo1rkv6vcmty4rpypuxp2a6a0y5ze4ztm3y6d6xwy5a7cye85f7reqsm85c5s",
+          base_token: { native: "gamm/pool/722" },
+          dex: "osmosis",
+        },
+      },
+    ],
+    decimals: 24,
+  },
 ];

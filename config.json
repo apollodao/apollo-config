@@ -570,6 +570,190 @@
             }
           ],
           "decimals": 24
+        },
+        {
+          "name": "AKT/OSMO Vault Token - 14d",
+          "img_url": "",
+          "asset": {
+            "native": "factory/osmo122ryl7pez7yjprtvjckltu2uvjxrq3kqt4nvclax2la7maj6757qg054ga/VaultToken/3/14d/AKT/OSMO"
+          },
+          "base": {
+            "native": "gamm/pool/3"
+          },
+          "sources": [
+            {
+              "name": "osmosis-1",
+              "params": {
+                "contract_address": "osmo122ryl7pez7yjprtvjckltu2uvjxrq3kqt4nvclax2la7maj6757qg054ga",
+                "base_token": {
+                  "native": "gamm/pool/3"
+                },
+                "dex": "osmosis"
+              }
+            }
+          ],
+          "decimals": 24
+        },
+        {
+          "name": "ION/OSMO Vault Token - 14d",
+          "img_url": "",
+          "asset": {
+            "native": "factory/osmo1869zena97sctemj78sgjmu737p2g94905hsf3hhkrfgummrfz4tsxj2k6r/VaultToken/2/14d/ION/OSMO"
+          },
+          "base": {
+            "native": "gamm/pool/2"
+          },
+          "sources": [
+            {
+              "name": "osmosis-1",
+              "params": {
+                "contract_address": "osmo1869zena97sctemj78sgjmu737p2g94905hsf3hhkrfgummrfz4tsxj2k6r",
+                "base_token": {
+                  "native": "gamm/pool/2"
+                },
+                "dex": "osmosis"
+              }
+            }
+          ],
+          "decimals": 24
+        },
+        {
+          "name": "JUNO/OSMO Vault Token - 14d",
+          "img_url": "",
+          "asset": {
+            "native": "factory/osmo1ceku0zks6y43r9l35n7wnv5pf82s6l4k5jhlrhkurakeemey9n4snz3x6z/VaultToken/497/14d/JUNO/OSMO"
+          },
+          "base": {
+            "native": "gamm/pool/497"
+          },
+          "sources": [
+            {
+              "name": "osmosis-1",
+              "params": {
+                "contract_address": "osmo1ceku0zks6y43r9l35n7wnv5pf82s6l4k5jhlrhkurakeemey9n4snz3x6z",
+                "base_token": {
+                  "native": "gamm/pool/497"
+                },
+                "dex": "osmosis"
+              }
+            }
+          ],
+          "decimals": 24
+        },
+        {
+          "name": "CRO/OSMO Vault Token - 14d",
+          "img_url": "",
+          "asset": {
+            "native": "factory/osmo1gmd2vc4crmv7urlfn3j5avhplfncjf5mg649dkgsu5a0zvd6cgrsn9dq4l/VaultToken/9/14d/CRO/OSMO"
+          },
+          "base": {
+            "native": "gamm/pool/9"
+          },
+          "sources": [
+            {
+              "name": "osmosis-1",
+              "params": {
+                "contract_address": "osmo1gmd2vc4crmv7urlfn3j5avhplfncjf5mg649dkgsu5a0zvd6cgrsn9dq4l",
+                "base_token": {
+                  "native": "gamm/pool/9"
+                },
+                "dex": "osmosis"
+              }
+            }
+          ],
+          "decimals": 24
+        },
+        {
+          "name": "AXL/OSMO Vault Token - 14d",
+          "img_url": "",
+          "asset": {
+            "native": "factory/osmo1m9e4cks405tvzlppkw64znr35vkvujvptrdqtgu5q6luk4ccw9qqeuenwd/VaultToken/812/14d/AXL/OSMO"
+          },
+          "base": {
+            "native": "gamm/pool/812"
+          },
+          "sources": [
+            {
+              "name": "osmosis-1",
+              "params": {
+                "contract_address": "osmo1m9e4cks405tvzlppkw64znr35vkvujvptrdqtgu5q6luk4ccw9qqeuenwd",
+                "base_token": {
+                  "native": "gamm/pool/812"
+                },
+                "dex": "osmosis"
+              }
+            }
+          ],
+          "decimals": 24
+        },
+        {
+          "name": "SCRT/OSMO Vault Token - 14d",
+          "img_url": "",
+          "asset": {
+            "native": "factory/osmo1m9hn9sjk3tudx6fmjlefk45eml2exsa2gaa5vpyey82ypms78dnqc235an/VaultToken/584/14d/SCRT/OSMO"
+          },
+          "base": {
+            "native": "gamm/pool/584"
+          },
+          "sources": [
+            {
+              "name": "osmosis-1",
+              "params": {
+                "contract_address": "osmo1m9hn9sjk3tudx6fmjlefk45eml2exsa2gaa5vpyey82ypms78dnqc235an",
+                "base_token": {
+                  "native": "gamm/pool/584"
+                },
+                "dex": "osmosis"
+              }
+            }
+          ],
+          "decimals": 24
+        },
+        {
+          "name": "IST/OSMO Vault Token - 14d",
+          "img_url": "",
+          "asset": {
+            "native": "factory/osmo1qajgwrcce9srkq370pa9ew96dyk4hajyyk6rfpuexrktm8862xnst443kp/VaultToken/837/14d/IST/OSMO"
+          },
+          "base": {
+            "native": "gamm/pool/837"
+          },
+          "sources": [
+            {
+              "name": "osmosis-1",
+              "params": {
+                "contract_address": "osmo1qajgwrcce9srkq370pa9ew96dyk4hajyyk6rfpuexrktm8862xnst443kp",
+                "base_token": {
+                  "native": "gamm/pool/837"
+                },
+                "dex": "osmosis"
+              }
+            }
+          ],
+          "decimals": 24
+        },
+        {
+          "name": "EVMOS/OSMO Vault Token - 14d",
+          "img_url": "",
+          "asset": {
+            "native": "factory/osmo1rkv6vcmty4rpypuxp2a6a0y5ze4ztm3y6d6xwy5a7cye85f7reqsm85c5s/VaultToken/722/14d/EVMOS/OSMO"
+          },
+          "base": {
+            "native": "gamm/pool/722"
+          },
+          "sources": [
+            {
+              "name": "osmosis-1",
+              "params": {
+                "contract_address": "osmo1rkv6vcmty4rpypuxp2a6a0y5ze4ztm3y6d6xwy5a7cye85f7reqsm85c5s",
+                "base_token": {
+                  "native": "gamm/pool/722"
+                },
+                "dex": "osmosis"
+              }
+            }
+          ],
+          "decimals": 24
         }
       ]
     },
@@ -1231,6 +1415,108 @@
         "decimals": 6
       },
       {
+        "name": "Akash",
+        "img_url": "https://stats.apollo.farm/tokens/akt.svg",
+        "asset": {
+          "native": "ibc/1480B8FD20AD5FCAE81EA87584D269547DD4D436843C1D20F15E00EB64743EF4"
+        },
+        "base": "USD",
+        "sources": [
+          {
+            "name": "coingecko-api",
+            "params": {
+              "coingecko_id": "akash-network"
+            }
+          }
+        ],
+        "decimals": 6
+      },
+      {
+        "name": "Crypto.com",
+        "img_url": "https://stats.apollo.farm/tokens/cro.svg",
+        "asset": {
+          "native": "ibc/E6931F78057F7CC5DA0FD6CEF82FF39373A6E0452BF1FD76910B93292CF356C1"
+        },
+        "base": "USD",
+        "sources": [
+          {
+            "name": "coingecko-api",
+            "params": {
+              "coingecko_id": "crypto-com-chain"
+            }
+          }
+        ],
+        "decimals": 6
+      },
+      {
+        "name": "Axelar",
+        "img_url": "https://stats.apollo.farm/tokens/axl.svg",
+        "asset": {
+          "native": "ibc/903A61A498756EA560B85A85132D3AEE21B5DEDD41213725D22ABF276EA6945E"
+        },
+        "base": "USD",
+        "sources": [
+          {
+            "name": "coingecko-api",
+            "params": {
+              "coingecko_id": "axelar"
+            }
+          }
+        ],
+        "decimals": 6
+      },
+      {
+        "name": "Secret",
+        "img_url": "https://stats.apollo.farm/tokens/scrt.svg",
+        "asset": {
+          "native": "ibc/0954E1C28EB7AF5B72D24F3BC2B47BBB2FDF91BDDFD57B74B99E133AED40972A"
+        },
+        "base": "USD",
+        "sources": [
+          {
+            "name": "coingecko-api",
+            "params": {
+              "coingecko_id": "secret"
+            }
+          }
+        ],
+        "decimals": 6
+      },
+      {
+        "name": "Inter Stable Token",
+        "img_url": "https://stats.apollo.farm/tokens/ist.svg",
+        "asset": {
+          "native": "ibc/92BE0717F4678905E53F4E45B2DED18BC0CB97BF1F8B6A25AFEDF3D5A879B4D5"
+        },
+        "base": "USD",
+        "sources": [
+          {
+            "name": "coingecko-api",
+            "params": {
+              "coingecko_id": "inter-stable-token"
+            }
+          }
+        ],
+        "decimals": 6
+      },
+      {
+        "name": "Evmos",
+        "img_url": "https://stats.apollo.farm/tokens/evmos.svg",
+        "asset": {
+          "native": "ibc/6AE98883D4D5D5FF9E50D7130F1305DA2FFA0C652D1DD9C123657C6B4EB2DF8A"
+        },
+        "base": "USD",
+        "sources": [
+          {
+            "name": "coingecko-api",
+            "params": {
+              "coingecko_id": "evmos"
+            }
+          }
+        ],
+        "decimals": 6
+      },
+      {
         "name": "OSMO/ATOM LP Token",
         "img_url": "",
         "asset": {
@@ -1337,7 +1623,7 @@
             "native": "uosmo"
           },
           {
-            "native": "ibc/46B44899322F3CD854D2D46DEEF881958467CDD4B3B10086DA49296BBED94BED"
+            "native": "ibc/1E09CB0F506ACF12FDE4683FB6B34DA62FB4BE122641E0D93AAF98A87675676C"
           }
         ],
         "sources": [
@@ -1350,7 +1636,7 @@
                   "native": "uosmo"
                 },
                 {
-                  "native": "ibc/46B44899322F3CD854D2D46DEEF881958467CDD4B3B10086DA49296BBED94BED"
+                  "native": "ibc/1E09CB0F506ACF12FDE4683FB6B34DA62FB4BE122641E0D93AAF98A87675676C"
                 }
               ]
             }
@@ -1543,6 +1829,230 @@
                 },
                 {
                   "native": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+                }
+              ]
+            }
+          }
+        ],
+        "decimals": 18
+      },
+      {
+        "name": "AKT/OSMO LP Token",
+        "img_url": "",
+        "asset": {
+          "native": "gamm/pool/3"
+        },
+        "base": [
+          {
+            "native": "uosmo"
+          },
+          {
+            "native": "ibc/1480B8FD20AD5FCAE81EA87584D269547DD4D436843C1D20F15E00EB64743EF4"
+          }
+        ],
+        "sources": [
+          {
+            "name": "osmosis-api",
+            "params": {
+              "pool_id": 3,
+              "underlying_tokens": [
+                {
+                  "native": "uosmo"
+                },
+                {
+                  "native": "ibc/1480B8FD20AD5FCAE81EA87584D269547DD4D436843C1D20F15E00EB64743EF4"
+                }
+              ]
+            }
+          }
+        ],
+        "decimals": 18
+      },
+      {
+        "name": "ION/OSMO LP Token",
+        "img_url": "",
+        "asset": {
+          "native": "gamm/pool/2"
+        },
+        "base": [
+          {
+            "native": "uosmo"
+          },
+          {
+            "native": "uion"
+          }
+        ],
+        "sources": [
+          {
+            "name": "osmosis-api",
+            "params": {
+              "pool_id": 2,
+              "underlying_tokens": [
+                {
+                  "native": "uosmo"
+                },
+                {
+                  "native": "uion"
+                }
+              ]
+            }
+          }
+        ],
+        "decimals": 18
+      },
+      {
+        "name": "CRO/OSMO LP Token",
+        "img_url": "",
+        "asset": {
+          "native": "gamm/pool/9"
+        },
+        "base": [
+          {
+            "native": "uosmo"
+          },
+          {
+            "native": "ibc/E6931F78057F7CC5DA0FD6CEF82FF39373A6E0452BF1FD76910B93292CF356C1"
+          }
+        ],
+        "sources": [
+          {
+            "name": "osmosis-api",
+            "params": {
+              "pool_id": 9,
+              "underlying_tokens": [
+                {
+                  "native": "uosmo"
+                },
+                {
+                  "native": "ibc/E6931F78057F7CC5DA0FD6CEF82FF39373A6E0452BF1FD76910B93292CF356C1"
+                }
+              ]
+            }
+          }
+        ],
+        "decimals": 18
+      },
+      {
+        "name": "AXL/OSMO LP Token",
+        "img_url": "",
+        "asset": {
+          "native": "gamm/pool/812"
+        },
+        "base": [
+          {
+            "native": "uosmo"
+          },
+          {
+            "native": "ibc/903A61A498756EA560B85A85132D3AEE21B5DEDD41213725D22ABF276EA6945E"
+          }
+        ],
+        "sources": [
+          {
+            "name": "osmosis-api",
+            "params": {
+              "pool_id": 812,
+              "underlying_tokens": [
+                {
+                  "native": "uosmo"
+                },
+                {
+                  "native": "ibc/903A61A498756EA560B85A85132D3AEE21B5DEDD41213725D22ABF276EA6945E"
+                }
+              ]
+            }
+          }
+        ],
+        "decimals": 18
+      },
+      {
+        "name": "SCRT/OSMO LP Token",
+        "img_url": "",
+        "asset": {
+          "native": "gamm/pool/584"
+        },
+        "base": [
+          {
+            "native": "uosmo"
+          },
+          {
+            "native": "ibc/0954E1C28EB7AF5B72D24F3BC2B47BBB2FDF91BDDFD57B74B99E133AED40972A"
+          }
+        ],
+        "sources": [
+          {
+            "name": "osmosis-api",
+            "params": {
+              "pool_id": 584,
+              "underlying_tokens": [
+                {
+                  "native": "uosmo"
+                },
+                {
+                  "native": "ibc/0954E1C28EB7AF5B72D24F3BC2B47BBB2FDF91BDDFD57B74B99E133AED40972A"
+                }
+              ]
+            }
+          }
+        ],
+        "decimals": 18
+      },
+      {
+        "name": "IST/OSMO LP Token",
+        "img_url": "",
+        "asset": {
+          "native": "gamm/pool/837"
+        },
+        "base": [
+          {
+            "native": "uosmo"
+          },
+          {
+            "native": "ibc/92BE0717F4678905E53F4E45B2DED18BC0CB97BF1F8B6A25AFEDF3D5A879B4D5"
+          }
+        ],
+        "sources": [
+          {
+            "name": "osmosis-api",
+            "params": {
+              "pool_id": 837,
+              "underlying_tokens": [
+                {
+                  "native": "uosmo"
+                },
+                {
+                  "native": "ibc/92BE0717F4678905E53F4E45B2DED18BC0CB97BF1F8B6A25AFEDF3D5A879B4D5"
+                }
+              ]
+            }
+          }
+        ],
+        "decimals": 18
+      },
+      {
+        "name": "EVMOS/OSMO LP Token",
+        "img_url": "",
+        "asset": {
+          "native": "gamm/pool/722"
+        },
+        "base": [
+          {
+            "native": "uosmo"
+          },
+          {
+            "native": "ibc/6AE98883D4D5D5FF9E50D7130F1305DA2FFA0C652D1DD9C123657C6B4EB2DF8A"
+          }
+        ],
+        "sources": [
+          {
+            "name": "osmosis-api",
+            "params": {
+              "pool_id": 722,
+              "underlying_tokens": [
+                {
+                  "native": "uosmo"
+                },
+                {
+                  "native": "ibc/6AE98883D4D5D5FF9E50D7130F1305DA2FFA0C652D1DD9C123657C6B4EB2DF8A"
                 }
               ]
             }
