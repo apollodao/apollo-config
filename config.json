@@ -1446,7 +1446,7 @@
             }
           }
         ],
-        "decimals": 6
+        "decimals": 8
       },
       {
         "name": "Axelar",
@@ -1514,7 +1514,7 @@
             }
           }
         ],
-        "decimals": 6
+        "decimals": 18
       },
       {
         "name": "OSMO/ATOM LP Token",

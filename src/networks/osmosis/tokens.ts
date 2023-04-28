@@ -158,7 +158,7 @@ export const tokens: (Omit<Token, "sources"> & {
     sources: [
       { name: "coingecko-api", params: { coingecko_id: "crypto-com-chain" } },
     ],
-    decimals: 6,
+    decimals: 8,
   },
   {
     name: "Axelar",
@@ -204,7 +204,7 @@ export const tokens: (Omit<Token, "sources"> & {
     },
     base: "USD",
     sources: [{ name: "coingecko-api", params: { coingecko_id: "evmos" } }],
-    decimals: 6,
+    decimals: 18,
   },
   {
     name: "OSMO/ATOM LP Token",
