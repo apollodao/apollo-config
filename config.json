@@ -1416,7 +1416,7 @@
       },
       {
         "name": "Akash",
-        "img_url": "https://stats.apollo.farm/tokens/akt.svg",
+        "img_url": "https://api.apollo.farm/tokens/akt.svg",
         "asset": {
           "native": "ibc/1480B8FD20AD5FCAE81EA87584D269547DD4D436843C1D20F15E00EB64743EF4"
         },
@@ -1432,8 +1432,8 @@
         "decimals": 6
       },
       {
-        "name": "Crypto.com",
-        "img_url": "https://stats.apollo.farm/tokens/cro.svg",
+        "name": "Cronos",
+        "img_url": "https://api.apollo.farm/tokens/cro.svg",
         "asset": {
           "native": "ibc/E6931F78057F7CC5DA0FD6CEF82FF39373A6E0452BF1FD76910B93292CF356C1"
         },
@@ -1467,7 +1467,7 @@
       },
       {
         "name": "Secret",
-        "img_url": "https://stats.apollo.farm/tokens/scrt.svg",
+        "img_url": "https://api.apollo.farm/tokens/scrt.svg",
         "asset": {
           "native": "ibc/0954E1C28EB7AF5B72D24F3BC2B47BBB2FDF91BDDFD57B74B99E133AED40972A"
         },
@@ -1484,7 +1484,7 @@
       },
       {
         "name": "Inter Stable Token",
-        "img_url": "https://stats.apollo.farm/tokens/ist.svg",
+        "img_url": "https://api.apollo.farm/tokens/ist.png",
         "asset": {
           "native": "ibc/92BE0717F4678905E53F4E45B2DED18BC0CB97BF1F8B6A25AFEDF3D5A879B4D5"
         },
