@@ -1,365 +1,1254 @@
 {
-  "osmo-test-4": {
-    "name": "osmosis testnet",
-    "chain_id": "osmo-test-4",
-    "supported_wallets": [
-      {
-        "name": "keplr",
-        "config": {
-          "rpc": "https://rpc-test.osmosis.zone",
-          "rest": "https://lcd-test.osmosis.zone",
-          "chainId": "osmo-test-4",
-          "chainName": "osmosistestnet",
-          "stakeCurrency": {
-            "coinDenom": "OSMO",
-            "coinMinimalDenom": "uosmo",
-            "coinDecimals": 6,
-            "coinGeckoId": "osmosis"
-          },
-          "bip44": {
-            "coinType": 118
-          },
-          "bech32Config": {
-            "bech32PrefixAccAddr": "osmo",
-            "bech32PrefixAccPub": "osmopub",
-            "bech32PrefixValAddr": "osmovaloper",
-            "bech32PrefixValPub": "osmovaloperpub",
-            "bech32PrefixConsAddr": "osmovalcons",
-            "bech32PrefixConsPub": "osmovalconspub"
-          },
-          "currencies": [
-            {
-              "coinDenom": "OSMO",
-              "coinMinimalDenom": "uosmo",
-              "coinDecimals": 6,
-              "coinGeckoId": "osmosis"
-            }
-          ],
-          "feeCurrencies": [
-            {
-              "coinDenom": "OSMO",
-              "coinMinimalDenom": "uosmo",
-              "coinDecimals": 6,
-              "coinGeckoId": "osmosis",
-              "gasPriceStep": {
-                "low": 0.01,
-                "average": 0.025,
-                "high": 0.04
+  "injective": {
+    "name": "injective",
+    "mainnet": {
+      "chain_id": "injective-1",
+      "supported_wallets": [
+        {
+          "name": "keplr",
+          "config": {
+            "rpc": "https://grpc.injective.network",
+            "rest": "https://lcd.injective.network",
+            "chainId": "injective-1",
+            "chainName": "injective",
+            "stakeCurrency": {
+              "coinDenom": "INJ",
+              "coinMinimalDenom": "inj",
+              "coinDecimals": 18,
+              "coinGeckoId": "injective-protocol"
+            },
+            "bip44": {
+              "coinType": 60
+            },
+            "bech32Config": {
+              "bech32PrefixAccAddr": "inj",
+              "bech32PrefixAccPub": "injpub",
+              "bech32PrefixValAddr": "injvaloper",
+              "bech32PrefixValPub": "injvaloperpub",
+              "bech32PrefixConsAddr": "injvalcons",
+              "bech32PrefixConsPub": "injvalconspub"
+            },
+            "currencies": [
+              {
+                "coinDenom": "INJ",
+                "coinMinimalDenom": "inj",
+                "coinDecimals": 18,
+                "coinGeckoId": "injective-protocol"
               }
-            }
+            ],
+            "feeCurrencies": [
+              {
+                "coinDenom": "INJ",
+                "coinMinimalDenom": "inj",
+                "coinDecimals": 18,
+                "coinGeckoId": "injective-protocol",
+                "gasPriceStep": {
+                  "low": 0.01,
+                  "average": 0.025,
+                  "high": 0.04
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "walletConnect"
+        }
+      ],
+      "supported_apps": [
+        {
+          "name": "safe",
+          "supportedFeatures": [
+            "cw3-fixed"
           ]
         }
-      },
-      {
-        "name": "walletConnect"
-      }
-    ],
-    "supported_apps": [
-      {
-        "name": "safe",
-        "supportedFeatures": [
-          "cw3-fixed"
-        ]
-      }
-    ],
-    "code_ids": [
-      {
-        "label": "apollo cw3",
-        "id": 237,
-        "checksum": ""
-      },
-      {
-        "label": "apollo vault new",
-        "id": 5945,
-        "checksum": ""
-      },
-      {
-        "label": "apollo vault old",
-        "id": 4787,
-        "checksum": ""
-      },
-      {
-        "label": "apollo zapper",
-        "id": 4922,
-        "checksum": ""
-      }
-    ],
-    "contracts": [
-      {
-        "label": "Osmo-Atom 1d",
-        "description": "Osmo-Atom Autocompounding Vault 1d",
-        "address": "osmo1zktjv92f76epswjvyxzzt3yyskpw7k6jsyu0kmq4zzc5fphrjumqlahctp",
-        "admin": "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
-        "code_id": 5945
-      },
-      {
-        "label": "Osmo-Atom 7d",
-        "description": "Osmo-Atom Autocompounding Vault 7d",
-        "address": "osmo167j3yttwzcm3785tzk4jse2qdkppcy2xxrn5u6srqv7s93wnq6yqw8zhg5",
-        "admin": "5945",
-        "code_id": 5945
-      },
-      {
-        "label": "Osmo-Atom 14d",
-        "description": "Osmo-Atom Autocompounding Vault 14d",
-        "address": "osmo1tp2m6g39h8mvhnu3plqjyen5s63023gj8w873l8wvly0cd77l6hsaa73wt",
-        "admin": "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
-        "code_id": 5945
-      },
-      {
-        "label": "Juno-Osmo 1d",
-        "description": "Juno-Osmo Autocompounding Vault 1d",
-        "address": "osmo1r6h0pafu3wq0kf6yv09qhc8qvuku2d6fua0rpwwv46h7hd8u586scxspjf",
-        "admin": "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
-        "code_id": 5945
-      },
-      {
-        "label": "Juno-Osmo 7d",
-        "description": "Juno-Osmo Autocompounding Vault 7d",
-        "address": "osmo1gr5epxn67q6202l3hy0mcnu7qc039v22pa6x2tsk23zwg235n9jsq6pmes",
-        "admin": "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
-        "code_id": 5945
-      },
-      {
-        "label": "Juno-Osmo 14d",
-        "description": "Juno-Osmo Autocompounding Vault 14d",
-        "address": "osmo1d6knwkelyr9eklewnn9htkess4ttpxpf2cze9ec0xfw7e3fj0ggssqzfpp",
-        "admin": "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
-        "code_id": 5945
-      },
-      {
-        "label": "Ion-Osmo 1d",
-        "description": "Ion-Osmo Autocompounding Vault 1d - 4787",
-        "address": "osmo1nv2d5tcn3xhfera55swsl20hyymz9wjtl39x2c8tumkj3jzqc7qqvd9max",
-        "admin": "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
-        "code_id": 4787
-      },
-      {
-        "label": "Ion-Osmo 7d",
-        "description": "Ion-Osmo Autocompounding Vault 7d - 4787",
-        "address": "osmo1yzrsuck79kynz9yxpawkuppy5cnfv6cdjagtd8daa5dgefj4v6usdvlv0n",
-        "admin": "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
-        "code_id": 4787
-      },
-      {
-        "label": "Ion-Osmo 14d",
-        "description": "Ion-Osmo Autocompounding Vault 14d - 4787",
-        "address": "osmo1fzednazwpkjspa39yqsgm8xqmmgls5fe2mesgjmjjmqgtxzhwn8s6v5mmf",
-        "admin": "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
-        "code_id": 4787
-      },
-      {
-        "label": "Tgrade-Osmo 1d",
-        "description": "Tgrade-Osmo Autocompounding Vault 1d",
-        "address": "osmo1akgu9fd68rf6e6tvatryewxc23t27zvlpfsvgcu9emkgkqcpkz0qz5zlwc",
-        "admin": "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
-        "code_id": 5945
-      },
-      {
-        "label": "Tgrade-Osmo 7d",
-        "description": "Tgrade-Osmo Autocompounding Vault 7d",
-        "address": "osmo1497tszvzlt5vgqzcy73ty5gc04ztmvqeaujeefmalq7wcufuf25sxayk3e",
-        "admin": "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
-        "code_id": 5945
-      },
-      {
-        "label": "Tgrade-Osmo 14d",
-        "description": "Tgrade-Osmo Autocompounding Vault 14d",
-        "address": "osmo1np5lnwpr3rs4dktvg5qzz7ra8j8pp8yd942qx7qe2298dv3hyfysjlpxkh",
-        "admin": "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
-        "code_id": 5945
-      },
-      {
-        "label": "Apollo Zapper",
-        "address": "osmo1lx2tqad63s7xhchwm60gpk5wssl4jgll0xpp2x8hp9e6dx9c9ztqcmwjzv",
-        "admin": "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
-        "code_id": 4922
-      }
-    ],
-    "nodes": [
-      {
-        "name": "allthatnode",
-        "rpc": "https://osmosis-testnet-rpc.allthatnode.com:26657",
-        "lcd": "https://osmosis-testnet-rpc.allthatnode.com:1317"
-      },
-      {
-        "name": "osmosis",
-        "rpc": "https://rpc-test.osmosis.zone:443",
-        "lcd": "https://testnet-rest.osmosis.zone"
-      }
-    ],
+      ],
+      "code_ids": [
+        {
+          "label": "apollo cw3",
+          "id": 1,
+          "checksum": ""
+        }
+      ],
+      "contracts": [
+        {
+          "label": "Apollo Safe CW3",
+          "address": "",
+          "admin": "",
+          "code_id": 1
+        }
+      ],
+      "nodes": [],
+      "tokens": []
+    },
+    "testnet": {
+      "chain_id": "injective-888",
+      "supported_wallets": [
+        {
+          "name": "keplr",
+          "config": {
+            "rpc": "https://k8s.testnet.chain.grpc-web.injective.network",
+            "rest": "https://k8s.testnet.lcd.injective.network",
+            "chainId": "injective-888",
+            "chainName": "injective",
+            "stakeCurrency": {
+              "coinDenom": "INJ",
+              "coinMinimalDenom": "inj",
+              "coinDecimals": 18,
+              "coinGeckoId": "injective-protocol"
+            },
+            "bip44": {
+              "coinType": 60
+            },
+            "bech32Config": {
+              "bech32PrefixAccAddr": "inj",
+              "bech32PrefixAccPub": "injpub",
+              "bech32PrefixValAddr": "injvaloper",
+              "bech32PrefixValPub": "injvaloperpub",
+              "bech32PrefixConsAddr": "injvalcons",
+              "bech32PrefixConsPub": "injvalconspub"
+            },
+            "currencies": [
+              {
+                "coinDenom": "INJ",
+                "coinMinimalDenom": "inj",
+                "coinDecimals": 18,
+                "coinGeckoId": "injective-protocol"
+              }
+            ],
+            "feeCurrencies": [
+              {
+                "coinDenom": "INJ",
+                "coinMinimalDenom": "inj",
+                "coinDecimals": 18,
+                "coinGeckoId": "injective-protocol",
+                "gasPriceStep": {
+                  "low": 0.01,
+                  "average": 0.025,
+                  "high": 0.04
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "walletConnect"
+        }
+      ],
+      "supported_apps": [
+        {
+          "name": "safe",
+          "supportedFeatures": [
+            "cw3-fixed"
+          ]
+        }
+      ],
+      "code_ids": [
+        {
+          "label": "apollo cw3",
+          "id": 1,
+          "checksum": ""
+        }
+      ],
+      "contracts": [
+        {
+          "label": "Apollo Safe CW3",
+          "address": "",
+          "admin": "",
+          "code_id": 1
+        }
+      ],
+      "tokens": [],
+      "nodes": []
+    },
     "tokens": []
   },
-  "osmosis-1": {
-    "name": "osmosis mainnet",
-    "chain_id": "osmosis-1",
-    "supported_wallets": [
-      {
-        "name": "keplr",
-        "config": {
-          "rpc": "https://osmosis-mainnet-rpc.allthatnode.com:26657",
-          "rest": "https://osmosis-mainnet-rpc.allthatnode.com:1317",
-          "chainId": "osmosis-1",
-          "chainName": "osmosis",
-          "stakeCurrency": {
-            "coinDenom": "OSMO",
-            "coinMinimalDenom": "uosmo",
-            "coinDecimals": 6,
-            "coinGeckoId": "osmosis"
-          },
-          "bip44": {
-            "coinType": 118
-          },
-          "bech32Config": {
-            "bech32PrefixAccAddr": "osmo",
-            "bech32PrefixAccPub": "osmopub",
-            "bech32PrefixValAddr": "osmovaloper",
-            "bech32PrefixValPub": "osmovaloperpub",
-            "bech32PrefixConsAddr": "osmovalcons",
-            "bech32PrefixConsPub": "osmovalconspub"
-          },
-          "currencies": [
-            {
+  "secret": {
+    "name": "secret",
+    "testnet": {
+      "chain_id": "pulsar-2",
+      "supported_wallets": [
+        {
+          "name": "keplr",
+          "config": {
+            "rpc": "https://grpc.testnet.secretsaturn.net",
+            "rest": "https://lcd.testnet.secretsaturn.net",
+            "chainId": "pulsar-2",
+            "chainName": "secrettestnet",
+            "stakeCurrency": {
+              "coinDenom": "SCRT",
+              "coinMinimalDenom": "uscrt",
+              "coinDecimals": 6,
+              "coinGeckoId": "secret"
+            },
+            "bip44": {
+              "coinType": 118
+            },
+            "bech32Config": {
+              "bech32PrefixAccAddr": "secret",
+              "bech32PrefixAccPub": "secretpub",
+              "bech32PrefixValAddr": "secretvaloper",
+              "bech32PrefixValPub": "secretvaloperpub",
+              "bech32PrefixConsAddr": "secretvalcons",
+              "bech32PrefixConsPub": "secretvalconspub"
+            },
+            "currencies": [
+              {
+                "coinDenom": "SCRT",
+                "coinMinimalDenom": "uscrt",
+                "coinDecimals": 6,
+                "coinGeckoId": "secret"
+              }
+            ],
+            "feeCurrencies": [
+              {
+                "coinDenom": "SCRT",
+                "coinMinimalDenom": "uscrt",
+                "coinDecimals": 6,
+                "coinGeckoId": "secret",
+                "gasPriceStep": {
+                  "low": 0.01,
+                  "average": 0.025,
+                  "high": 0.04
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "walletConnect"
+        }
+      ],
+      "supported_apps": [],
+      "code_ids": [],
+      "contracts": [],
+      "nodes": [],
+      "tokens": []
+    },
+    "tokens": []
+  },
+  "osmosis": {
+    "name": "osmosis",
+    "mainnet": {
+      "chain_id": "osmosis-1",
+      "supported_wallets": [
+        {
+          "name": "keplr",
+          "config": {
+            "rpc": "https://osmosis-mainnet-rpc.allthatnode.com:26657",
+            "rest": "https://osmosis-mainnet-rpc.allthatnode.com:1317",
+            "chainId": "osmosis-1",
+            "chainName": "osmosis",
+            "stakeCurrency": {
               "coinDenom": "OSMO",
               "coinMinimalDenom": "uosmo",
               "coinDecimals": 6,
               "coinGeckoId": "osmosis"
+            },
+            "bip44": {
+              "coinType": 118
+            },
+            "bech32Config": {
+              "bech32PrefixAccAddr": "osmo",
+              "bech32PrefixAccPub": "osmopub",
+              "bech32PrefixValAddr": "osmovaloper",
+              "bech32PrefixValPub": "osmovaloperpub",
+              "bech32PrefixConsAddr": "osmovalcons",
+              "bech32PrefixConsPub": "osmovalconspub"
+            },
+            "currencies": [
+              {
+                "coinDenom": "OSMO",
+                "coinMinimalDenom": "uosmo",
+                "coinDecimals": 6,
+                "coinGeckoId": "osmosis"
+              }
+            ],
+            "feeCurrencies": [
+              {
+                "coinDenom": "OSMO",
+                "coinMinimalDenom": "uosmo",
+                "coinDecimals": 6,
+                "coinGeckoId": "osmosis",
+                "gasPriceStep": {
+                  "low": 0.01,
+                  "average": 0.025,
+                  "high": 0.04
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "walletConnect"
+        }
+      ],
+      "supported_apps": [
+        {
+          "name": "safe",
+          "supportedFeatures": [
+            "cw3-fixed"
+          ]
+        }
+      ],
+      "code_ids": [
+        {
+          "label": "apollo cw3",
+          "id": 1,
+          "checksum": ""
+        },
+        {
+          "label": "apollo vault",
+          "id": 17,
+          "checksum": ""
+        },
+        {
+          "label": "apollo zapper",
+          "id": 4922,
+          "checksum": ""
+        }
+      ],
+      "contracts": [
+        {
+          "label": "Apollo Safe CW3",
+          "address": "",
+          "admin": "",
+          "code_id": 1
+        },
+        {
+          "label": "Apollo Zapper",
+          "address": "osmo12",
+          "admin": "osmo1wl59k23zngj34l7d42y9yltask7rjlnxgccawc7ltrknp6n52fps94qsjd",
+          "code_id": 4922
+        },
+        {
+          "label": "Osmo-Atom Vault - 14d",
+          "description": "Osmo-Atom Autocompounding Vault 14d",
+          "address": "osmo1g3kmqpp8608szfp0pdag3r6z85npph7wmccat8lgl3mp407kv73qlj7qwp",
+          "admin": "osmo1wl59k23zngj34l7d42y9yltask7rjlnxgccawc7ltrknp6n52fps94qsjd",
+          "code_id": 17
+        },
+        {
+          "label": "USDC-OSMO Vault - 14d",
+          "description": "USDC-OSMO Autocompounding Vault 14d",
+          "address": "osmo1jfmwayj8jqp9tfy4v4eks5c2jpnqdumn8x8xvfllng0wfes770qqp7jl4j",
+          "admin": "osmo1wl59k23zngj34l7d42y9yltask7rjlnxgccawc7ltrknp6n52fps94qsjd",
+          "code_id": 17
+        },
+        {
+          "label": "WBTC-OSMO Vault - 14d",
+          "description": "WBTC-OSMO Autocompounding Vault 14d",
+          "address": "osmo185gqewrlde8vrqw7j8lpad67v8jfrx9u7770k9q87tqqecctp5tq50wt2c",
+          "admin": "osmo1wl59k23zngj34l7d42y9yltask7rjlnxgccawc7ltrknp6n52fps94qsjd",
+          "code_id": 17
+        },
+        {
+          "label": "DAI-OSMO Vault - 14d",
+          "description": "DAI-OSMO Autocompounding Vault 14d",
+          "address": "osmo1lhs6kyuxytu4suua0qf88z5057wzpxs77tyrlgztw2uctcy75hcqf2ajrt",
+          "admin": "osmo1wl59k23zngj34l7d42y9yltask7rjlnxgccawc7ltrknp6n52fps94qsjd",
+          "code_id": 17
+        },
+        {
+          "label": "stOSMO-OSMO Vault - 14d",
+          "description": "stOSMO-OSMO Autocompounding Vault 14d",
+          "address": "osmo1p4zqs5y2w5srzd2vesznzu5ql8wfq9tpz3e7mf2j3y07nxrtkdes5r5g0t",
+          "admin": "osmo1wl59k23zngj34l7d42y9yltask7rjlnxgccawc7ltrknp6n52fps94qsjd",
+          "code_id": 17
+        },
+        {
+          "label": "wETH-OSMO Vault - 14d",
+          "description": "wETH-OSMO Autocompounding Vault 14d",
+          "address": "osmo1r235f4tdkwrsnj3mdm9hf647l754y6g6xsmz0nas5r4vr5tda3qsgtftef",
+          "admin": "osmo1wl59k23zngj34l7d42y9yltask7rjlnxgccawc7ltrknp6n52fps94qsjd",
+          "code_id": 17
+        },
+        {
+          "label": "ATOM-stATOM Vault - 14d",
+          "description": "ATOM-stATOM Autocompounding Vault 14d",
+          "address": "osmo1a6tcf60pyz8qq2n532dzcs7s7sj8klcmra04tvaqympzcvxqg9esn7xz7l",
+          "admin": "osmo1wl59k23zngj34l7d42y9yltask7rjlnxgccawc7ltrknp6n52fps94qsjd",
+          "code_id": 17
+        }
+      ],
+      "nodes": [
+        {
+          "name": "osmosis",
+          "lcd": "https://lcd.osmosis.zone",
+          "rpc": "https://rpc.osmosis.zone:443",
+          "archive": false
+        },
+        {
+          "name": "allthatnode",
+          "lcd": "https://osmosis-mainnet-rpc.allthatnode.com:1317",
+          "rpc": "https://osmosis-mainnet-rpc.allthatnode.com:26657",
+          "archive": false
+        },
+        {
+          "name": "polkachu",
+          "lcd": "https://osmosis-api.polkachu.com",
+          "rpc": "https://osmosis-rpc.polkachu.com:443",
+          "archive": false
+        },
+        {
+          "name": "ecostake",
+          "lcd": "https://rest-osmosis.ecostake.com",
+          "rpc": "https://rpc-osmosis.ecostake.com:443",
+          "archive": false
+        },
+        {
+          "name": "chainlayer",
+          "lcd": "https://osmosis-lcd.quickapi.com:443",
+          "rpc": "https://osmosis-rpc.quickapi.com:443",
+          "archive": false
+        },
+        {
+          "name": "notional",
+          "lcd": "https://api-osmosis-ia.cosmosia.notional.ventures:443",
+          "rpc": "https://rpc-osmosis-ia.cosmosia.notional.ventures:443",
+          "archive": true
+        }
+      ],
+      "tokens": [
+        {
+          "name": "OSMO/ATOM Vault Token - 14d",
+          "img_url": "",
+          "asset": {
+            "native": "factory/osmo1g3kmqpp8608szfp0pdag3r6z85npph7wmccat8lgl3mp407kv73qlj7qwp/VaultToken/1/14d/ATOM/OSMO"
+          },
+          "base": {
+            "native": "gamm/pool/1"
+          },
+          "sources": [
+            {
+              "name": "osmosis-1",
+              "params": {
+                "contract_address": "osmo1g3kmqpp8608szfp0pdag3r6z85npph7wmccat8lgl3mp407kv73qlj7qwp",
+                "base_token": {
+                  "native": "gamm/pool/1"
+                },
+                "dex": "osmosis"
+              }
             }
           ],
-          "feeCurrencies": [
+          "decimals": 24
+        },
+        {
+          "name": "USDC/OSMO Vault Token - 14d",
+          "img_url": "",
+          "asset": {
+            "native": "factory/osmo1jfmwayj8jqp9tfy4v4eks5c2jpnqdumn8x8xvfllng0wfes770qqp7jl4j/VaultToken/678/14d/USDC/OSMO"
+          },
+          "base": {
+            "native": "gamm/pool/678"
+          },
+          "sources": [
             {
+              "name": "osmosis-1",
+              "params": {
+                "contract_address": "osmo1jfmwayj8jqp9tfy4v4eks5c2jpnqdumn8x8xvfllng0wfes770qqp7jl4j",
+                "base_token": {
+                  "native": "gamm/pool/678"
+                },
+                "dex": "osmosis"
+              }
+            }
+          ],
+          "decimals": 24
+        },
+        {
+          "name": "wBTC/OSMO Vault Token - 14d",
+          "img_url": "",
+          "asset": {
+            "native": "factory/osmo185gqewrlde8vrqw7j8lpad67v8jfrx9u7770k9q87tqqecctp5tq50wt2c/VaultToken/712/14d/WBTC/OSMO"
+          },
+          "base": {
+            "native": "gamm/pool/712"
+          },
+          "sources": [
+            {
+              "name": "osmosis-1",
+              "params": {
+                "contract_address": "osmo185gqewrlde8vrqw7j8lpad67v8jfrx9u7770k9q87tqqecctp5tq50wt2c",
+                "base_token": {
+                  "native": "gamm/pool/712"
+                },
+                "dex": "osmosis"
+              }
+            }
+          ],
+          "decimals": 24
+        },
+        {
+          "name": "DAI/OSMO Vault Token - 14d",
+          "img_url": "",
+          "asset": {
+            "native": "factory/osmo1lhs6kyuxytu4suua0qf88z5057wzpxs77tyrlgztw2uctcy75hcqf2ajrt/VaultToken/674/14d/DAI/OSMO"
+          },
+          "base": {
+            "native": "gamm/pool/674"
+          },
+          "sources": [
+            {
+              "name": "osmosis-1",
+              "params": {
+                "contract_address": "osmo1lhs6kyuxytu4suua0qf88z5057wzpxs77tyrlgztw2uctcy75hcqf2ajrt",
+                "base_token": {
+                  "native": "gamm/pool/674"
+                },
+                "dex": "osmosis"
+              }
+            }
+          ],
+          "decimals": 24
+        },
+        {
+          "name": "stOSMO/OSMO Vault Token - 14d",
+          "img_url": "",
+          "asset": {
+            "native": "factory/osmo1p4zqs5y2w5srzd2vesznzu5ql8wfq9tpz3e7mf2j3y07nxrtkdes5r5g0t/VaultToken/833/14d/stOSMO/OSMO"
+          },
+          "base": {
+            "native": "gamm/pool/833"
+          },
+          "sources": [
+            {
+              "name": "osmosis-1",
+              "params": {
+                "contract_address": "osmo1p4zqs5y2w5srzd2vesznzu5ql8wfq9tpz3e7mf2j3y07nxrtkdes5r5g0t",
+                "base_token": {
+                  "native": "gamm/pool/833"
+                },
+                "dex": "osmosis"
+              }
+            }
+          ],
+          "decimals": 24
+        },
+        {
+          "name": "wETH/OSMO Vault Token - 14d",
+          "img_url": "",
+          "asset": {
+            "native": "factory/osmo1r235f4tdkwrsnj3mdm9hf647l754y6g6xsmz0nas5r4vr5tda3qsgtftef/VaultToken/704/14d/WETH/OSMO"
+          },
+          "base": {
+            "native": "gamm/pool/704"
+          },
+          "sources": [
+            {
+              "name": "osmosis-1",
+              "params": {
+                "contract_address": "osmo1r235f4tdkwrsnj3mdm9hf647l754y6g6xsmz0nas5r4vr5tda3qsgtftef",
+                "base_token": {
+                  "native": "gamm/pool/704"
+                },
+                "dex": "osmosis"
+              }
+            }
+          ],
+          "decimals": 24
+        },
+        {
+          "name": "stATOM/ATOM Vault Token - 14d",
+          "img_url": "",
+          "asset": {
+            "native": "factory/osmo1a6tcf60pyz8qq2n532dzcs7s7sj8klcmra04tvaqympzcvxqg9esn7xz7l/VaultToken/803/14d/ATOM/stATOM"
+          },
+          "base": {
+            "native": "gamm/pool/803"
+          },
+          "sources": [
+            {
+              "name": "osmosis-1",
+              "params": {
+                "contract_address": "osmo1a6tcf60pyz8qq2n532dzcs7s7sj8klcmra04tvaqympzcvxqg9esn7xz7l",
+                "base_token": {
+                  "native": "gamm/pool/803"
+                },
+                "dex": "osmosis"
+              }
+            }
+          ],
+          "decimals": 24
+        },
+        {
+          "name": "AKT/OSMO Vault Token - 14d",
+          "img_url": "",
+          "asset": {
+            "native": "factory/osmo122ryl7pez7yjprtvjckltu2uvjxrq3kqt4nvclax2la7maj6757qg054ga/VaultToken/3/14d/AKT/OSMO"
+          },
+          "base": {
+            "native": "gamm/pool/3"
+          },
+          "sources": [
+            {
+              "name": "osmosis-1",
+              "params": {
+                "contract_address": "osmo122ryl7pez7yjprtvjckltu2uvjxrq3kqt4nvclax2la7maj6757qg054ga",
+                "base_token": {
+                  "native": "gamm/pool/3"
+                },
+                "dex": "osmosis"
+              }
+            }
+          ],
+          "decimals": 24
+        },
+        {
+          "name": "ION/OSMO Vault Token - 14d",
+          "img_url": "",
+          "asset": {
+            "native": "factory/osmo1869zena97sctemj78sgjmu737p2g94905hsf3hhkrfgummrfz4tsxj2k6r/VaultToken/2/14d/ION/OSMO"
+          },
+          "base": {
+            "native": "gamm/pool/2"
+          },
+          "sources": [
+            {
+              "name": "osmosis-1",
+              "params": {
+                "contract_address": "osmo1869zena97sctemj78sgjmu737p2g94905hsf3hhkrfgummrfz4tsxj2k6r",
+                "base_token": {
+                  "native": "gamm/pool/2"
+                },
+                "dex": "osmosis"
+              }
+            }
+          ],
+          "decimals": 24
+        },
+        {
+          "name": "JUNO/OSMO Vault Token - 14d",
+          "img_url": "",
+          "asset": {
+            "native": "factory/osmo1ceku0zks6y43r9l35n7wnv5pf82s6l4k5jhlrhkurakeemey9n4snz3x6z/VaultToken/497/14d/JUNO/OSMO"
+          },
+          "base": {
+            "native": "gamm/pool/497"
+          },
+          "sources": [
+            {
+              "name": "osmosis-1",
+              "params": {
+                "contract_address": "osmo1ceku0zks6y43r9l35n7wnv5pf82s6l4k5jhlrhkurakeemey9n4snz3x6z",
+                "base_token": {
+                  "native": "gamm/pool/497"
+                },
+                "dex": "osmosis"
+              }
+            }
+          ],
+          "decimals": 24
+        },
+        {
+          "name": "CRO/OSMO Vault Token - 14d",
+          "img_url": "",
+          "asset": {
+            "native": "factory/osmo1gmd2vc4crmv7urlfn3j5avhplfncjf5mg649dkgsu5a0zvd6cgrsn9dq4l/VaultToken/9/14d/CRO/OSMO"
+          },
+          "base": {
+            "native": "gamm/pool/9"
+          },
+          "sources": [
+            {
+              "name": "osmosis-1",
+              "params": {
+                "contract_address": "osmo1gmd2vc4crmv7urlfn3j5avhplfncjf5mg649dkgsu5a0zvd6cgrsn9dq4l",
+                "base_token": {
+                  "native": "gamm/pool/9"
+                },
+                "dex": "osmosis"
+              }
+            }
+          ],
+          "decimals": 24
+        },
+        {
+          "name": "AXL/OSMO Vault Token - 14d",
+          "img_url": "",
+          "asset": {
+            "native": "factory/osmo1m9e4cks405tvzlppkw64znr35vkvujvptrdqtgu5q6luk4ccw9qqeuenwd/VaultToken/812/14d/AXL/OSMO"
+          },
+          "base": {
+            "native": "gamm/pool/812"
+          },
+          "sources": [
+            {
+              "name": "osmosis-1",
+              "params": {
+                "contract_address": "osmo1m9e4cks405tvzlppkw64znr35vkvujvptrdqtgu5q6luk4ccw9qqeuenwd",
+                "base_token": {
+                  "native": "gamm/pool/812"
+                },
+                "dex": "osmosis"
+              }
+            }
+          ],
+          "decimals": 24
+        },
+        {
+          "name": "SCRT/OSMO Vault Token - 14d",
+          "img_url": "",
+          "asset": {
+            "native": "factory/osmo1m9hn9sjk3tudx6fmjlefk45eml2exsa2gaa5vpyey82ypms78dnqc235an/VaultToken/584/14d/SCRT/OSMO"
+          },
+          "base": {
+            "native": "gamm/pool/584"
+          },
+          "sources": [
+            {
+              "name": "osmosis-1",
+              "params": {
+                "contract_address": "osmo1m9hn9sjk3tudx6fmjlefk45eml2exsa2gaa5vpyey82ypms78dnqc235an",
+                "base_token": {
+                  "native": "gamm/pool/584"
+                },
+                "dex": "osmosis"
+              }
+            }
+          ],
+          "decimals": 24
+        },
+        {
+          "name": "IST/OSMO Vault Token - 14d",
+          "img_url": "",
+          "asset": {
+            "native": "factory/osmo1qajgwrcce9srkq370pa9ew96dyk4hajyyk6rfpuexrktm8862xnst443kp/VaultToken/837/14d/IST/OSMO"
+          },
+          "base": {
+            "native": "gamm/pool/837"
+          },
+          "sources": [
+            {
+              "name": "osmosis-1",
+              "params": {
+                "contract_address": "osmo1qajgwrcce9srkq370pa9ew96dyk4hajyyk6rfpuexrktm8862xnst443kp",
+                "base_token": {
+                  "native": "gamm/pool/837"
+                },
+                "dex": "osmosis"
+              }
+            }
+          ],
+          "decimals": 24
+        },
+        {
+          "name": "EVMOS/OSMO Vault Token - 14d",
+          "img_url": "",
+          "asset": {
+            "native": "factory/osmo1rkv6vcmty4rpypuxp2a6a0y5ze4ztm3y6d6xwy5a7cye85f7reqsm85c5s/VaultToken/722/14d/EVMOS/OSMO"
+          },
+          "base": {
+            "native": "gamm/pool/722"
+          },
+          "sources": [
+            {
+              "name": "osmosis-1",
+              "params": {
+                "contract_address": "osmo1rkv6vcmty4rpypuxp2a6a0y5ze4ztm3y6d6xwy5a7cye85f7reqsm85c5s",
+                "base_token": {
+                  "native": "gamm/pool/722"
+                },
+                "dex": "osmosis"
+              }
+            }
+          ],
+          "decimals": 24
+        },
+        {
+          "name": "STRD/OSMO Vault Token - 14d",
+          "img_url": "",
+          "asset": {
+            "native": "factory/osmo1e3qjfcg9adrauz6jg030ptfy35r6zzplsgaavnn6xrh6686udhfqq7muwy/VaultToken/806/14d/STRD/OSMO"
+          },
+          "base": {
+            "native": "gamm/pool/806"
+          },
+          "sources": [
+            {
+              "name": "osmosis-1",
+              "params": {
+                "contract_address": "osmo1e3qjfcg9adrauz6jg030ptfy35r6zzplsgaavnn6xrh6686udhfqq7muwy",
+                "base_token": {
+                  "native": "gamm/pool/806"
+                },
+                "dex": "osmosis"
+              }
+            }
+          ],
+          "decimals": 24
+        }
+      ]
+    },
+    "testnet": {
+      "chain_id": "osmo-test-4",
+      "supported_wallets": [
+        {
+          "name": "keplr",
+          "config": {
+            "rpc": "https://rpc-test.osmosis.zone",
+            "rest": "https://lcd-test.osmosis.zone",
+            "chainId": "osmo-test-4",
+            "chainName": "osmosistestnet",
+            "stakeCurrency": {
               "coinDenom": "OSMO",
               "coinMinimalDenom": "uosmo",
               "coinDecimals": 6,
-              "coinGeckoId": "osmosis",
-              "gasPriceStep": {
-                "low": 0.01,
-                "average": 0.025,
-                "high": 0.04
+              "coinGeckoId": "osmosis"
+            },
+            "bip44": {
+              "coinType": 118
+            },
+            "bech32Config": {
+              "bech32PrefixAccAddr": "osmo",
+              "bech32PrefixAccPub": "osmopub",
+              "bech32PrefixValAddr": "osmovaloper",
+              "bech32PrefixValPub": "osmovaloperpub",
+              "bech32PrefixConsAddr": "osmovalcons",
+              "bech32PrefixConsPub": "osmovalconspub"
+            },
+            "currencies": [
+              {
+                "coinDenom": "OSMO",
+                "coinMinimalDenom": "uosmo",
+                "coinDecimals": 6,
+                "coinGeckoId": "osmosis"
               }
-            }
+            ],
+            "feeCurrencies": [
+              {
+                "coinDenom": "OSMO",
+                "coinMinimalDenom": "uosmo",
+                "coinDecimals": 6,
+                "coinGeckoId": "osmosis",
+                "gasPriceStep": {
+                  "low": 0.01,
+                  "average": 0.025,
+                  "high": 0.04
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "walletConnect"
+        }
+      ],
+      "supported_apps": [
+        {
+          "name": "safe",
+          "supportedFeatures": [
+            "cw3-fixed"
           ]
         }
-      },
-      {
-        "name": "walletConnect"
-      }
-    ],
-    "supported_apps": [
-      {
-        "name": "safe",
-        "supportedFeatures": [
-          "cw3-fixed"
-        ]
-      }
-    ],
-    "code_ids": [
-      {
-        "label": "apollo cw3",
-        "id": 1,
-        "checksum": ""
-      },
-      {
-        "label": "apollo vault",
-        "id": 17,
-        "checksum": ""
-      },
-      {
-        "label": "apollo zapper",
-        "id": 4922,
-        "checksum": ""
-      }
-    ],
-    "contracts": [
-      {
-        "label": "Apollo Safe CW3",
-        "address": "",
-        "admin": "",
-        "code_id": 1
-      },
-      {
-        "label": "Apollo Zapper",
-        "address": "osmo12",
-        "admin": "osmo1wl59k23zngj34l7d42y9yltask7rjlnxgccawc7ltrknp6n52fps94qsjd",
-        "code_id": 4922
-      },
-      {
-        "label": "Osmo-Atom Vault - 14d",
-        "description": "Osmo-Atom Autocompounding Vault 14d",
-        "address": "osmo1g3kmqpp8608szfp0pdag3r6z85npph7wmccat8lgl3mp407kv73qlj7qwp",
-        "admin": "osmo1wl59k23zngj34l7d42y9yltask7rjlnxgccawc7ltrknp6n52fps94qsjd",
-        "code_id": 17
-      },
-      {
-        "label": "USDC-OSMO Vault - 14d",
-        "description": "USDC-OSMO Autocompounding Vault 14d",
-        "address": "osmo1jfmwayj8jqp9tfy4v4eks5c2jpnqdumn8x8xvfllng0wfes770qqp7jl4j",
-        "admin": "osmo1wl59k23zngj34l7d42y9yltask7rjlnxgccawc7ltrknp6n52fps94qsjd",
-        "code_id": 17
-      },
-      {
-        "label": "WBTC-OSMO Vault - 14d",
-        "description": "WBTC-OSMO Autocompounding Vault 14d",
-        "address": "osmo185gqewrlde8vrqw7j8lpad67v8jfrx9u7770k9q87tqqecctp5tq50wt2c",
-        "admin": "osmo1wl59k23zngj34l7d42y9yltask7rjlnxgccawc7ltrknp6n52fps94qsjd",
-        "code_id": 17
-      },
-      {
-        "label": "DAI-OSMO Vault - 14d",
-        "description": "DAI-OSMO Autocompounding Vault 14d",
-        "address": "osmo1lhs6kyuxytu4suua0qf88z5057wzpxs77tyrlgztw2uctcy75hcqf2ajrt",
-        "admin": "osmo1wl59k23zngj34l7d42y9yltask7rjlnxgccawc7ltrknp6n52fps94qsjd",
-        "code_id": 17
-      },
-      {
-        "label": "stOSMO-OSMO Vault - 14d",
-        "description": "stOSMO-OSMO Autocompounding Vault 14d",
-        "address": "osmo1p4zqs5y2w5srzd2vesznzu5ql8wfq9tpz3e7mf2j3y07nxrtkdes5r5g0t",
-        "admin": "osmo1wl59k23zngj34l7d42y9yltask7rjlnxgccawc7ltrknp6n52fps94qsjd",
-        "code_id": 17
-      },
-      {
-        "label": "wETH-OSMO Vault - 14d",
-        "description": "wETH-OSMO Autocompounding Vault 14d",
-        "address": "osmo1r235f4tdkwrsnj3mdm9hf647l754y6g6xsmz0nas5r4vr5tda3qsgtftef",
-        "admin": "osmo1wl59k23zngj34l7d42y9yltask7rjlnxgccawc7ltrknp6n52fps94qsjd",
-        "code_id": 17
-      },
-      {
-        "label": "ATOM-stATOM Vault - 14d",
-        "description": "ATOM-stATOM Autocompounding Vault 14d",
-        "address": "osmo1a6tcf60pyz8qq2n532dzcs7s7sj8klcmra04tvaqympzcvxqg9esn7xz7l",
-        "admin": "osmo1wl59k23zngj34l7d42y9yltask7rjlnxgccawc7ltrknp6n52fps94qsjd",
-        "code_id": 17
-      }
-    ],
-    "nodes": [
-      {
-        "name": "osmosis",
-        "lcd": "https://lcd.osmosis.zone",
-        "rpc": "https://rpc.osmosis.zone:443"
-      },
-      {
-        "name": "allthatnode",
-        "lcd": "https://osmosis-mainnet-rpc.allthatnode.com:1317",
-        "rpc": "https://osmosis-mainnet-rpc.allthatnode.com:26657"
-      },
-      {
-        "name": "polkachu",
-        "lcd": "https://osmosis-api.polkachu.com",
-        "rpc": "https://osmosis-rpc.polkachu.com:443"
-      },
-      {
-        "name": "ecostake",
-        "lcd": "https://rest-osmosis.ecostake.com",
-        "rpc": "https://rpc-osmosis.ecostake.com:443"
-      },
-      {
-        "name": "chainlayer",
-        "lcd": "https://osmosis-lcd.quickapi.com:443",
-        "rpc": "https://osmosis-rpc.quickapi.com:443"
-      }
-    ],
+      ],
+      "code_ids": [
+        {
+          "label": "apollo cw3",
+          "id": 237,
+          "checksum": ""
+        },
+        {
+          "label": "apollo vault new",
+          "id": 5945,
+          "checksum": ""
+        },
+        {
+          "label": "apollo vault old",
+          "id": 4787,
+          "checksum": ""
+        },
+        {
+          "label": "apollo zapper",
+          "id": 4922,
+          "checksum": ""
+        }
+      ],
+      "contracts": [
+        {
+          "label": "Osmo-Atom 1d",
+          "description": "Osmo-Atom Autocompounding Vault 1d",
+          "address": "osmo1zktjv92f76epswjvyxzzt3yyskpw7k6jsyu0kmq4zzc5fphrjumqlahctp",
+          "admin": "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
+          "code_id": 5945
+        },
+        {
+          "label": "Osmo-Atom 7d",
+          "description": "Osmo-Atom Autocompounding Vault 7d",
+          "address": "osmo167j3yttwzcm3785tzk4jse2qdkppcy2xxrn5u6srqv7s93wnq6yqw8zhg5",
+          "admin": "5945",
+          "code_id": 5945
+        },
+        {
+          "label": "Osmo-Atom 14d",
+          "description": "Osmo-Atom Autocompounding Vault 14d",
+          "address": "osmo1tp2m6g39h8mvhnu3plqjyen5s63023gj8w873l8wvly0cd77l6hsaa73wt",
+          "admin": "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
+          "code_id": 5945
+        },
+        {
+          "label": "Juno-Osmo 1d",
+          "description": "Juno-Osmo Autocompounding Vault 1d",
+          "address": "osmo1r6h0pafu3wq0kf6yv09qhc8qvuku2d6fua0rpwwv46h7hd8u586scxspjf",
+          "admin": "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
+          "code_id": 5945
+        },
+        {
+          "label": "Juno-Osmo 7d",
+          "description": "Juno-Osmo Autocompounding Vault 7d",
+          "address": "osmo1gr5epxn67q6202l3hy0mcnu7qc039v22pa6x2tsk23zwg235n9jsq6pmes",
+          "admin": "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
+          "code_id": 5945
+        },
+        {
+          "label": "Juno-Osmo 14d",
+          "description": "Juno-Osmo Autocompounding Vault 14d",
+          "address": "osmo1d6knwkelyr9eklewnn9htkess4ttpxpf2cze9ec0xfw7e3fj0ggssqzfpp",
+          "admin": "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
+          "code_id": 5945
+        },
+        {
+          "label": "Ion-Osmo 1d",
+          "description": "Ion-Osmo Autocompounding Vault 1d - 4787",
+          "address": "osmo1nv2d5tcn3xhfera55swsl20hyymz9wjtl39x2c8tumkj3jzqc7qqvd9max",
+          "admin": "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
+          "code_id": 4787
+        },
+        {
+          "label": "Ion-Osmo 7d",
+          "description": "Ion-Osmo Autocompounding Vault 7d - 4787",
+          "address": "osmo1yzrsuck79kynz9yxpawkuppy5cnfv6cdjagtd8daa5dgefj4v6usdvlv0n",
+          "admin": "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
+          "code_id": 4787
+        },
+        {
+          "label": "Ion-Osmo 14d",
+          "description": "Ion-Osmo Autocompounding Vault 14d - 4787",
+          "address": "osmo1fzednazwpkjspa39yqsgm8xqmmgls5fe2mesgjmjjmqgtxzhwn8s6v5mmf",
+          "admin": "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
+          "code_id": 4787
+        },
+        {
+          "label": "Tgrade-Osmo 1d",
+          "description": "Tgrade-Osmo Autocompounding Vault 1d",
+          "address": "osmo1akgu9fd68rf6e6tvatryewxc23t27zvlpfsvgcu9emkgkqcpkz0qz5zlwc",
+          "admin": "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
+          "code_id": 5945
+        },
+        {
+          "label": "Tgrade-Osmo 7d",
+          "description": "Tgrade-Osmo Autocompounding Vault 7d",
+          "address": "osmo1497tszvzlt5vgqzcy73ty5gc04ztmvqeaujeefmalq7wcufuf25sxayk3e",
+          "admin": "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
+          "code_id": 5945
+        },
+        {
+          "label": "Tgrade-Osmo 14d",
+          "description": "Tgrade-Osmo Autocompounding Vault 14d",
+          "address": "osmo1np5lnwpr3rs4dktvg5qzz7ra8j8pp8yd942qx7qe2298dv3hyfysjlpxkh",
+          "admin": "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
+          "code_id": 5945
+        },
+        {
+          "label": "Apollo Zapper",
+          "address": "osmo1lx2tqad63s7xhchwm60gpk5wssl4jgll0xpp2x8hp9e6dx9c9ztqcmwjzv",
+          "admin": "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
+          "code_id": 4922
+        }
+      ],
+      "nodes": [
+        {
+          "name": "allthatnode",
+          "rpc": "https://osmosis-testnet-rpc.allthatnode.com:26657",
+          "lcd": "https://osmosis-testnet-rpc.allthatnode.com:1317",
+          "archive": false
+        },
+        {
+          "name": "osmosis",
+          "rpc": "https://rpc-test.osmosis.zone:443",
+          "lcd": "https://testnet-rest.osmosis.zone",
+          "archive": false
+        }
+      ],
+      "tokens": [
+        {
+          "name": "OSMO/ATOM Vault Token - 1d",
+          "img_url": "",
+          "asset": {
+            "native": "factory/osmo1zktjv92f76epswjvyxzzt3yyskpw7k6jsyu0kmq4zzc5fphrjumqlahctp/cwVTT"
+          },
+          "base": {
+            "native": "gamm/pool/1"
+          },
+          "sources": [
+            {
+              "name": "osmo-test-4",
+              "params": {
+                "contract_address": "osmo1zktjv92f76epswjvyxzzt3yyskpw7k6jsyu0kmq4zzc5fphrjumqlahctp",
+                "base_token": {
+                  "native": "gamm/pool/1"
+                },
+                "dex": "osmosis"
+              }
+            }
+          ],
+          "decimals": 24
+        },
+        {
+          "name": "OSMO/ATOM Vault Token - 7d",
+          "img_url": "",
+          "asset": {
+            "native": "factory/osmo167j3yttwzcm3785tzk4jse2qdkppcy2xxrn5u6srqv7s93wnq6yqw8zhg5/cwVTT"
+          },
+          "base": {
+            "native": "gamm/pool/1"
+          },
+          "sources": [
+            {
+              "name": "osmo-test-4",
+              "params": {
+                "contract_address": "osmo167j3yttwzcm3785tzk4jse2qdkppcy2xxrn5u6srqv7s93wnq6yqw8zhg5",
+                "base_token": {
+                  "native": "gamm/pool/1"
+                },
+                "dex": "osmosis"
+              }
+            }
+          ],
+          "decimals": 24
+        },
+        {
+          "name": "OSMO/ATOM Vault Token - 14d",
+          "img_url": "",
+          "asset": {
+            "native": "factory/osmo1tp2m6g39h8mvhnu3plqjyen5s63023gj8w873l8wvly0cd77l6hsaa73wt/cwVTT"
+          },
+          "base": {
+            "native": "gamm/pool/1"
+          },
+          "sources": [
+            {
+              "name": "osmo-test-4",
+              "params": {
+                "contract_address": "osmo1tp2m6g39h8mvhnu3plqjyen5s63023gj8w873l8wvly0cd77l6hsaa73wt",
+                "base_token": {
+                  "native": "gamm/pool/1"
+                },
+                "dex": "osmosis"
+              }
+            }
+          ],
+          "decimals": 24
+        },
+        {
+          "name": "JUNO/OSMO Vault Token - 1d",
+          "img_url": "",
+          "asset": {
+            "native": "factory/osmo1r6h0pafu3wq0kf6yv09qhc8qvuku2d6fua0rpwwv46h7hd8u586scxspjf/cwVTT"
+          },
+          "base": {
+            "native": "gamm/pool/497"
+          },
+          "sources": [
+            {
+              "name": "osmo-test-4",
+              "params": {
+                "contract_address": "osmo1r6h0pafu3wq0kf6yv09qhc8qvuku2d6fua0rpwwv46h7hd8u586scxspjf",
+                "base_token": {
+                  "native": "gamm/pool/497"
+                },
+                "dex": "osmosis"
+              }
+            }
+          ],
+          "decimals": 24
+        },
+        {
+          "name": "JUNO/OSMO Vault Token - 7d",
+          "img_url": "",
+          "asset": {
+            "native": "factory/osmo1gr5epxn67q6202l3hy0mcnu7qc039v22pa6x2tsk23zwg235n9jsq6pmes/cwVTT"
+          },
+          "base": {
+            "native": "gamm/pool/497"
+          },
+          "sources": [
+            {
+              "name": "osmo-test-4",
+              "params": {
+                "contract_address": "osmo1gr5epxn67q6202l3hy0mcnu7qc039v22pa6x2tsk23zwg235n9jsq6pmes",
+                "base_token": {
+                  "native": "gamm/pool/497"
+                },
+                "dex": "osmosis"
+              }
+            }
+          ],
+          "decimals": 24
+        },
+        {
+          "name": "JUNO/OSMO Vault Token - 14d",
+          "img_url": "",
+          "asset": {
+            "native": "factory/osmo1d6knwkelyr9eklewnn9htkess4ttpxpf2cze9ec0xfw7e3fj0ggssqzfpp/cwVTT"
+          },
+          "base": {
+            "native": "gamm/pool/497"
+          },
+          "sources": [
+            {
+              "name": "osmo-test-4",
+              "params": {
+                "contract_address": "osmo1d6knwkelyr9eklewnn9htkess4ttpxpf2cze9ec0xfw7e3fj0ggssqzfpp",
+                "base_token": {
+                  "native": "gamm/pool/497"
+                },
+                "dex": "osmosis"
+              }
+            }
+          ],
+          "decimals": 24
+        },
+        {
+          "name": "ION/OSMO Vault Token - 1d",
+          "img_url": "",
+          "asset": {
+            "native": "factory/osmo1nv2d5tcn3xhfera55swsl20hyymz9wjtl39x2c8tumkj3jzqc7qqvd9max/cwVTT"
+          },
+          "base": {
+            "native": "gamm/pool/2"
+          },
+          "sources": [
+            {
+              "name": "osmo-test-4",
+              "params": {
+                "contract_address": "osmo1nv2d5tcn3xhfera55swsl20hyymz9wjtl39x2c8tumkj3jzqc7qqvd9max",
+                "base_token": {
+                  "native": "gamm/pool/2"
+                },
+                "dex": "osmosis"
+              }
+            }
+          ],
+          "decimals": 24
+        },
+        {
+          "name": "ION/OSMO Vault Token - 7d",
+          "img_url": "",
+          "asset": {
+            "native": "factory/osmo1yzrsuck79kynz9yxpawkuppy5cnfv6cdjagtd8daa5dgefj4v6usdvlv0n/cwVTT"
+          },
+          "base": {
+            "native": "gamm/pool/2"
+          },
+          "sources": [
+            {
+              "name": "osmo-test-4",
+              "params": {
+                "contract_address": "osmo1yzrsuck79kynz9yxpawkuppy5cnfv6cdjagtd8daa5dgefj4v6usdvlv0n",
+                "base_token": {
+                  "native": "gamm/pool/2"
+                },
+                "dex": "osmosis"
+              }
+            }
+          ],
+          "decimals": 24
+        },
+        {
+          "name": "ION/OSMO Vault Token - 14d",
+          "img_url": "",
+          "asset": {
+            "native": "factory/osmo1fzednazwpkjspa39yqsgm8xqmmgls5fe2mesgjmjjmqgtxzhwn8s6v5mmf/cwVTT"
+          },
+          "base": {
+            "native": "gamm/pool/2"
+          },
+          "sources": [
+            {
+              "name": "osmo-test-4",
+              "params": {
+                "contract_address": "osmo1fzednazwpkjspa39yqsgm8xqmmgls5fe2mesgjmjjmqgtxzhwn8s6v5mmf",
+                "base_token": {
+                  "native": "gamm/pool/2"
+                },
+                "dex": "osmosis"
+              }
+            }
+          ],
+          "decimals": 24
+        },
+        {
+          "name": "TGRADE/OSMO Vault Token - 1d",
+          "img_url": "",
+          "asset": {
+            "native": "factory/osmo1akgu9fd68rf6e6tvatryewxc23t27zvlpfsvgcu9emkgkqcpkz0qz5zlwc/cwVTT"
+          },
+          "base": {
+            "native": "gamm/pool/769"
+          },
+          "sources": [
+            {
+              "name": "osmo-test-4",
+              "params": {
+                "contract_address": "osmo1akgu9fd68rf6e6tvatryewxc23t27zvlpfsvgcu9emkgkqcpkz0qz5zlwc",
+                "base_token": {
+                  "native": "gamm/pool/769"
+                },
+                "dex": "osmosis"
+              }
+            }
+          ],
+          "decimals": 24
+        },
+        {
+          "name": "TGRADE/OSMO Vault Token - 7d",
+          "img_url": "",
+          "asset": {
+            "native": "factory/osmo1497tszvzlt5vgqzcy73ty5gc04ztmvqeaujeefmalq7wcufuf25sxayk3e/cwVTT"
+          },
+          "base": {
+            "native": "gamm/pool/769"
+          },
+          "sources": [
+            {
+              "name": "osmo-test-4",
+              "params": {
+                "contract_address": "osmo1497tszvzlt5vgqzcy73ty5gc04ztmvqeaujeefmalq7wcufuf25sxayk3e",
+                "base_token": {
+                  "native": "gamm/pool/769"
+                },
+                "dex": "osmosis"
+              }
+            }
+          ],
+          "decimals": 24
+        },
+        {
+          "name": "TGRADE/OSMO Vault Token - 14d",
+          "img_url": "",
+          "asset": {
+            "native": "factory/osmo1np5lnwpr3rs4dktvg5qzz7ra8j8pp8yd942qx7qe2298dv3hyfysjlpxkh/cwVTT"
+          },
+          "base": {
+            "native": "gamm/pool/769"
+          },
+          "sources": [
+            {
+              "name": "osmo-test-4",
+              "params": {
+                "contract_address": "osmo1np5lnwpr3rs4dktvg5qzz7ra8j8pp8yd942qx7qe2298dv3hyfysjlpxkh",
+                "base_token": {
+                  "native": "gamm/pool/769"
+                },
+                "dex": "osmosis"
+              }
+            }
+          ],
+          "decimals": 24
+        }
+      ]
+    },
     "tokens": [
       {
         "name": "Osmo",
@@ -380,7 +1269,7 @@
       },
       {
         "name": "Ion",
-        "img_url": "https://stats.apollo.farm/tokens/ion.svg",
+        "img_url": "https://stats.apollo.farm/tokens/ion.png",
         "asset": {
           "native": "uion"
         },
@@ -431,7 +1320,7 @@
       },
       {
         "name": "USDC",
-        "img_url": "",
+        "img_url": "https://stats.apollo.farm/tokens/usdc.svg",
         "asset": {
           "native": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
         },
@@ -448,7 +1337,7 @@
       },
       {
         "name": "stAtom",
-        "img_url": "",
+        "img_url": "https://stats.apollo.farm/tokens/statom.svg",
         "asset": {
           "native": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
         },
@@ -465,7 +1354,7 @@
       },
       {
         "name": "wETH",
-        "img_url": "",
+        "img_url": "https://stats.apollo.farm/tokens/weth.svg",
         "asset": {
           "native": "ibc/EA1D43981D5C9A1C4AAEA9C23BB1D4FA126BA9BC7020A25E0AE4AA841EA25DC5"
         },
@@ -478,11 +1367,11 @@
             }
           }
         ],
-        "decimals": 6
+        "decimals": 18
       },
       {
         "name": "wBTC",
-        "img_url": "",
+        "img_url": "https://stats.apollo.farm/tokens/wbtc.png",
         "asset": {
           "native": "ibc/D1542AA8762DB13087D8364F3EA6509FD6F009A34F00426AF9E4F9FA85CBBF1F"
         },
@@ -495,11 +1384,11 @@
             }
           }
         ],
-        "decimals": 6
+        "decimals": 8
       },
       {
         "name": "Dai",
-        "img_url": "",
+        "img_url": "https://stats.apollo.farm/tokens/dai.svg",
         "asset": {
           "native": "ibc/0CD3A0285E1341859B5E86B6AB7682F023D03E97607CCC1DC95706411D866DF7"
         },
@@ -512,11 +1401,11 @@
             }
           }
         ],
-        "decimals": 6
+        "decimals": 18
       },
       {
         "name": "stOsmo",
-        "img_url": "",
+        "img_url": "https://stats.apollo.farm/tokens/stosmo.svg",
         "asset": {
           "native": "ibc/D176154B0C63D1F9C6DCFB4F70349EBF2E2B5A87A05902F57A6AE92B863E9AEC"
         },
@@ -526,6 +1415,142 @@
             "name": "coingecko-api",
             "params": {
               "coingecko_id": "stride-staked-osmo"
+            }
+          }
+        ],
+        "decimals": 6
+      },
+      {
+        "name": "Juno",
+        "img_url": "https://stats.apollo.farm/tokens/juno.svg",
+        "asset": {
+          "native": "ibc/46B44899322F3CD854D2D46DEEF881958467CDD4B3B10086DA49296BBED94BED"
+        },
+        "base": "USD",
+        "sources": [
+          {
+            "name": "coingecko-api",
+            "params": {
+              "coingecko_id": "juno-network"
+            }
+          }
+        ],
+        "decimals": 6
+      },
+      {
+        "name": "Akash",
+        "img_url": "https://api.apollo.farm/tokens/akt.svg",
+        "asset": {
+          "native": "ibc/1480B8FD20AD5FCAE81EA87584D269547DD4D436843C1D20F15E00EB64743EF4"
+        },
+        "base": "USD",
+        "sources": [
+          {
+            "name": "coingecko-api",
+            "params": {
+              "coingecko_id": "akash-network"
+            }
+          }
+        ],
+        "decimals": 6
+      },
+      {
+        "name": "Cronos",
+        "img_url": "https://api.apollo.farm/tokens/cro.svg",
+        "asset": {
+          "native": "ibc/E6931F78057F7CC5DA0FD6CEF82FF39373A6E0452BF1FD76910B93292CF356C1"
+        },
+        "base": "USD",
+        "sources": [
+          {
+            "name": "coingecko-api",
+            "params": {
+              "coingecko_id": "crypto-com-chain"
+            }
+          }
+        ],
+        "decimals": 8
+      },
+      {
+        "name": "Axelar",
+        "img_url": "https://stats.apollo.farm/tokens/axl.svg",
+        "asset": {
+          "native": "ibc/903A61A498756EA560B85A85132D3AEE21B5DEDD41213725D22ABF276EA6945E"
+        },
+        "base": "USD",
+        "sources": [
+          {
+            "name": "coingecko-api",
+            "params": {
+              "coingecko_id": "axelar"
+            }
+          }
+        ],
+        "decimals": 6
+      },
+      {
+        "name": "Secret",
+        "img_url": "https://api.apollo.farm/tokens/scrt.svg",
+        "asset": {
+          "native": "ibc/0954E1C28EB7AF5B72D24F3BC2B47BBB2FDF91BDDFD57B74B99E133AED40972A"
+        },
+        "base": "USD",
+        "sources": [
+          {
+            "name": "coingecko-api",
+            "params": {
+              "coingecko_id": "secret"
+            }
+          }
+        ],
+        "decimals": 6
+      },
+      {
+        "name": "Inter Stable Token",
+        "img_url": "https://api.apollo.farm/tokens/ist.png",
+        "asset": {
+          "native": "ibc/92BE0717F4678905E53F4E45B2DED18BC0CB97BF1F8B6A25AFEDF3D5A879B4D5"
+        },
+        "base": "USD",
+        "sources": [
+          {
+            "name": "coingecko-api",
+            "params": {
+              "coingecko_id": "inter-stable-token"
+            }
+          }
+        ],
+        "decimals": 6
+      },
+      {
+        "name": "Evmos",
+        "img_url": "https://stats.apollo.farm/tokens/evmos.svg",
+        "asset": {
+          "native": "ibc/6AE98883D4D5D5FF9E50D7130F1305DA2FFA0C652D1DD9C123657C6B4EB2DF8A"
+        },
+        "base": "USD",
+        "sources": [
+          {
+            "name": "coingecko-api",
+            "params": {
+              "coingecko_id": "evmos"
+            }
+          }
+        ],
+        "decimals": 18
+      },
+      {
+        "name": "Stride",
+        "img_url": "https://stats.apollo.farm/tokens/strd.svg",
+        "asset": {
+          "native": "ibc/A8CA5EE328FA10C9519DF6057DA1F69682D28F7D0F5CCC7ECB72E3DCA2D157A4"
+        },
+        "base": "USD",
+        "sources": [
+          {
+            "name": "coingecko-api",
+            "params": {
+              "coingecko_id": "stride"
             }
           }
         ],
@@ -638,7 +1663,7 @@
             "native": "uosmo"
           },
           {
-            "native": "ibc/46B44899322F3CD854D2D46DEEF881958467CDD4B3B10086DA49296BBED94BED"
+            "native": "ibc/1E09CB0F506ACF12FDE4683FB6B34DA62FB4BE122641E0D93AAF98A87675676C"
           }
         ],
         "sources": [
@@ -651,7 +1676,7 @@
                   "native": "uosmo"
                 },
                 {
-                  "native": "ibc/46B44899322F3CD854D2D46DEEF881958467CDD4B3B10086DA49296BBED94BED"
+                  "native": "ibc/1E09CB0F506ACF12FDE4683FB6B34DA62FB4BE122641E0D93AAF98A87675676C"
                 }
               ]
             }
@@ -852,389 +1877,261 @@
         "decimals": 18
       },
       {
-        "name": "OSMO/ATOM Vault Token - 14d",
+        "name": "AKT/OSMO LP Token",
         "img_url": "",
         "asset": {
-          "native": "factory/osmo1g3kmqpp8608szfp0pdag3r6z85npph7wmccat8lgl3mp407kv73qlj7qwp/VaultToken/1/14d/ATOM/OSMO"
+          "native": "gamm/pool/3"
         },
-        "base": {
-          "native": "gamm/pool/1"
-        },
+        "base": [
+          {
+            "native": "uosmo"
+          },
+          {
+            "native": "ibc/1480B8FD20AD5FCAE81EA87584D269547DD4D436843C1D20F15E00EB64743EF4"
+          }
+        ],
         "sources": [
           {
-            "name": "osmosis-1",
+            "name": "osmosis-api",
             "params": {
-              "contract_address": "osmo1g3kmqpp8608szfp0pdag3r6z85npph7wmccat8lgl3mp407kv73qlj7qwp",
-              "base_token": {
-                "native": "gamm/pool/1"
-              },
-              "dex": "osmosis"
+              "pool_id": 3,
+              "underlying_tokens": [
+                {
+                  "native": "uosmo"
+                },
+                {
+                  "native": "ibc/1480B8FD20AD5FCAE81EA87584D269547DD4D436843C1D20F15E00EB64743EF4"
+                }
+              ]
             }
           }
         ],
-        "decimals": 24
+        "decimals": 18
       },
       {
-        "name": "USDC/OSMO Vault Token - 14d",
+        "name": "ION/OSMO LP Token",
         "img_url": "",
         "asset": {
-          "native": "factory/osmo1jfmwayj8jqp9tfy4v4eks5c2jpnqdumn8x8xvfllng0wfes770qqp7jl4j/VaultToken/678/14d/USDC/OSMO"
+          "native": "gamm/pool/2"
         },
-        "base": {
-          "native": "gamm/pool/678"
-        },
+        "base": [
+          {
+            "native": "uosmo"
+          },
+          {
+            "native": "uion"
+          }
+        ],
         "sources": [
           {
-            "name": "osmosis-1",
+            "name": "osmosis-api",
             "params": {
-              "contract_address": "osmo1jfmwayj8jqp9tfy4v4eks5c2jpnqdumn8x8xvfllng0wfes770qqp7jl4j",
-              "base_token": {
-                "native": "gamm/pool/678"
-              },
-              "dex": "osmosis"
+              "pool_id": 2,
+              "underlying_tokens": [
+                {
+                  "native": "uosmo"
+                },
+                {
+                  "native": "uion"
+                }
+              ]
             }
           }
         ],
-        "decimals": 24
+        "decimals": 18
       },
       {
-        "name": "wBTC/OSMO Vault Token - 14d",
+        "name": "CRO/OSMO LP Token",
         "img_url": "",
         "asset": {
-          "native": "factory/osmo185gqewrlde8vrqw7j8lpad67v8jfrx9u7770k9q87tqqecctp5tq50wt2c/VaultToken/712/14d/WBTC/OSMO"
+          "native": "gamm/pool/9"
         },
-        "base": {
-          "native": "gamm/pool/712"
-        },
+        "base": [
+          {
+            "native": "uosmo"
+          },
+          {
+            "native": "ibc/E6931F78057F7CC5DA0FD6CEF82FF39373A6E0452BF1FD76910B93292CF356C1"
+          }
+        ],
         "sources": [
           {
-            "name": "osmosis-1",
+            "name": "osmosis-api",
             "params": {
-              "contract_address": "osmo185gqewrlde8vrqw7j8lpad67v8jfrx9u7770k9q87tqqecctp5tq50wt2c",
-              "base_token": {
-                "native": "gamm/pool/712"
-              },
-              "dex": "osmosis"
+              "pool_id": 9,
+              "underlying_tokens": [
+                {
+                  "native": "uosmo"
+                },
+                {
+                  "native": "ibc/E6931F78057F7CC5DA0FD6CEF82FF39373A6E0452BF1FD76910B93292CF356C1"
+                }
+              ]
             }
           }
         ],
-        "decimals": 24
+        "decimals": 18
       },
       {
-        "name": "DAI/OSMO Vault Token - 14d",
+        "name": "AXL/OSMO LP Token",
         "img_url": "",
         "asset": {
-          "native": "factory/osmo1lhs6kyuxytu4suua0qf88z5057wzpxs77tyrlgztw2uctcy75hcqf2ajrt/VaultToken/674/14d/DAI/OSMO"
+          "native": "gamm/pool/812"
         },
-        "base": {
-          "native": "gamm/pool/674"
-        },
+        "base": [
+          {
+            "native": "uosmo"
+          },
+          {
+            "native": "ibc/903A61A498756EA560B85A85132D3AEE21B5DEDD41213725D22ABF276EA6945E"
+          }
+        ],
         "sources": [
           {
-            "name": "osmosis-1",
+            "name": "osmosis-api",
             "params": {
-              "contract_address": "osmo1lhs6kyuxytu4suua0qf88z5057wzpxs77tyrlgztw2uctcy75hcqf2ajrt",
-              "base_token": {
-                "native": "gamm/pool/674"
-              },
-              "dex": "osmosis"
+              "pool_id": 812,
+              "underlying_tokens": [
+                {
+                  "native": "uosmo"
+                },
+                {
+                  "native": "ibc/903A61A498756EA560B85A85132D3AEE21B5DEDD41213725D22ABF276EA6945E"
+                }
+              ]
             }
           }
         ],
-        "decimals": 24
+        "decimals": 18
       },
       {
-        "name": "stOSMO/OSMO Vault Token - 14d",
+        "name": "SCRT/OSMO LP Token",
         "img_url": "",
         "asset": {
-          "native": "factory/osmo1p4zqs5y2w5srzd2vesznzu5ql8wfq9tpz3e7mf2j3y07nxrtkdes5r5g0t/VaultToken/833/14d/stOSMO/OSMO"
+          "native": "gamm/pool/584"
         },
-        "base": {
-          "native": "gamm/pool/833"
-        },
+        "base": [
+          {
+            "native": "uosmo"
+          },
+          {
+            "native": "ibc/0954E1C28EB7AF5B72D24F3BC2B47BBB2FDF91BDDFD57B74B99E133AED40972A"
+          }
+        ],
         "sources": [
           {
-            "name": "osmosis-1",
+            "name": "osmosis-api",
             "params": {
-              "contract_address": "osmo1p4zqs5y2w5srzd2vesznzu5ql8wfq9tpz3e7mf2j3y07nxrtkdes5r5g0t",
-              "base_token": {
-                "native": "gamm/pool/833"
-              },
-              "dex": "osmosis"
+              "pool_id": 584,
+              "underlying_tokens": [
+                {
+                  "native": "uosmo"
+                },
+                {
+                  "native": "ibc/0954E1C28EB7AF5B72D24F3BC2B47BBB2FDF91BDDFD57B74B99E133AED40972A"
+                }
+              ]
             }
           }
         ],
-        "decimals": 24
+        "decimals": 18
       },
       {
-        "name": "wETH/OSMO Vault Token - 14d",
+        "name": "IST/OSMO LP Token",
         "img_url": "",
         "asset": {
-          "native": "factory/osmo1r235f4tdkwrsnj3mdm9hf647l754y6g6xsmz0nas5r4vr5tda3qsgtftef/VaultToken/704/14d/WETH/OSMO"
+          "native": "gamm/pool/837"
         },
-        "base": {
-          "native": "gamm/pool/704"
-        },
+        "base": [
+          {
+            "native": "uosmo"
+          },
+          {
+            "native": "ibc/92BE0717F4678905E53F4E45B2DED18BC0CB97BF1F8B6A25AFEDF3D5A879B4D5"
+          }
+        ],
         "sources": [
           {
-            "name": "osmosis-1",
+            "name": "osmosis-api",
             "params": {
-              "contract_address": "osmo1r235f4tdkwrsnj3mdm9hf647l754y6g6xsmz0nas5r4vr5tda3qsgtftef",
-              "base_token": {
-                "native": "gamm/pool/704"
-              },
-              "dex": "osmosis"
+              "pool_id": 837,
+              "underlying_tokens": [
+                {
+                  "native": "uosmo"
+                },
+                {
+                  "native": "ibc/92BE0717F4678905E53F4E45B2DED18BC0CB97BF1F8B6A25AFEDF3D5A879B4D5"
+                }
+              ]
             }
           }
         ],
-        "decimals": 24
+        "decimals": 18
       },
       {
-        "name": "stATOM/ATOM Vault Token - 14d",
+        "name": "EVMOS/OSMO LP Token",
         "img_url": "",
         "asset": {
-          "native": "factory/osmo1a6tcf60pyz8qq2n532dzcs7s7sj8klcmra04tvaqympzcvxqg9esn7xz7l/VaultToken/803/14d/ATOM/stATOM"
+          "native": "gamm/pool/722"
         },
-        "base": {
-          "native": "gamm/pool/803"
-        },
+        "base": [
+          {
+            "native": "uosmo"
+          },
+          {
+            "native": "ibc/6AE98883D4D5D5FF9E50D7130F1305DA2FFA0C652D1DD9C123657C6B4EB2DF8A"
+          }
+        ],
         "sources": [
           {
-            "name": "osmosis-1",
+            "name": "osmosis-api",
             "params": {
-              "contract_address": "osmo1a6tcf60pyz8qq2n532dzcs7s7sj8klcmra04tvaqympzcvxqg9esn7xz7l",
-              "base_token": {
-                "native": "gamm/pool/803"
-              },
-              "dex": "osmosis"
+              "pool_id": 722,
+              "underlying_tokens": [
+                {
+                  "native": "uosmo"
+                },
+                {
+                  "native": "ibc/6AE98883D4D5D5FF9E50D7130F1305DA2FFA0C652D1DD9C123657C6B4EB2DF8A"
+                }
+              ]
             }
           }
         ],
-        "decimals": 24
+        "decimals": 18
+      },
+      {
+        "name": "STRD/OSMO LP Token",
+        "img_url": "",
+        "asset": {
+          "native": "gamm/pool/806"
+        },
+        "base": [
+          {
+            "native": "uosmo"
+          },
+          {
+            "native": "ibc/A8CA5EE328FA10C9519DF6057DA1F69682D28F7D0F5CCC7ECB72E3DCA2D157A4"
+          }
+        ],
+        "sources": [
+          {
+            "name": "osmosis-api",
+            "params": {
+              "pool_id": 806,
+              "underlying_tokens": [
+                {
+                  "native": "uosmo"
+                },
+                {
+                  "native": "ibc/A8CA5EE328FA10C9519DF6057DA1F69682D28F7D0F5CCC7ECB72E3DCA2D157A4"
+                }
+              ]
+            }
+          }
+        ],
+        "decimals": 18
       }
     ]
-  },
-  "pulsar-2": {
-    "name": "secret testnet",
-    "chain_id": "pulsar-2",
-    "supported_wallets": [
-      {
-        "name": "keplr",
-        "config": {
-          "rpc": "https://grpc.testnet.secretsaturn.net",
-          "rest": "https://lcd.testnet.secretsaturn.net",
-          "chainId": "pulsar-2",
-          "chainName": "secrettestnet",
-          "stakeCurrency": {
-            "coinDenom": "SCRT",
-            "coinMinimalDenom": "uscrt",
-            "coinDecimals": 6,
-            "coinGeckoId": "secret"
-          },
-          "bip44": {
-            "coinType": 118
-          },
-          "bech32Config": {
-            "bech32PrefixAccAddr": "secret",
-            "bech32PrefixAccPub": "secretpub",
-            "bech32PrefixValAddr": "secretvaloper",
-            "bech32PrefixValPub": "secretvaloperpub",
-            "bech32PrefixConsAddr": "secretvalcons",
-            "bech32PrefixConsPub": "secretvalconspub"
-          },
-          "currencies": [
-            {
-              "coinDenom": "SCRT",
-              "coinMinimalDenom": "uscrt",
-              "coinDecimals": 6,
-              "coinGeckoId": "secret"
-            }
-          ],
-          "feeCurrencies": [
-            {
-              "coinDenom": "SCRT",
-              "coinMinimalDenom": "uscrt",
-              "coinDecimals": 6,
-              "coinGeckoId": "secret",
-              "gasPriceStep": {
-                "low": 0.01,
-                "average": 0.025,
-                "high": 0.04
-              }
-            }
-          ]
-        }
-      },
-      {
-        "name": "walletConnect"
-      }
-    ],
-    "supported_apps": [],
-    "code_ids": [],
-    "contracts": [],
-    "nodes": [],
-    "tokens": []
-  },
-  "injective-888": {
-    "name": "injective testnet",
-    "chain_id": "injective-888",
-    "supported_wallets": [
-      {
-        "name": "keplr",
-        "config": {
-          "rpc": "https://k8s.testnet.chain.grpc-web.injective.network",
-          "rest": "https://k8s.testnet.lcd.injective.network",
-          "chainId": "injective-888",
-          "chainName": "injective",
-          "stakeCurrency": {
-            "coinDenom": "INJ",
-            "coinMinimalDenom": "inj",
-            "coinDecimals": 18,
-            "coinGeckoId": "injective-protocol"
-          },
-          "bip44": {
-            "coinType": 60
-          },
-          "bech32Config": {
-            "bech32PrefixAccAddr": "inj",
-            "bech32PrefixAccPub": "injpub",
-            "bech32PrefixValAddr": "injvaloper",
-            "bech32PrefixValPub": "injvaloperpub",
-            "bech32PrefixConsAddr": "injvalcons",
-            "bech32PrefixConsPub": "injvalconspub"
-          },
-          "currencies": [
-            {
-              "coinDenom": "INJ",
-              "coinMinimalDenom": "inj",
-              "coinDecimals": 18,
-              "coinGeckoId": "injective-protocol"
-            }
-          ],
-          "feeCurrencies": [
-            {
-              "coinDenom": "INJ",
-              "coinMinimalDenom": "inj",
-              "coinDecimals": 18,
-              "coinGeckoId": "injective-protocol",
-              "gasPriceStep": {
-                "low": 0.01,
-                "average": 0.025,
-                "high": 0.04
-              }
-            }
-          ]
-        }
-      },
-      {
-        "name": "walletConnect"
-      }
-    ],
-    "supported_apps": [
-      {
-        "name": "safe",
-        "supportedFeatures": [
-          "cw3-fixed"
-        ]
-      }
-    ],
-    "code_ids": [
-      {
-        "label": "apollo cw3",
-        "id": 1,
-        "checksum": ""
-      }
-    ],
-    "contracts": [
-      {
-        "label": "Apollo Safe CW3",
-        "address": "",
-        "admin": "",
-        "code_id": 1
-      }
-    ],
-    "tokens": [],
-    "nodes": []
-  },
-  "injective-1": {
-    "name": "injective mainnet",
-    "chain_id": "injective-1",
-    "supported_wallets": [
-      {
-        "name": "keplr",
-        "config": {
-          "rpc": "https://grpc.injective.network",
-          "rest": "https://lcd.injective.network",
-          "chainId": "injective-1",
-          "chainName": "injective",
-          "stakeCurrency": {
-            "coinDenom": "INJ",
-            "coinMinimalDenom": "inj",
-            "coinDecimals": 18,
-            "coinGeckoId": "injective-protocol"
-          },
-          "bip44": {
-            "coinType": 60
-          },
-          "bech32Config": {
-            "bech32PrefixAccAddr": "inj",
-            "bech32PrefixAccPub": "injpub",
-            "bech32PrefixValAddr": "injvaloper",
-            "bech32PrefixValPub": "injvaloperpub",
-            "bech32PrefixConsAddr": "injvalcons",
-            "bech32PrefixConsPub": "injvalconspub"
-          },
-          "currencies": [
-            {
-              "coinDenom": "INJ",
-              "coinMinimalDenom": "inj",
-              "coinDecimals": 18,
-              "coinGeckoId": "injective-protocol"
-            }
-          ],
-          "feeCurrencies": [
-            {
-              "coinDenom": "INJ",
-              "coinMinimalDenom": "inj",
-              "coinDecimals": 18,
-              "coinGeckoId": "injective-protocol",
-              "gasPriceStep": {
-                "low": 0.01,
-                "average": 0.025,
-                "high": 0.04
-              }
-            }
-          ]
-        }
-      },
-      {
-        "name": "walletConnect"
-      }
-    ],
-    "supported_apps": [
-      {
-        "name": "safe",
-        "supportedFeatures": [
-          "cw3-fixed"
-        ]
-      }
-    ],
-    "code_ids": [
-      {
-        "label": "apollo cw3",
-        "id": 1,
-        "checksum": ""
-      }
-    ],
-    "contracts": [
-      {
-        "label": "Apollo Safe CW3",
-        "address": "",
-        "admin": "",
-        "code_id": 1
-      }
-    ],
-    "nodes": [],
-    "tokens": []
   }
 }
