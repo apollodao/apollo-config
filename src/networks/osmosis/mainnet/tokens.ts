@@ -329,4 +329,25 @@ export const tokens: (Omit<Token, "sources"> & {
     ],
     decimals: 24,
   },
+  {
+    name: "STRD/OSMO Vault Token - 14d",
+    img_url: "",
+    asset: {
+      native:
+        "factory/osmo1e3qjfcg9adrauz6jg030ptfy35r6zzplsgaavnn6xrh6686udhfqq7muwy/VaultToken/806/14d/STRD/OSMO",
+    },
+    base: { native: "gamm/pool/806" },
+    sources: [
+      {
+        name: "osmosis-1",
+        params: {
+          contract_address:
+            "osmo1e3qjfcg9adrauz6jg030ptfy35r6zzplsgaavnn6xrh6686udhfqq7muwy",
+          base_token: { native: "gamm/pool/806" },
+          dex: "osmosis",
+        },
+      },
+    ],
+    decimals: 24,
+  },
 ];

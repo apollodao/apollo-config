@@ -207,6 +207,16 @@ export const tokens: (Omit<Token, "sources"> & {
     decimals: 18,
   },
   {
+    name: "Stride",
+    img_url: "https://stats.apollo.farm/tokens/strd.svg",
+    asset: {
+      native: "",
+    },
+    base: "USD",
+    sources: [{ name: "coingecko-api", params: { coingecko_id: "stride" } }],
+    decimals: 6,
+  },
+  {
     name: "OSMO/ATOM LP Token",
     img_url: "",
     asset: { native: "gamm/pool/1" },
@@ -705,6 +715,38 @@ export const tokens: (Omit<Token, "sources"> & {
             {
               native:
                 "ibc/6AE98883D4D5D5FF9E50D7130F1305DA2FFA0C652D1DD9C123657C6B4EB2DF8A",
+            },
+          ],
+        },
+      },
+    ],
+    decimals: 18,
+  },
+  {
+    name: "STRD/OSMO LP Token",
+    img_url: "",
+    asset: { native: "gamm/pool/806" },
+    base: [
+      {
+        native: "uosmo",
+      },
+      {
+        native:
+          "ibc/A8CA5EE328FA10C9519DF6057DA1F69682D28F7D0F5CCC7ECB72E3DCA2D157A4",
+      },
+    ],
+    sources: [
+      {
+        name: "osmosis-api",
+        params: {
+          pool_id: 806,
+          underlying_tokens: [
+            {
+              native: "uosmo",
+            },
+            {
+              native:
+                "ibc/A8CA5EE328FA10C9519DF6057DA1F69682D28F7D0F5CCC7ECB72E3DCA2D157A4",
             },
           ],
         },
