@@ -210,7 +210,8 @@ export const tokens: (Omit<Token, "sources"> & {
     name: "Stride",
     img_url: "https://stats.apollo.farm/tokens/strd.svg",
     asset: {
-      native: "",
+      native:
+        "ibc/A8CA5EE328FA10C9519DF6057DA1F69682D28F7D0F5CCC7ECB72E3DCA2D157A4",
     },
     base: "USD",
     sources: [{ name: "coingecko-api", params: { coingecko_id: "stride" } }],
