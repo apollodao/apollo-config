@@ -7,6 +7,7 @@ export const supported_chains = ["osmosis", "secret", "injective"] as const;
 
 export const supported_networks = [
   "osmo-test-4",
+  "osmo-test-5",
   "osmosis-1",
   "pulsar-2",
   "injective-888",

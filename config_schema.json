@@ -60,6 +60,7 @@
       "type": "string",
       "enum": [
         "osmo-test-4",
+        "osmo-test-5",
         "osmosis-1",
         "pulsar-2",
         "injective-888",
