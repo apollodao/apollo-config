@@ -223,4 +223,15 @@ export const tokens: (Omit<Token, "sources"> & {
     sources: [{ name: "coingecko-api", params: { coingecko_id: "stride" } }],
     decimals: 6,
   },
+  {
+    name: "Agoric",
+    img_url: "https://stats.apollo.farm/tokens/bld.svg",
+    asset: {
+      native:
+        "ibc/2DA9C149E9AD2BD27FEFA635458FB37093C256C1A940392634A16BEA45262604",
+    },
+    base: "USD",
+    sources: [{ name: "coingecko-api", params: { coingecko_id: "agoric" } }],
+    decimals: 6,
+  },
 ];
