@@ -16,6 +16,7 @@ export type Chain = {
   name: string;
   mainnet?: NetworkConfig;
   testnet?: NetworkConfig;
+  testnet_2?: NetworkConfig;
   tokens: Token[];
 };
 
