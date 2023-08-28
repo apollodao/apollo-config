@@ -3026,5 +3026,120 @@
         "decimals": 6
       }
     ]
+  },
+  "neutron": {
+    "name": "neutron",
+    "testnet": {
+      "chain_id": "pion-1",
+      "supported_wallets": [],
+      "supported_apps": [],
+      "code_ids": [
+        {
+          "label": "apollo vault",
+          "id": 1460,
+          "checksum": ""
+        }
+      ],
+      "contracts": [
+        {
+          "label": "Neutron-Astro 0d",
+          "description": "Neutron-Astro Autocompounding Vault 0d",
+          "address": "neutron1675p0u4eflqgvfwf3tlk8rhkvfjggrenjlc4jqtyjgsrfp9kyrus6r8hly",
+          "admin": "neutron1ke0vqqzyymlp5esr8gjwuzh94ysnpvj8er5hm7",
+          "code_id": 1460
+        }
+      ],
+      "tokens": [
+        {
+          "name": "Neutron-Astro Vault Token - 0d",
+          "img_url": "",
+          "asset": {
+            "native": "factory/neutron1675p0u4eflqgvfwf3tlk8rhkvfjggrenjlc4jqtyjgsrfp9kyrus6r8hly/VaultToken/xyk/0d/ASTRO/NTRN"
+          },
+          "base": {
+            "cw20": "neutron1cxzfrnpjpptlwpwz6x0c4s5ephzxf0xm32p8tau2y5l2k2qv6e9sjznux9"
+          },
+          "sources": [
+            {
+              "name": "pion-1",
+              "params": {
+                "dex": "astroport",
+                "contract_address": "neutron1675p0u4eflqgvfwf3tlk8rhkvfjggrenjlc4jqtyjgsrfp9kyrus6r8hly"
+              }
+            }
+          ],
+          "decimals": 6
+        },
+        {
+          "name": "Neutron-Astro LP Token",
+          "img_url": "",
+          "asset": {
+            "cw20": "neutron1cxzfrnpjpptlwpwz6x0c4s5ephzxf0xm32p8tau2y5l2k2qv6e9sjznux9"
+          },
+          "base": [
+            {
+              "native": "untrn"
+            },
+            {
+              "native": "ibc/2FEFB00E728F98F0C4BBE8CA362123ACAB466EDA2826DC6837E49F4C1902F21BBA"
+            }
+          ],
+          "sources": [
+            {
+              "name": "pion-1",
+              "params": {
+                "dex": "astroport",
+                "contract_address": "neutron1cxzfrnpjpptlwpwz6x0c4s5ephzxf0xm32p8tau2y5l2k2qv6e9sjznux9"
+              }
+            }
+          ],
+          "decimals": 6
+        }
+      ],
+      "nodes": [
+        {
+          "name": "neutron",
+          "rpc": "https://rpc-palvus.pion-1.ntrn.tech:443",
+          "lcd": "https://rest-palvus.pion-1.ntrn.tech",
+          "archive": false
+        }
+      ]
+    },
+    "tokens": [
+      {
+        "name": "Neutron",
+        "img_url": "https://stats.apollo.farm/tokens/ntrn.webp",
+        "asset": {
+          "native": "untrn"
+        },
+        "base": "USD",
+        "sources": [
+          {
+            "name": "coingecko-api",
+            "params": {
+              "coingecko_id": "neutron"
+            }
+          }
+        ],
+        "decimals": 6
+      },
+      {
+        "name": "Astro",
+        "img_url": "https://stats.apollo.farm/tokens/astro.png",
+        "asset": {
+          "native": "ibc/2FEFB00E728F98F0C4BBE8CA362123ACAB466EDA2826DC6837E49F4C1902F21BBA"
+        },
+        "base": "USD",
+        "sources": [
+          {
+            "name": "coingecko-api",
+            "params": {
+              "coingecko_id": "astroport"
+            }
+          }
+        ],
+        "decimals": 6
+      }
+    ]
   }
 }
