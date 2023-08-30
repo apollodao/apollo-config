@@ -2,6 +2,10 @@ import { AssetInfo, Token } from "../../../types";
 
 export type supported_data_sources =
   | {
+      name: "coingecko-api";
+      params: { coingecko_id: string };
+    }
+  | {
       name: "osmo-test-5";
       params: {
         contract_address: string;
@@ -20,6 +24,17 @@ export type supported_data_sources =
 export const tokens: (Omit<Token, "sources"> & {
   sources: supported_data_sources[];
 })[] = [
+  {
+    name: "Atom",
+    img_url: "https://stats.apollo.farm/tokens/atom.svg",
+    asset: {
+      native:
+        "ibc/A8C2D23A1E6F95DA4E48BA349667E322BD7A6C996D8A4AAE8BA72E190F3D1477",
+    },
+    base: "USD",
+    sources: [{ name: "coingecko-api", params: { coingecko_id: "cosmos" } }],
+    decimals: 6,
+  },
   {
     name: "OSMO/USDC Vault Token - 1d",
     img_url: "",
@@ -84,6 +99,27 @@ export const tokens: (Omit<Token, "sources"> & {
     decimals: 24,
   },
   {
+    name: "OSMO/ATOM Vault Token - 1d",
+    img_url: "",
+    asset: {
+      native:
+        "factory/osmo1m45ap4rq4m2mfjkcqu9ks9mxmyx2hvx0cdca9sjmrg46q7lghzqqhxxup5/cwVTT",
+    },
+    base: { native: "gamm/pool/12" },
+    sources: [
+      {
+        name: "osmo-test-5",
+        params: {
+          contract_address:
+            "osmo1m45ap4rq4m2mfjkcqu9ks9mxmyx2hvx0cdca9sjmrg46q7lghzqqhxxup5",
+          base_token: { native: "gamm/pool/12" },
+          dex: "osmosis",
+        },
+      },
+    ],
+    decimals: 24,
+  },
+  {
     name: "OSMO/USDC LP Token",
     img_url: "",
     asset: { native: "gamm/pool/6" },
@@ -104,6 +140,34 @@ export const tokens: (Omit<Token, "sources"> & {
             {
               native:
                 "ibc/B3504E092456BA618CC28AC671A71FB08C6CA0FD0BE7C8A5B5A3E2DD933CC9E4",
+            },
+          ],
+        },
+      },
+    ],
+    decimals: 18,
+  },
+  {
+    name: "OSMO/ATOM LP Token",
+    img_url: "",
+    asset: { native: "gamm/pool/12" },
+    base: [
+      { native: "uosmo" },
+      {
+        native:
+          "ibc/A8C2D23A1E6F95DA4E48BA349667E322BD7A6C996D8A4AAE8BA72E190F3D1477",
+      },
+    ],
+    sources: [
+      {
+        name: "osmosis-api",
+        params: {
+          pool_id: 12,
+          underlying_tokens: [
+            { native: "uosmo" },
+            {
+              native:
+                "ibc/A8C2D23A1E6F95DA4E48BA349667E322BD7A6C996D8A4AAE8BA72E190F3D1477",
             },
           ],
         },

@@ -22,4 +22,11 @@ export const contracts: Contract[] = [
     admin: "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
     code_id: 67,
   },
+  {
+    label: "Osmo-Atom 1d",
+    description: "Osmo-Atom Autocompounding Vault 1d",
+    address: "osmo1m45ap4rq4m2mfjkcqu9ks9mxmyx2hvx0cdca9sjmrg46q7lghzqqhxxup5",
+    admin: "osmo15pz333htntschjk0mu89m7rmetduemvdfkangs",
+    code_id: 3465,
+  },
 ];
