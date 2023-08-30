@@ -36,6 +36,17 @@ export const tokens: (Omit<Token, "sources"> & {
     decimals: 6,
   },
   {
+    name: "Atom-2",
+    img_url: "https://stats.apollo.farm/tokens/atom.svg",
+    asset: {
+      native:
+        "ibc/A8C2D23A1E6F95DA4E48BA349667E322BD7A6C996D8A4AAE8BA72E190F3D1477",
+    },
+    base: "USD",
+    sources: [{ name: "coingecko-api", params: { coingecko_id: "cosmos" } }],
+    decimals: 6,
+  },
+  {
     name: "Tgrade",
     img_url: "https://stats.apollo.farm/tokens/tgrade.svg",
     asset: {

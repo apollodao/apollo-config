@@ -2,10 +2,6 @@ import { AssetInfo, Token } from "../../../types";
 
 export type supported_data_sources =
   | {
-      name: "coingecko-api";
-      params: { coingecko_id: string };
-    }
-  | {
       name: "osmo-test-5";
       params: {
         contract_address: string;
@@ -24,17 +20,6 @@ export type supported_data_sources =
 export const tokens: (Omit<Token, "sources"> & {
   sources: supported_data_sources[];
 })[] = [
-  {
-    name: "Atom",
-    img_url: "https://stats.apollo.farm/tokens/atom.svg",
-    asset: {
-      native:
-        "ibc/A8C2D23A1E6F95DA4E48BA349667E322BD7A6C996D8A4AAE8BA72E190F3D1477",
-    },
-    base: "USD",
-    sources: [{ name: "coingecko-api", params: { coingecko_id: "cosmos" } }],
-    decimals: 6,
-  },
   {
     name: "OSMO/USDC Vault Token - 1d",
     img_url: "",

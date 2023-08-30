@@ -2510,23 +2510,6 @@
       ],
       "tokens": [
         {
-          "name": "Atom",
-          "img_url": "https://stats.apollo.farm/tokens/atom.svg",
-          "asset": {
-            "native": "ibc/A8C2D23A1E6F95DA4E48BA349667E322BD7A6C996D8A4AAE8BA72E190F3D1477"
-          },
-          "base": "USD",
-          "sources": [
-            {
-              "name": "coingecko-api",
-              "params": {
-                "coingecko_id": "cosmos"
-              }
-            }
-          ],
-          "decimals": 6
-        },
-        {
           "name": "OSMO/USDC Vault Token - 1d",
           "img_url": "",
           "asset": {
@@ -2724,6 +2707,23 @@
         "img_url": "https://stats.apollo.farm/tokens/atom.svg",
         "asset": {
           "native": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+        },
+        "base": "USD",
+        "sources": [
+          {
+            "name": "coingecko-api",
+            "params": {
+              "coingecko_id": "cosmos"
+            }
+          }
+        ],
+        "decimals": 6
+      },
+      {
+        "name": "Atom-2",
+        "img_url": "https://stats.apollo.farm/tokens/atom.svg",
+        "asset": {
+          "native": "ibc/A8C2D23A1E6F95DA4E48BA349667E322BD7A6C996D8A4AAE8BA72E190F3D1477"
         },
         "base": "USD",
         "sources": [
