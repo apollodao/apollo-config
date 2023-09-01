@@ -27,4 +27,15 @@ export const tokens: (Omit<Token, "sources"> & {
     sources: [{ name: "coingecko-api", params: { coingecko_id: "astroport" } }],
     decimals: 6,
   },
+  {
+    name: "Axelar",
+    img_url: "https://stats.apollo.farm/tokens/axl.svg",
+    asset: {
+      native:
+        "ibc/85CE72EE820A66F0ABD5EE3907A34E243E4BE2D6CFAEB4C08DF85BD6C0784FA2",
+    },
+    base: "USD",
+    sources: [{ name: "coingecko-api", params: { coingecko_id: "axelar" } }],
+    decimals: 6,
+  },
 ];
