@@ -23,7 +23,7 @@ export const tokens: (Omit<Token, "sources"> & {
     img_url: "https://stats.apollo.farm/tokens/astro.png",
     asset: {
       native:
-        "ibc/2FEFB00E728F98F0C4BBE8CA362123ACAB466EDA2826DC6837E49F4C1902F21BBA",
+        "ibc/EFB00E728F98F0C4BBE8CA362123ACAB466EDA2826DC6837E49F4C1902F21BBA",
     },
     base: "USD",
     sources: [{ name: "coingecko-api", params: { coingecko_id: "astroport" } }],
