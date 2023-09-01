@@ -64,7 +64,9 @@
         "osmosis-1",
         "pulsar-2",
         "injective-888",
-        "injective-1"
+        "injective-1",
+        "neutron-1",
+        "pion-1"
       ]
     },
     "Node": {
@@ -175,6 +177,9 @@
       "type": "object",
       "properties": {
         "name": {
+          "type": "string"
+        },
+        "symbol": {
           "type": "string"
         },
         "img_url": {
