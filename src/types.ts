@@ -39,6 +39,7 @@ export type Node = {
 
 export type Token = {
   name: string;
+  symbol?: string;
   img_url: string;
   asset: AssetInfo;
   base: AssetInfo | AssetInfo[] | "USD";

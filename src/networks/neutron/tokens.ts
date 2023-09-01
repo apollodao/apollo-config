@@ -10,6 +10,7 @@ export const tokens: (Omit<Token, "sources"> & {
 })[] = [
   {
     name: "Neutron",
+    symbol: "NTRN",
     img_url: "https://stats.apollo.farm/tokens/ntrn.webp",
     asset: { native: "untrn" },
     base: "USD",
@@ -18,6 +19,7 @@ export const tokens: (Omit<Token, "sources"> & {
   },
   {
     name: "Astro",
+    symbol: "ASTRO",
     img_url: "https://stats.apollo.farm/tokens/astro.png",
     asset: {
       native:
@@ -29,6 +31,7 @@ export const tokens: (Omit<Token, "sources"> & {
   },
   {
     name: "Axelar",
+    symbol: "AXL",
     img_url: "https://stats.apollo.farm/tokens/axl.svg",
     asset: {
       native:
