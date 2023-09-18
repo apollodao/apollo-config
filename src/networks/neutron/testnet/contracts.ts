@@ -13,7 +13,7 @@ export const contracts: Contract[] = [
     label: "Neutron-Axelar 0d",
     description: "Neutron-Axelar Autocompounding Vault 0d",
     address:
-      "neutron10r7q0pv5ms8t7pspuy0vry5mc38sfxh8nvmn5qm6cp30m409ln7qgnrx7v",
+      "neutron17dhpuf4fduc3mshw3e8t0wymkp42sz82uwmr8865r6hngm4fk4yscrmgyz",
     admin: "neutron1xdu5gcpr6alvc53l7y9j5mfadvxhn9q7fwae9v",
     code_id: 1481,
   },
@@ -21,7 +21,7 @@ export const contracts: Contract[] = [
     label: "Ethereum-WrappedStakedEthereum 5m",
     description: "Ethereum-WrappedStakedEthereum Autocompounding Vault 5m",
     address:
-      "neutron1cdlyrfz62j89vzr6k0uhwdwctpapxt2vhxzfcz0rlprzy6nepvasn9stpe",
+      "neutron18repwf8rfsu6qsj6avyxe7r5n9h0jzqza85yzxmsn5uj59f42nes3u5nn3",
     admin: "neutron1xdu5gcpr6alvc53l7y9j5mfadvxhn9q7fwae9v",
     code_id: 1481,
   },

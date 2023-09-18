@@ -44,7 +44,7 @@ export const tokens: (Omit<Token, "sources"> & {
     img_url: "",
     asset: {
       native:
-        "factory/neutron10r7q0pv5ms8t7pspuy0vry5mc38sfxh8nvmn5qm6cp30m409ln7qgnrx7v/VaultToken/xyk/0d/AXL/NTRN",
+        "factory/neutron17dhpuf4fduc3mshw3e8t0wymkp42sz82uwmr8865r6hngm4fk4yscrmgyz/VaultToken/xyk/0d/AXL/NTRN",
     },
     base: {
       cw20: "neutron1tur4sa9y2jqnvmepd80qwdykr3r73flr3a39kpm7frqwnh98c00s3w6v5w",
@@ -55,7 +55,7 @@ export const tokens: (Omit<Token, "sources"> & {
         params: {
           dex: "astroport",
           contract_address:
-            "neutron10r7q0pv5ms8t7pspuy0vry5mc38sfxh8nvmn5qm6cp30m409ln7qgnrx7v",
+            "neutron17dhpuf4fduc3mshw3e8t0wymkp42sz82uwmr8865r6hngm4fk4yscrmgyz",
           base_token: {
             cw20: "neutron1tur4sa9y2jqnvmepd80qwdykr3r73flr3a39kpm7frqwnh98c00s3w6v5w",
           },
@@ -69,7 +69,7 @@ export const tokens: (Omit<Token, "sources"> & {
     img_url: "",
     asset: {
       native:
-        "factory/neutron1cdlyrfz62j89vzr6k0uhwdwctpapxt2vhxzfcz0rlprzy6nepvasn9stpe/VaultToken/xyk/5m/wstETH/ETH",
+        "factory/neutron18repwf8rfsu6qsj6avyxe7r5n9h0jzqza85yzxmsn5uj59f42nes3u5nn3/VaultToken/xyk/5m/wstETH/ETH",
     },
     base: {
       cw20: "neutron1etvty3ru2mkzd0dxf3z2xhlz24609e8604r92y5d9xz8jnwp2xhswcmc7m",
@@ -80,7 +80,7 @@ export const tokens: (Omit<Token, "sources"> & {
         params: {
           dex: "astroport",
           contract_address:
-            "neutron1cdlyrfz62j89vzr6k0uhwdwctpapxt2vhxzfcz0rlprzy6nepvasn9stpe",
+            "neutron18repwf8rfsu6qsj6avyxe7r5n9h0jzqza85yzxmsn5uj59f42nes3u5nn3",
           base_token: {
             cw20: "neutron1etvty3ru2mkzd0dxf3z2xhlz24609e8604r92y5d9xz8jnwp2xhswcmc7m",
           },
