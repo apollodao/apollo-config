@@ -17,4 +17,12 @@ export const contracts: Contract[] = [
     admin: "neutron1xdu5gcpr6alvc53l7y9j5mfadvxhn9q7fwae9v",
     code_id: 1481,
   },
+  {
+    label: "Ethereum-WrappedStakedEthereum 5m",
+    description: "Ethereum-WrappedStakedEthereum Autocompounding Vault 5m",
+    address:
+      "neutron1cdlyrfz62j89vzr6k0uhwdwctpapxt2vhxzfcz0rlprzy6nepvasn9stpe",
+    admin: "neutron1xdu5gcpr6alvc53l7y9j5mfadvxhn9q7fwae9v",
+    code_id: 1481,
+  },
 ];

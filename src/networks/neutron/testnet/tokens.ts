@@ -7,6 +7,7 @@ export type supported_data_sources = {
     contract_address: string;
     base_token?: AssetInfo;
     underlying_tokens?: AssetInfo[];
+    swap_fee?: number;
   };
 };
 
@@ -36,7 +37,7 @@ export const tokens: (Omit<Token, "sources"> & {
         },
       },
     ],
-    decimals: 6,
+    decimals: 12,
   },
   {
     name: "Neutron-Axelar Vault Token - 0d",
@@ -61,7 +62,32 @@ export const tokens: (Omit<Token, "sources"> & {
         },
       },
     ],
-    decimals: 6,
+    decimals: 12,
+  },
+  {
+    name: "Ethereum-WrappedStakedEthereum Vault Token - 5m",
+    img_url: "",
+    asset: {
+      native:
+        "factory/neutron1cdlyrfz62j89vzr6k0uhwdwctpapxt2vhxzfcz0rlprzy6nepvasn9stpe/VaultToken/xyk/5m/wstETH/ETH",
+    },
+    base: {
+      cw20: "neutron1etvty3ru2mkzd0dxf3z2xhlz24609e8604r92y5d9xz8jnwp2xhswcmc7m",
+    },
+    sources: [
+      {
+        name: "pion-1",
+        params: {
+          dex: "astroport",
+          contract_address:
+            "neutron1cdlyrfz62j89vzr6k0uhwdwctpapxt2vhxzfcz0rlprzy6nepvasn9stpe",
+          base_token: {
+            cw20: "neutron1etvty3ru2mkzd0dxf3z2xhlz24609e8604r92y5d9xz8jnwp2xhswcmc7m",
+          },
+        },
+      },
+    ],
+    decimals: 24,
   },
   {
     name: "Neutron-Astro LP Token",
@@ -90,6 +116,7 @@ export const tokens: (Omit<Token, "sources"> & {
                 "ibc/EFB00E728F98F0C4BBE8CA362123ACAB466EDA2826DC6837E49F4C1902F21BBA",
             },
           ],
+          swap_fee: 0.003,
         },
       },
     ],
@@ -122,9 +149,49 @@ export const tokens: (Omit<Token, "sources"> & {
                 "ibc/85CE72EE820A66F0ABD5EE3907A34E243E4BE2D6CFAEB4C08DF85BD6C0784FA2",
             },
           ],
+          swap_fee: 0.003,
         },
       },
     ],
     decimals: 6,
+  },
+  {
+    name: "Ethereum-WrappedStakedEthereum LP Token",
+    img_url: "",
+    asset: {
+      cw20: "neutron1etvty3ru2mkzd0dxf3z2xhlz24609e8604r92y5d9xz8jnwp2xhswcmc7m",
+    },
+    base: [
+      {
+        native:
+          "factory/neutron1xdtwh5jr4zjx8g3zh29jud75c666wua7tsmum3ajm6ylf782etfs60dj2h/wstETH",
+      },
+      {
+        native:
+          "ibc/CC8B40E3F3536D003C6ED7C65421067215453AECE1517A6F0935470C634A036B",
+      },
+    ],
+    sources: [
+      {
+        name: "pion-1",
+        params: {
+          dex: "astroport",
+          contract_address:
+            "neutron1w08m5v225vkghuqht865yljrdvez6lp3lt9d3wewmw9f9uqu4mwsmn4uw3",
+          underlying_tokens: [
+            {
+              native:
+                "factory/neutron1xdtwh5jr4zjx8g3zh29jud75c666wua7tsmum3ajm6ylf782etfs60dj2h/wstETH",
+            },
+            {
+              native:
+                "ibc/CC8B40E3F3536D003C6ED7C65421067215453AECE1517A6F0935470C634A036B",
+            },
+          ],
+          swap_fee: 0.003,
+        },
+      },
+    ],
+    decimals: 18,
   },
 ];
