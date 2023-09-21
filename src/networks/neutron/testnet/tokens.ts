@@ -87,7 +87,7 @@ export const tokens: (Omit<Token, "sources"> & {
         },
       },
     ],
-    decimals: 24,
+    decimals: 12,
   },
   {
     name: "Neutron-Astro LP Token",
