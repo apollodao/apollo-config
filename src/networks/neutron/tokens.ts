@@ -30,7 +30,7 @@ export const tokens: (Omit<Token, "sources"> & {
     decimals: 6,
   },
   {
-    name: "Axelar",
+    name: "Axelar Testnet",
     symbol: "AXL",
     img_url: "https://stats.apollo.farm/tokens/axl.svg",
     asset: {
@@ -42,7 +42,19 @@ export const tokens: (Omit<Token, "sources"> & {
     decimals: 6,
   },
   {
-    name: "Ethereum",
+    name: "Axelar Mainnet",
+    symbol: "AXL",
+    img_url: "https://stats.apollo.farm/tokens/axl.svg",
+    asset: {
+      native:
+        "ibc/C0E66D1C81D8AAF0E6896E05190FDFBC222367148F86AC3EA679C28327A763CD",
+    },
+    base: "USD",
+    sources: [{ name: "coingecko-api", params: { coingecko_id: "axelar" } }],
+    decimals: 6,
+  },
+  {
+    name: "Ethereum Testnet",
     symbol: "ETH",
     img_url: "https://stats.apollo.farm/tokens/weth.svg",
     asset: {
@@ -61,12 +73,50 @@ export const tokens: (Omit<Token, "sources"> & {
     decimals: 18,
   },
   {
-    name: "Wrapped Staked Ethereum",
+    name: "Wrapped Staked Ethereum Testnet",
     symbol: "wstETH",
     img_url: "https://stats.apollo.farm/tokens/weth.svg",
     asset: {
       native:
         "factory/neutron1xdtwh5jr4zjx8g3zh29jud75c666wua7tsmum3ajm6ylf782etfs60dj2h/wstETH",
+    },
+    base: "USD",
+    sources: [
+      {
+        name: "coingecko-api",
+        params: {
+          coingecko_id: "staked-ether",
+        },
+      },
+    ],
+    decimals: 18,
+  },
+  {
+    name: "Ethereum Mainnet",
+    symbol: "ETH",
+    img_url: "https://stats.apollo.farm/tokens/weth.svg",
+    asset: {
+      native:
+        "ibcA585C2D15DCD3B010849B453A2CFCB5E213208A5AB665691792684C26274304D/",
+    },
+    base: "USD",
+    sources: [
+      {
+        name: "coingecko-api",
+        params: {
+          coingecko_id: "goerli-eth",
+        },
+      },
+    ],
+    decimals: 18,
+  },
+  {
+    name: "Wrapped Staked Ethereum Mainnet",
+    symbol: "wstETH",
+    img_url: "https://stats.apollo.farm/tokens/weth.svg",
+    asset: {
+      native:
+        "factory/neutron1ug740qrkquxzrk2hh29qrlx3sktkfml3je7juusc2te7xmvsscns0n2wry/wstETH",
     },
     base: "USD",
     sources: [

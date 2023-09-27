@@ -119,7 +119,7 @@ export const tokens: (Omit<Token, "sources"> & {
         params: {
           dex: "astroport",
           contract_address:
-            "neutron17hdxfavyu4qen5fy8cy09js2qud02h6d97dvx72m4uhtjryhdcks8de0wq",
+            "neutron1wzsewgysr8ttdlw96lp7u2j55z3sg7rtuvfjmd70ajavvpr3308s3zekqu",
           underlying_tokens: [
             {
               native:
