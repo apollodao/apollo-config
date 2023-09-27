@@ -5,6 +5,8 @@ export type supported_data_sources = {
   params: {
     dex: "astroport";
     contract_address: string;
+    reward_contract?: string;
+    reward_token?: AssetInfo;
     base_token?: AssetInfo;
     underlying_tokens?: AssetInfo[];
     swap_fee?: number;
@@ -120,6 +122,11 @@ export const tokens: (Omit<Token, "sources"> & {
           dex: "astroport",
           contract_address:
             "neutron1wzsewgysr8ttdlw96lp7u2j55z3sg7rtuvfjmd70ajavvpr3308s3zekqu",
+          reward_contract:
+            "neutron10y38963k0rzqs554nefe8p8f4cpx9k5v9awlfgw83nzprjqh3cfq9grt5z",
+          reward_token: {
+            cw20: "neutron149tpx0nequ0cpctw06nk29hwfps0343wvwfh6tkhju3ra7hxvpeq8pvstf",
+          },
           underlying_tokens: [
             {
               native:

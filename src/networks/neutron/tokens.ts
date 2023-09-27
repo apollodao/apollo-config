@@ -129,4 +129,22 @@ export const tokens: (Omit<Token, "sources"> & {
     ],
     decimals: 18,
   },
+  {
+    name: "Wrapped Staked Ethereum Cw20",
+    symbol: "wstETH",
+    img_url: "https://stats.apollo.farm/tokens/weth.svg",
+    asset: {
+      cw20: "neutron149tpx0nequ0cpctw06nk29hwfps0343wvwfh6tkhju3ra7hxvpeq8pvstf",
+    },
+    base: "USD",
+    sources: [
+      {
+        name: "coingecko-api",
+        params: {
+          coingecko_id: "staked-ether",
+        },
+      },
+    ],
+    decimals: 18,
+  },
 ];
