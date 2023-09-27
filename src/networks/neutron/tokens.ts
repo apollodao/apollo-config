@@ -97,7 +97,7 @@ export const tokens: (Omit<Token, "sources"> & {
     img_url: "https://stats.apollo.farm/tokens/weth.svg",
     asset: {
       native:
-        "ibcA585C2D15DCD3B010849B453A2CFCB5E213208A5AB665691792684C26274304D/",
+        "ibc/A585C2D15DCD3B010849B453A2CFCB5E213208A5AB665691792684C26274304D",
     },
     base: "USD",
     sources: [
