@@ -3489,7 +3489,7 @@
           {
             "name": "coingecko-api",
             "params": {
-              "coingecko_id": "goerli-eth"
+              "coingecko_id": "ethereum"
             }
           }
         ],
@@ -3507,7 +3507,7 @@
           {
             "name": "coingecko-api",
             "params": {
-              "coingecko_id": "staked-ether"
+              "coingecko_id": "wrapped-steth"
             }
           }
         ],
@@ -3525,7 +3525,7 @@
           {
             "name": "coingecko-api",
             "params": {
-              "coingecko_id": "goerli-eth"
+              "coingecko_id": "ethereum"
             }
           }
         ],
@@ -3543,7 +3543,7 @@
           {
             "name": "coingecko-api",
             "params": {
-              "coingecko_id": "staked-ether"
+              "coingecko_id": "wrapped-steth"
             }
           }
         ],
@@ -3561,7 +3561,7 @@
           {
             "name": "coingecko-api",
             "params": {
-              "coingecko_id": "staked-ether"
+              "coingecko_id": "wrapped-steth"
             }
           }
         ],

@@ -66,7 +66,7 @@ export const tokens: (Omit<Token, "sources"> & {
       {
         name: "coingecko-api",
         params: {
-          coingecko_id: "goerli-eth",
+          coingecko_id: "ethereum",
         },
       },
     ],
@@ -85,7 +85,7 @@ export const tokens: (Omit<Token, "sources"> & {
       {
         name: "coingecko-api",
         params: {
-          coingecko_id: "staked-ether",
+          coingecko_id: "wrapped-steth",
         },
       },
     ],
@@ -104,7 +104,7 @@ export const tokens: (Omit<Token, "sources"> & {
       {
         name: "coingecko-api",
         params: {
-          coingecko_id: "goerli-eth",
+          coingecko_id: "ethereum",
         },
       },
     ],
@@ -123,7 +123,7 @@ export const tokens: (Omit<Token, "sources"> & {
       {
         name: "coingecko-api",
         params: {
-          coingecko_id: "staked-ether",
+          coingecko_id: "wrapped-steth",
         },
       },
     ],
@@ -141,7 +141,7 @@ export const tokens: (Omit<Token, "sources"> & {
       {
         name: "coingecko-api",
         params: {
-          coingecko_id: "staked-ether",
+          coingecko_id: "wrapped-steth",
         },
       },
     ],
