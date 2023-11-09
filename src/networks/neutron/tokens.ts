@@ -30,6 +30,18 @@ export const tokens: (Omit<Token, "sources"> & {
     decimals: 6,
   },
   {
+    name: "Astro",
+    symbol: "ASTRO",
+    img_url: "https://stats.apollo.farm/tokens/astro.png",
+    asset: {
+      native:
+        "ibc/5751B8BCDA688FD0A8EC0B292EEF1CDEAB4B766B63EC632778B196D317C40C3A",
+    },
+    base: "USD",
+    sources: [{ name: "coingecko-api", params: { coingecko_id: "astroport" } }],
+    decimals: 6,
+  },
+  {
     name: "Axelar Testnet",
     symbol: "AXL",
     img_url: "https://stats.apollo.farm/tokens/axl.svg",
