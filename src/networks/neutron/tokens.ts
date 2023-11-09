@@ -18,7 +18,7 @@ export const tokens: (Omit<Token, "sources"> & {
     decimals: 6,
   },
   {
-    name: "Astro",
+    name: "Astro Testnet",
     symbol: "ASTRO",
     img_url: "https://stats.apollo.farm/tokens/astro.png",
     asset: {
@@ -30,7 +30,7 @@ export const tokens: (Omit<Token, "sources"> & {
     decimals: 6,
   },
   {
-    name: "Astro",
+    name: "Astro Mainnet",
     symbol: "ASTRO",
     img_url: "https://stats.apollo.farm/tokens/astro.png",
     asset: {
