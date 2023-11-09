@@ -159,4 +159,22 @@ export const tokens: (Omit<Token, "sources"> & {
     ],
     decimals: 18,
   },
+  {
+    name: "Mainnet axlUSDC",
+    symbol: "axlUSDC",
+    img_url: "https://raw.githubusercontent.com/cosmos/chain-registry/f5d291313003d2428205a541167a634eed93d453/axelar/images/usdc.svg",
+    asset: {
+      native: "ibc/F082B65C88E4B6D5EF1DB243CDA1D331D002759E938A0F5CD3FFDC5D53B3E349",
+    },
+    base: "USD",
+    sources: [
+      {
+        name: "coingecko-api",
+        params: {
+          coingecko_id: "usdc",
+        },
+      },
+    ],
+    decimals: 6,
+  },
 ];
