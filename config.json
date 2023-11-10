@@ -3280,9 +3280,39 @@
           "address": "neutron1jyk9sulr5wfyy0zp95cujupvennnc9xap79wkp6pwp7k2qmsmz2qw0wkrg",
           "admin": "neutron16u56nw6rhdt5wc63ammgdn565q6t825mpunm35",
           "code_id": 278
+        },
+        {
+          "label": "ASTRO/axlUSDC Unlocked LP Vault",
+          "description": "This vault takes in ASTRO/axlUSDC Astroport LP tokens and autocompounds any rewards back into the LP position. There is no lockup period for this vault and funds can be withdrawn at any time.",
+          "address": "neutron135nkp0fth0vtertv7ngvkkgc4cwamp2tpnmjdlppat0047f9wjmqxeu9p8",
+          "admin": "neutron16u56nw6rhdt5wc63ammgdn565q6t825mpunm35",
+          "code_id": 451
         }
       ],
       "tokens": [
+        {
+          "name": "ASTRO/axlUSDC 0d Vault Token",
+          "img_url": "",
+          "asset": {
+            "native": "factory/neutron135nkp0fth0vtertv7ngvkkgc4cwamp2tpnmjdlppat0047f9wjmqxeu9p8/VaultToken/xyk/0d/ASTRO/axlUSDC"
+          },
+          "base": {
+            "cw20": "neutron1vw93hy8tm3xekpz9286428gesmmc8dqxmw8cujsh3fcu3rt0hvdqvlyrrl"
+          },
+          "sources": [
+            {
+              "name": "neutron-1",
+              "params": {
+                "dex": "astroport",
+                "contract_address": "neutron135nkp0fth0vtertv7ngvkkgc4cwamp2tpnmjdlppat0047f9wjmqxeu9p8",
+                "base_token": {
+                  "cw20": "neutron1vw93hy8tm3xekpz9286428gesmmc8dqxmw8cujsh3fcu3rt0hvdqvlyrrl"
+                }
+              }
+            }
+          ],
+          "decimals": 12
+        },
         {
           "name": "AXL/NTRN Vault Token - 0d",
           "img_url": "",

@@ -18,4 +18,12 @@ export const contracts: Contract[] = [
     admin: "neutron16u56nw6rhdt5wc63ammgdn565q6t825mpunm35",
     code_id: 278,
   },
+  {
+    label: "ASTRO/axlUSDC Unlocked LP Vault",
+    description: "This vault takes in ASTRO/axlUSDC Astroport LP tokens and autocompounds any rewards back into the LP position. There is no lockup period for this vault and funds can be withdrawn at any time.",
+    address:
+      "neutron135nkp0fth0vtertv7ngvkkgc4cwamp2tpnmjdlppat0047f9wjmqxeu9p8",
+    admin: "neutron16u56nw6rhdt5wc63ammgdn565q6t825mpunm35",
+    code_id: 451,
+  }
 ];

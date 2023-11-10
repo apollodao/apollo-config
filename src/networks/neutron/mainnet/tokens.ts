@@ -17,6 +17,31 @@ export const tokens: (Omit<Token, "sources"> & {
   sources: supported_data_sources[];
 })[] = [
   {
+    name: "ASTRO/axlUSDC 0d Vault Token",
+    img_url: "",
+    asset: {
+      native:
+        "factory/neutron135nkp0fth0vtertv7ngvkkgc4cwamp2tpnmjdlppat0047f9wjmqxeu9p8/VaultToken/xyk/0d/ASTRO/axlUSDC",
+    },
+    base: {
+      cw20: "neutron1vw93hy8tm3xekpz9286428gesmmc8dqxmw8cujsh3fcu3rt0hvdqvlyrrl",
+    },
+    sources: [
+      {
+        name: "neutron-1",
+        params: {
+          dex: "astroport",
+          contract_address:
+            "neutron135nkp0fth0vtertv7ngvkkgc4cwamp2tpnmjdlppat0047f9wjmqxeu9p8",
+          base_token: {
+            cw20: "neutron1vw93hy8tm3xekpz9286428gesmmc8dqxmw8cujsh3fcu3rt0hvdqvlyrrl",
+          },
+        },
+      },
+    ],
+    decimals: 12,
+  },
+  {
     name: "AXL/NTRN Vault Token - 0d",
     img_url: "",
     asset: {
