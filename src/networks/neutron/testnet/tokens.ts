@@ -15,7 +15,7 @@ export const tokens: (Omit<Token, "sources"> & {
   sources: supported_data_sources[];
 })[] = [
   {
-    name: "Neutron-Astro Vault Token - 0d",
+    name: "NTRN/ASTRO 0d Vault Token",
     img_url: "",
     asset: {
       native:
@@ -40,11 +40,11 @@ export const tokens: (Omit<Token, "sources"> & {
     decimals: 12,
   },
   {
-    name: "Neutron-Axelar Vault Token - 0d",
+    name: "NTRN/AXL 0d Vault Token",
     img_url: "",
     asset: {
       native:
-        "factory/neutron17dhpuf4fduc3mshw3e8t0wymkp42sz82uwmr8865r6hngm4fk4yscrmgyz/VaultToken/xyk/0d/AXL/NTRN",
+        "factory/neutron1rylsg4js5nrm4acaqez5v95mv279lpfrstfupwqykkg6mcyt6lsqxafdcf/VaultToken/xyk/0d/AXL/NTRN",
     },
     base: {
       cw20: "neutron1tur4sa9y2jqnvmepd80qwdykr3r73flr3a39kpm7frqwnh98c00s3w6v5w",
@@ -55,7 +55,7 @@ export const tokens: (Omit<Token, "sources"> & {
         params: {
           dex: "astroport",
           contract_address:
-            "neutron17dhpuf4fduc3mshw3e8t0wymkp42sz82uwmr8865r6hngm4fk4yscrmgyz",
+            "neutron1rylsg4js5nrm4acaqez5v95mv279lpfrstfupwqykkg6mcyt6lsqxafdcf",
           base_token: {
             cw20: "neutron1tur4sa9y2jqnvmepd80qwdykr3r73flr3a39kpm7frqwnh98c00s3w6v5w",
           },
@@ -65,11 +65,11 @@ export const tokens: (Omit<Token, "sources"> & {
     decimals: 12,
   },
   {
-    name: "Ethereum-WrappedStakedEthereum Vault Token - 5m",
+    name: "wstETH/axlWETH 5m Vault Token",
     img_url: "",
     asset: {
       native:
-        "factory/neutron18repwf8rfsu6qsj6avyxe7r5n9h0jzqza85yzxmsn5uj59f42nes3u5nn3/VaultToken/xyk/5m/wstETH/ETH",
+        "factory/neutron1zzwzqehc5nhyv6wztfr63etvfa8ujmt6h0m488ttdy2tmde5gdqsqe25yn/VaultToken/xyk/5m/wstETH/axlWETH",
     },
     base: {
       cw20: "neutron1etvty3ru2mkzd0dxf3z2xhlz24609e8604r92y5d9xz8jnwp2xhswcmc7m",
@@ -80,7 +80,7 @@ export const tokens: (Omit<Token, "sources"> & {
         params: {
           dex: "astroport",
           contract_address:
-            "neutron18repwf8rfsu6qsj6avyxe7r5n9h0jzqza85yzxmsn5uj59f42nes3u5nn3",
+            "neutron1zzwzqehc5nhyv6wztfr63etvfa8ujmt6h0m488ttdy2tmde5gdqsqe25yn",
           base_token: {
             cw20: "neutron1etvty3ru2mkzd0dxf3z2xhlz24609e8604r92y5d9xz8jnwp2xhswcmc7m",
           },
@@ -90,7 +90,7 @@ export const tokens: (Omit<Token, "sources"> & {
     decimals: 12,
   },
   {
-    name: "Neutron-Astro LP Token",
+    name: "NTRN/ASTRO LP Token",
     img_url: "",
     asset: {
       cw20: "neutron1cxzfrnpjpptlwpwz6x0c4s5ephzxf0xm32p8tau2y5l2k2qv6e9sjznux9",
@@ -123,7 +123,7 @@ export const tokens: (Omit<Token, "sources"> & {
     decimals: 6,
   },
   {
-    name: "Neutron-Axelar LP Token",
+    name: "NTRN/AXL LP Token",
     img_url: "",
     asset: {
       cw20: "neutron1tur4sa9y2jqnvmepd80qwdykr3r73flr3a39kpm7frqwnh98c00s3w6v5w",
@@ -156,7 +156,7 @@ export const tokens: (Omit<Token, "sources"> & {
     decimals: 6,
   },
   {
-    name: "Ethereum-WrappedStakedEthereum LP Token",
+    name: "wstETH/axlWETH LP Token",
     img_url: "",
     asset: {
       cw20: "neutron1etvty3ru2mkzd0dxf3z2xhlz24609e8604r92y5d9xz8jnwp2xhswcmc7m",

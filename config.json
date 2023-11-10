@@ -3042,30 +3042,30 @@
       ],
       "contracts": [
         {
-          "label": "Neutron-Astro 0d",
-          "description": "Neutron-Astro Autocompounding Vault 0d",
+          "label": "NTRN/ASTRO Unlocked",
+          "description": "Neutron-Astro Unlocked Autocompounding Vault",
           "address": "neutron1675p0u4eflqgvfwf3tlk8rhkvfjggrenjlc4jqtyjgsrfp9kyrus6r8hly",
-          "admin": "neutron1ke0vqqzyymlp5esr8gjwuzh94ysnpvj8er5hm7",
-          "code_id": 1481
-        },
-        {
-          "label": "Neutron-Axelar 0d",
-          "description": "Neutron-Axelar Autocompounding Vault 0d",
-          "address": "neutron17dhpuf4fduc3mshw3e8t0wymkp42sz82uwmr8865r6hngm4fk4yscrmgyz",
           "admin": "neutron1xdu5gcpr6alvc53l7y9j5mfadvxhn9q7fwae9v",
           "code_id": 1481
         },
         {
-          "label": "Ethereum-WrappedStakedEthereum 5m",
-          "description": "Ethereum-WrappedStakedEthereum Autocompounding Vault 5m",
-          "address": "neutron18repwf8rfsu6qsj6avyxe7r5n9h0jzqza85yzxmsn5uj59f42nes3u5nn3",
+          "label": "NTRN/AXL Unlocked",
+          "description": "Neutron-Axelar Unlocked Autocompounding Vault",
+          "address": "neutron1rylsg4js5nrm4acaqez5v95mv279lpfrstfupwqykkg6mcyt6lsqxafdcf",
           "admin": "neutron1xdu5gcpr6alvc53l7y9j5mfadvxhn9q7fwae9v",
-          "code_id": 1481
+          "code_id": 1945
+        },
+        {
+          "label": "wstETH/axlWETH Locked",
+          "description": "wstETH/axlWETH 5m Locked Autocompounding Vault",
+          "address": "neutron1zzwzqehc5nhyv6wztfr63etvfa8ujmt6h0m488ttdy2tmde5gdqsqe25yn",
+          "admin": "neutron1xdu5gcpr6alvc53l7y9j5mfadvxhn9q7fwae9v",
+          "code_id": 1945
         }
       ],
       "tokens": [
         {
-          "name": "Neutron-Astro Vault Token - 0d",
+          "name": "NTRN/ASTRO 0d Vault Token",
           "img_url": "",
           "asset": {
             "native": "factory/neutron1675p0u4eflqgvfwf3tlk8rhkvfjggrenjlc4jqtyjgsrfp9kyrus6r8hly/VaultToken/xyk/0d/ASTRO/NTRN"
@@ -3088,10 +3088,10 @@
           "decimals": 12
         },
         {
-          "name": "Neutron-Axelar Vault Token - 0d",
+          "name": "NTRN/AXL 0d Vault Token",
           "img_url": "",
           "asset": {
-            "native": "factory/neutron17dhpuf4fduc3mshw3e8t0wymkp42sz82uwmr8865r6hngm4fk4yscrmgyz/VaultToken/xyk/0d/AXL/NTRN"
+            "native": "factory/neutron1rylsg4js5nrm4acaqez5v95mv279lpfrstfupwqykkg6mcyt6lsqxafdcf/VaultToken/xyk/0d/AXL/NTRN"
           },
           "base": {
             "cw20": "neutron1tur4sa9y2jqnvmepd80qwdykr3r73flr3a39kpm7frqwnh98c00s3w6v5w"
@@ -3101,7 +3101,7 @@
               "name": "pion-1",
               "params": {
                 "dex": "astroport",
-                "contract_address": "neutron17dhpuf4fduc3mshw3e8t0wymkp42sz82uwmr8865r6hngm4fk4yscrmgyz",
+                "contract_address": "neutron1rylsg4js5nrm4acaqez5v95mv279lpfrstfupwqykkg6mcyt6lsqxafdcf",
                 "base_token": {
                   "cw20": "neutron1tur4sa9y2jqnvmepd80qwdykr3r73flr3a39kpm7frqwnh98c00s3w6v5w"
                 }
@@ -3111,10 +3111,10 @@
           "decimals": 12
         },
         {
-          "name": "Ethereum-WrappedStakedEthereum Vault Token - 5m",
+          "name": "wstETH/axlWETH 5m Vault Token",
           "img_url": "",
           "asset": {
-            "native": "factory/neutron18repwf8rfsu6qsj6avyxe7r5n9h0jzqza85yzxmsn5uj59f42nes3u5nn3/VaultToken/xyk/5m/wstETH/ETH"
+            "native": "factory/neutron1zzwzqehc5nhyv6wztfr63etvfa8ujmt6h0m488ttdy2tmde5gdqsqe25yn/VaultToken/xyk/5m/wstETH/axlWETH"
           },
           "base": {
             "cw20": "neutron1etvty3ru2mkzd0dxf3z2xhlz24609e8604r92y5d9xz8jnwp2xhswcmc7m"
@@ -3124,7 +3124,7 @@
               "name": "pion-1",
               "params": {
                 "dex": "astroport",
-                "contract_address": "neutron18repwf8rfsu6qsj6avyxe7r5n9h0jzqza85yzxmsn5uj59f42nes3u5nn3",
+                "contract_address": "neutron1zzwzqehc5nhyv6wztfr63etvfa8ujmt6h0m488ttdy2tmde5gdqsqe25yn",
                 "base_token": {
                   "cw20": "neutron1etvty3ru2mkzd0dxf3z2xhlz24609e8604r92y5d9xz8jnwp2xhswcmc7m"
                 }
@@ -3134,7 +3134,7 @@
           "decimals": 12
         },
         {
-          "name": "Neutron-Astro LP Token",
+          "name": "NTRN/ASTRO LP Token",
           "img_url": "",
           "asset": {
             "cw20": "neutron1cxzfrnpjpptlwpwz6x0c4s5ephzxf0xm32p8tau2y5l2k2qv6e9sjznux9"
@@ -3168,7 +3168,7 @@
           "decimals": 6
         },
         {
-          "name": "Neutron-Axelar LP Token",
+          "name": "NTRN/AXL LP Token",
           "img_url": "",
           "asset": {
             "cw20": "neutron1tur4sa9y2jqnvmepd80qwdykr3r73flr3a39kpm7frqwnh98c00s3w6v5w"
@@ -3202,7 +3202,7 @@
           "decimals": 6
         },
         {
-          "name": "Ethereum-WrappedStakedEthereum LP Token",
+          "name": "wstETH/axlWETH LP Token",
           "img_url": "",
           "asset": {
             "cw20": "neutron1etvty3ru2mkzd0dxf3z2xhlz24609e8604r92y5d9xz8jnwp2xhswcmc7m"
