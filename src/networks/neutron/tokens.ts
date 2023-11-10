@@ -26,7 +26,7 @@ export const tokens: (Omit<Token, "sources"> & {
         "ibc/EFB00E728F98F0C4BBE8CA362123ACAB466EDA2826DC6837E49F4C1902F21BBA",
     },
     base: "USD",
-    sources: [{ name: "coingecko-api", params: { coingecko_id: "astroport" } }],
+    sources: [{ name: "coingecko-api", params: { coingecko_id: "astroport-fi" } }],
     decimals: 6,
   },
   {
@@ -38,7 +38,7 @@ export const tokens: (Omit<Token, "sources"> & {
         "ibc/5751B8BCDA688FD0A8EC0B292EEF1CDEAB4B766B63EC632778B196D317C40C3A",
     },
     base: "USD",
-    sources: [{ name: "coingecko-api", params: { coingecko_id: "astroport" } }],
+    sources: [{ name: "coingecko-api", params: { coingecko_id: "astroport-fi" } }],
     decimals: 6,
   },
   {

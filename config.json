@@ -3442,7 +3442,7 @@
           {
             "name": "coingecko-api",
             "params": {
-              "coingecko_id": "astroport"
+              "coingecko_id": "astroport-fi"
             }
           }
         ],
@@ -3460,7 +3460,7 @@
           {
             "name": "coingecko-api",
             "params": {
-              "coingecko_id": "astroport"
+              "coingecko_id": "astroport-fi"
             }
           }
         ],
