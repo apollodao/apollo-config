@@ -171,7 +171,7 @@ export const tokens: (Omit<Token, "sources"> & {
       {
         name: "coingecko-api",
         params: {
-          coingecko_id: "usdc",
+          coingecko_id: "axlusdc",
         },
       },
     ],
