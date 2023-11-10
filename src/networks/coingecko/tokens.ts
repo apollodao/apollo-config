@@ -6,7 +6,7 @@ export const tokens: CoingeckoToken[] = [
     symbol: "NTRN",
     img_url: "https://stats.apollo.farm/tokens/ntrn.webp",
     base: "USD",
-    sources: [{ name: "coingecko-api", params: { coingecko_id: "neutron" } }],
+    id: "neutron",
     decimals: 6,
     assets: { "neutron-1": { native: "untrn" }, "pion-1": { native: "untrn" } },
   },
@@ -15,9 +15,7 @@ export const tokens: CoingeckoToken[] = [
     symbol: "ASTRO",
     img_url: "https://stats.apollo.farm/tokens/astro.png",
     base: "USD",
-    sources: [
-      { name: "coingecko-api", params: { coingecko_id: "astroport-fi" } },
-    ],
+    id: "astroport-fi",
     decimals: 6,
     assets: {
       "neutron-1": {
@@ -35,7 +33,7 @@ export const tokens: CoingeckoToken[] = [
     symbol: "AXL",
     img_url: "https://stats.apollo.farm/tokens/axl.svg",
     base: "USD",
-    sources: [{ name: "coingecko-api", params: { coingecko_id: "axelar" } }],
+    id: "axelar",
     decimals: 6,
     assets: {
       "neutron-1": {
@@ -61,14 +59,7 @@ export const tokens: CoingeckoToken[] = [
     symbol: "ETH",
     img_url: "https://stats.apollo.farm/tokens/weth.svg",
     base: "USD",
-    sources: [
-      {
-        name: "coingecko-api",
-        params: {
-          coingecko_id: "ethereum",
-        },
-      },
-    ],
+    id: "ethereum",
     decimals: 18,
     assets: {
       "neutron-1": {
@@ -86,14 +77,7 @@ export const tokens: CoingeckoToken[] = [
     symbol: "wstETH",
     img_url: "https://stats.apollo.farm/tokens/weth.svg",
     base: "USD",
-    sources: [
-      {
-        name: "coingecko-api",
-        params: {
-          coingecko_id: "wrapped-steth",
-        },
-      },
-    ],
+    id: "wrapped-steth",
     decimals: 18,
     assets: {
       "neutron-1": {
@@ -113,14 +97,7 @@ export const tokens: CoingeckoToken[] = [
     img_url:
       "https://raw.githubusercontent.com/cosmos/chain-registry/f5d291313003d2428205a541167a634eed93d453/axelar/images/usdc.svg",
     base: "USD",
-    sources: [
-      {
-        name: "coingecko-api",
-        params: {
-          coingecko_id: "axlusdc",
-        },
-      },
-    ],
+    id: "axlusdc",
     decimals: 6,
     assets: {
       "neutron-1": {
@@ -142,7 +119,7 @@ export const tokens: CoingeckoToken[] = [
     symbol: "OSMO",
     img_url: "https://stats.apollo.farm/tokens/osmo.svg",
     base: "USD",
-    sources: [{ name: "coingecko-api", params: { coingecko_id: "osmosis" } }],
+    id: "osmosis",
     decimals: 6,
     assets: {
       "osmosis-1": { native: "uosmo" },
@@ -155,7 +132,7 @@ export const tokens: CoingeckoToken[] = [
     symbol: "ION",
     img_url: "https://stats.apollo.farm/tokens/ion.png",
     base: "USD",
-    sources: [{ name: "coingecko-api", params: { coingecko_id: "ion" } }],
+    id: "ion",
     decimals: 6,
     assets: {
       "osmosis-1": { native: "uion" },
@@ -168,7 +145,7 @@ export const tokens: CoingeckoToken[] = [
     symbol: "ATOM",
     img_url: "https://stats.apollo.farm/tokens/atom.svg",
     base: "USD",
-    sources: [{ name: "coingecko-api", params: { coingecko_id: "cosmos" } }],
+    id: "cosmos",
     decimals: 6,
     assets: {
       "osmosis-1": {
@@ -190,7 +167,7 @@ export const tokens: CoingeckoToken[] = [
     symbol: "TGD",
     img_url: "https://stats.apollo.farm/tokens/tgrade.svg",
     base: "USD",
-    sources: [{ name: "coingecko-api", params: { coingecko_id: "tgrade" } }],
+    id: "tgrade",
     decimals: 6,
     assets: {
       "osmosis-1": {
@@ -208,7 +185,7 @@ export const tokens: CoingeckoToken[] = [
     symbol: "USDC",
     img_url: "https://stats.apollo.farm/tokens/usdc.svg",
     base: "USD",
-    sources: [{ name: "coingecko-api", params: { coingecko_id: "usd-coin" } }],
+    id: "usd-coin",
     decimals: 6,
     assets: {
       "osmo-test-5": {
@@ -222,9 +199,7 @@ export const tokens: CoingeckoToken[] = [
     symbol: "stATOM",
     img_url: "https://stats.apollo.farm/tokens/statom.svg",
     base: "USD",
-    sources: [
-      { name: "coingecko-api", params: { coingecko_id: "stride-staked-atom" } },
-    ],
+    id: "stride-staked-atom",
     decimals: 6,
     assets: {
       "osmosis-1": {
@@ -242,7 +217,7 @@ export const tokens: CoingeckoToken[] = [
     symbol: "axlwETH",
     img_url: "https://stats.apollo.farm/tokens/weth.svg",
     base: "USD",
-    sources: [{ name: "coingecko-api", params: { coingecko_id: "axlweth" } }],
+    id: "axlweth",
     decimals: 18,
     assets: {
       "osmosis-1": {
@@ -260,7 +235,7 @@ export const tokens: CoingeckoToken[] = [
     symbol: "wBTC",
     img_url: "https://stats.apollo.farm/tokens/wbtc.png",
     base: "USD",
-    sources: [{ name: "coingecko-api", params: { coingecko_id: "axlwbtc" } }],
+    id: "axlwbtc",
     decimals: 8,
     assets: {
       "osmosis-1": {
@@ -278,7 +253,7 @@ export const tokens: CoingeckoToken[] = [
     symbol: "DAI",
     img_url: "https://stats.apollo.farm/tokens/dai.svg",
     base: "USD",
-    sources: [{ name: "coingecko-api", params: { coingecko_id: "dai" } }],
+    id: "dai",
     decimals: 18,
     assets: {
       "osmosis-1": {
@@ -296,9 +271,7 @@ export const tokens: CoingeckoToken[] = [
     symbol: "stOSMO",
     img_url: "https://stats.apollo.farm/tokens/stosmo.svg",
     base: "USD",
-    sources: [
-      { name: "coingecko-api", params: { coingecko_id: "stride-staked-osmo" } },
-    ],
+    id: "stride-staked-osmo",
     decimals: 6,
     assets: {
       "osmosis-1": {
@@ -316,9 +289,7 @@ export const tokens: CoingeckoToken[] = [
     symbol: "JUNO",
     img_url: "https://stats.apollo.farm/tokens/juno.svg",
     base: "USD",
-    sources: [
-      { name: "coingecko-api", params: { coingecko_id: "juno-network" } },
-    ],
+    id: "juno-network",
     decimals: 6,
     assets: {
       "osmosis-1": {
@@ -336,9 +307,7 @@ export const tokens: CoingeckoToken[] = [
     symbol: "AKT",
     img_url: "https://api.apollo.farm/tokens/akt.svg",
     base: "USD",
-    sources: [
-      { name: "coingecko-api", params: { coingecko_id: "akash-network" } },
-    ],
+    id: "akash-network",
     decimals: 6,
     assets: {
       "osmosis-1": {
@@ -356,9 +325,7 @@ export const tokens: CoingeckoToken[] = [
     symbol: "CRO",
     img_url: "https://api.apollo.farm/tokens/cro.svg",
     base: "USD",
-    sources: [
-      { name: "coingecko-api", params: { coingecko_id: "crypto-com-chain" } },
-    ],
+    id: "crypto-com-chain",
     decimals: 8,
     assets: {
       "osmosis-1": {
@@ -376,7 +343,7 @@ export const tokens: CoingeckoToken[] = [
     symbol: "SCRT",
     img_url: "https://api.apollo.farm/tokens/scrt.svg",
     base: "USD",
-    sources: [{ name: "coingecko-api", params: { coingecko_id: "secret" } }],
+    id: "secret",
     decimals: 6,
     assets: {
       "osmosis-1": {
@@ -394,9 +361,7 @@ export const tokens: CoingeckoToken[] = [
     symbol: "IST",
     img_url: "https://api.apollo.farm/tokens/ist.png",
     base: "USD",
-    sources: [
-      { name: "coingecko-api", params: { coingecko_id: "inter-stable-token" } },
-    ],
+    id: "inter-stable-token",
     decimals: 6,
     assets: {
       "osmosis-1": {
@@ -414,7 +379,7 @@ export const tokens: CoingeckoToken[] = [
     symbol: "EVMOS",
     img_url: "https://stats.apollo.farm/tokens/evmos.svg",
     base: "USD",
-    sources: [{ name: "coingecko-api", params: { coingecko_id: "evmos" } }],
+    id: "evmos",
     decimals: 18,
     assets: {
       "osmosis-1": {
@@ -432,7 +397,7 @@ export const tokens: CoingeckoToken[] = [
     symbol: "STRD",
     img_url: "https://stats.apollo.farm/tokens/strd.svg",
     base: "USD",
-    sources: [{ name: "coingecko-api", params: { coingecko_id: "stride" } }],
+    id: "stride",
     decimals: 6,
     assets: {
       "osmosis-1": {

@@ -42,20 +42,17 @@ export type Token = {
   symbol?: string;
   img_url: string;
   asset: AssetInfo;
-  base: AssetInfo | AssetInfo[] | "USD";
-  sources: DataSource[];
+  base: AssetInfo | AssetInfo[];
+  sources: DataSource[]; // todo - refactor to 'source', single source instead of array
   decimals: number;
 };
 
 export type CoingeckoToken = {
+  id: string;
   name: string;
   symbol: string;
   img_url: string;
   base: "USD";
-  sources: {
-    name: "coingecko-api";
-    params: { coingecko_id: string };
-  }[];
   decimals: number;
   assets: { [network in SupportedNetwork]?: AssetInfo };
 };
