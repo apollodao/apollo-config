@@ -3314,6 +3314,40 @@
           "decimals": 12
         },
         {
+          "name": "ASTRO/axlUSDC LP Token",
+          "img_url": "",
+          "asset": {
+            "cw20": "neutron1vw93hy8tm3xekpz9286428gesmmc8dqxmw8cujsh3fcu3rt0hvdqvlyrrl"
+          },
+          "base": [
+            {
+              "native": "ibc/5751B8BCDA688FD0A8EC0B292EEF1CDEAB4B766B63EC632778B196D317C40C3A"
+            },
+            {
+              "native": "ibc/F082B65C88E4B6D5EF1DB243CDA1D331D002759E938A0F5CD3FFDC5D53B3E349"
+            }
+          ],
+          "sources": [
+            {
+              "name": "neutron-1",
+              "params": {
+                "dex": "astroport",
+                "contract_address": "neutron1jpm7j2cmj2mmk5pnxv20dxz869tw2vyy87qdl0xjasqnn23l04psudtf2y",
+                "underlying_tokens": [
+                  {
+                    "native": "ibc/5751B8BCDA688FD0A8EC0B292EEF1CDEAB4B766B63EC632778B196D317C40C3A"
+                  },
+                  {
+                    "native": "ibc/F082B65C88E4B6D5EF1DB243CDA1D331D002759E938A0F5CD3FFDC5D53B3E349"
+                  }
+                ],
+                "swap_fee": 0.003
+              }
+            }
+          ],
+          "decimals": 6
+        },
+        {
           "name": "AXL/NTRN Vault Token - 0d",
           "img_url": "",
           "asset": {
