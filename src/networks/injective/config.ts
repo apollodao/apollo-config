@@ -6,5 +6,4 @@ export const injective_config: Chain = {
   name: "injective",
   mainnet: injective_mainnet_config,
   testnet: injective_testnet_config,
-  tokens: [],
 };
