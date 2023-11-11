@@ -198,10 +198,6 @@
               "items": {
                 "$ref": "#/definitions/AssetInfo"
               }
-            },
-            {
-              "type": "string",
-              "const": "USD"
             }
           ]
         },

@@ -17,7 +17,7 @@ export type Chain = {
   mainnet?: NetworkConfig;
   testnet?: NetworkConfig;
   testnet_2?: NetworkConfig;
-  tokens: Token[];
+  tokens?: CoingeckoToken[];
 };
 
 export type NetworkConfig = {
@@ -42,9 +42,19 @@ export type Token = {
   symbol?: string;
   img_url: string;
   asset: AssetInfo;
-  base: AssetInfo | AssetInfo[] | "USD";
-  sources: DataSource[];
+  base: AssetInfo | AssetInfo[];
+  sources: DataSource[]; // todo - refactor to 'source', single source instead of array
   decimals: number;
+};
+
+export type CoingeckoToken = {
+  id: string;
+  name: string;
+  symbol: string;
+  img_url: string;
+  base: "USD";
+  decimals: number;
+  assets: { [network in SupportedNetwork]?: AssetInfo };
 };
 
 export type DataSource = {
