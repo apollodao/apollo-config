@@ -55,8 +55,8 @@ export const tokens: CoingeckoToken[] = [
     },
   },
   {
-    name: "Ethereum",
-    symbol: "ETH",
+    name: "Axelar Ethereum",
+    symbol: "axlWETH",
     img_url: "https://stats.apollo.farm/tokens/weth.svg",
     base: "USD",
     id: "ethereum",
