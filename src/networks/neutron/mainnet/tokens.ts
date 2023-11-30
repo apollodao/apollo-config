@@ -42,6 +42,31 @@ export const tokens: (Omit<Token, "sources"> & {
     decimals: 12,
   },
   {
+    name: "wstETH/axlWETH 7d Vault Token",
+    img_url: "",
+    asset: {
+      native:
+        "factory/neutron1yvhe4f0q3swtf37pkf9kku59l52nevr3trxs62vah004a08pkl8qlaccc7/VaultToken/pcl/7d/wstETH/axlWETH",
+    },
+    base: {
+      cw20: "neutron1uywpz5esk0r3z7p7vl2h3vnqlrchra5phkex76z0rh2pckun0x9q3lj7va",
+    },
+    sources: [
+      {
+        name: "neutron-1",
+        params: {
+          dex: "astroport",
+          contract_address:
+            "neutron1yvhe4f0q3swtf37pkf9kku59l52nevr3trxs62vah004a08pkl8qlaccc7",
+          base_token: {
+            cw20: "neutron1uywpz5esk0r3z7p7vl2h3vnqlrchra5phkex76z0rh2pckun0x9q3lj7va",
+          },
+        },
+      },
+    ],
+    decimals: 12,
+  },
+  {
     name: "ASTRO/axlUSDC LP Token",
     img_url: "",
     asset: {
@@ -68,57 +93,6 @@ export const tokens: (Omit<Token, "sources"> & {
     ],
     decimals: 6,
   },
-  {
-    name: "AXL/NTRN Vault Token - 0d",
-    img_url: "",
-    asset: {
-      native:
-        "factory/neutron12pdx3z009fx92kcsr8fhvnkh92w98n5f5xaecz3sn0kzxthz20js0llxjw/VaultToken/xyk/0d/AXL/NTRN",
-    },
-    base: {
-      cw20: "neutron19p7fqw2njtf90y5atdv8367ehrzspjla6wu73z70ey9hk5pvtlqqx7gvzc",
-    },
-    sources: [
-      {
-        name: "neutron-1",
-        params: {
-          dex: "astroport",
-          contract_address:
-            "neutron12pdx3z009fx92kcsr8fhvnkh92w98n5f5xaecz3sn0kzxthz20js0llxjw",
-          base_token: {
-            cw20: "neutron19p7fqw2njtf90y5atdv8367ehrzspjla6wu73z70ey9hk5pvtlqqx7gvzc",
-          },
-        },
-      },
-    ],
-    decimals: 12,
-  },
-  {
-    name: "wstETH/axlWETH Vault Token - 0d",
-    img_url: "",
-    asset: {
-      native:
-        "factory/neutron1jyk9sulr5wfyy0zp95cujupvennnc9xap79wkp6pwp7k2qmsmz2qw0wkrg/VaultToken/xyk/0d/wstETH/axlWETH",
-    },
-    base: {
-      cw20: "neutron190u6kv2esdm93vj4wxjayzrchau5j3ekpacupdayw3kqepwdnt5sg7lfjw",
-    },
-    sources: [
-      {
-        name: "neutron-1",
-        params: {
-          dex: "astroport",
-          contract_address:
-            "neutron1jyk9sulr5wfyy0zp95cujupvennnc9xap79wkp6pwp7k2qmsmz2qw0wkrg",
-          base_token: {
-            cw20: "neutron190u6kv2esdm93vj4wxjayzrchau5j3ekpacupdayw3kqepwdnt5sg7lfjw",
-          },
-        },
-      },
-    ],
-    decimals: 12,
-  },
-
   {
     name: "AXL/NTRN LP Token",
     img_url: "",
