@@ -130,7 +130,7 @@ export const tokens: (Omit<Token, "sources"> & {
     name: "wstETH/axlWETH LP Token",
     img_url: "",
     asset: {
-      cw20: "neutron190u6kv2esdm93vj4wxjayzrchau5j3ekpacupdayw3kqepwdnt5sg7lfjw",
+      cw20: "neutron1uywpz5esk0r3z7p7vl2h3vnqlrchra5phkex76z0rh2pckun0x9q3lj7va",
     },
     base: [
       {
@@ -148,9 +148,9 @@ export const tokens: (Omit<Token, "sources"> & {
         params: {
           dex: "astroport",
           contract_address:
-            "neutron1wzsewgysr8ttdlw96lp7u2j55z3sg7rtuvfjmd70ajavvpr3308s3zekqu",
+            "neutron1yw0a7nxa8jdgzmdsme4gwxhj76n44z305qgwrzvlfavgna9epcys3k9m2f",
           reward_contract:
-            "neutron10y38963k0rzqs554nefe8p8f4cpx9k5v9awlfgw83nzprjqh3cfq9grt5z",
+            "neutron1addt5qylptc0f9343q2u7q5wqulnwl5fwyqss9f757nrw34d0dzqvf8l2g",
           reward_token: {
             cw20: "neutron149tpx0nequ0cpctw06nk29hwfps0343wvwfh6tkhju3ra7hxvpeq8pvstf",
           },
