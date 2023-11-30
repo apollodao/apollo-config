@@ -168,6 +168,6 @@ export const tokens: (Omit<Token, "sources"> & {
         },
       },
     ],
-    decimals: 18,
+    decimals: 6,
   },
 ];
