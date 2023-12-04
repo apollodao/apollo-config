@@ -6,7 +6,7 @@ export const tokens: CoingeckoToken[] = [
     symbol: "NTRN",
     img_url: "https://stats.apollo.farm/tokens/ntrn.webp",
     base: "USD",
-    id: "neutron",
+    id: "neutron-3",
     decimals: 6,
     assets: { "neutron-1": { native: "untrn" }, "pion-1": { native: "untrn" } },
   },
