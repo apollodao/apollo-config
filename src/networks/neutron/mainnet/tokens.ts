@@ -176,6 +176,9 @@ export const tokens: (Omit<Token, "sources"> & {
             "neutron1yw0a7nxa8jdgzmdsme4gwxhj76n44z305qgwrzvlfavgna9epcys3k9m2f",
           reward_contract:
             "neutron1addt5qylptc0f9343q2u7q5wqulnwl5fwyqss9f757nrw34d0dzqvf8l2g",
+          reward_token: {
+            cw20: "neutron149tpx0nequ0cpctw06nk29hwfps0343wvwfh6tkhju3ra7hxvpeq8pvstf",
+          },
           underlying_tokens: [
             {
               native:
