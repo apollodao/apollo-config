@@ -286,84 +286,84 @@ export const tokens: (Omit<Token, "sources"> & {
     ],
     decimals: 6,
   },
-  {
-    name: "ATOM/stkATOM LP Token",
-    img_url: "",
-    asset: {
-      cw20: "neutron13jcw3sryrhpmamt3dqgatuts4tdewyjk4edzejcc7sjy3kypmqvshwexa8",
-    },
-    base: [
-      {
-        native:
-          "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
-      },
-      {
-        native:
-          "ibc/3649CE0C8A2C79048D8C6F31FF18FA69C9BC7EB193512E0BD03B733011290445",
-      },
-    ],
-    sources: [
-      {
-        name: "neutron-1",
-        params: {
-          dex: "astroport",
-          contract_address:
-            "neutron1d73vc84e36d4mmm9dwqql4sty3fx4usjmupxewx36e4qudm5auqs0yryma",
-          underlying_tokens: [
-            {
-              native:
-                "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
-            },
-            {
-              native:
-                "ibc/3649CE0C8A2C79048D8C6F31FF18FA69C9BC7EB193512E0BD03B733011290445",
-            },
-          ],
-          swap_fee: 0.003, // todo - what is swap fee for pcl?
-        },
-      },
-    ],
-    decimals: 6,
-  },
-  {
-    name: "stTIA/TIA LP Token",
-    img_url: "",
-    asset: {
-      cw20: "neutron1jh2vt0zl8pxdfpvllwctpd07c7ct62qwjfk04nvpexfnwh8ram2sa260jp",
-    },
-    base: [
-      {
-        native:
-          "ibc/773B4D0A3CD667B2275D5A4A7A2F0909C0BA0F4059C0B9181E680DDF4965DCC7",
-      },
-      {
-        native:
-          "ibc/6569E05DEE32B339D9286A52BE33DFCEFC97267F23EF9CFDE0C055140967A9A5",
-      },
-    ],
-    sources: [
-      {
-        name: "neutron-1",
-        params: {
-          dex: "astroport",
-          contract_address:
-            "neutron18v0swe4fg2hdnc80zw74qfnjxulnwmw9f5uv99ukj2usrrpcgjyswslqc6",
-          underlying_tokens: [
-            {
-              native:
-                "ibc/773B4D0A3CD667B2275D5A4A7A2F0909C0BA0F4059C0B9181E680DDF4965DCC7",
-            },
-            {
-              native:
-                "ibc/6569E05DEE32B339D9286A52BE33DFCEFC97267F23EF9CFDE0C055140967A9A5",
-            },
-          ],
-          swap_fee: 0.003, // todo - what is swap fee for pcl?
-        },
-      },
-    ],
-    decimals: 6,
-  },
+  // {
+  //   name: "ATOM/stkATOM LP Token",
+  //   img_url: "",
+  //   asset: {
+  //     cw20: "neutron13jcw3sryrhpmamt3dqgatuts4tdewyjk4edzejcc7sjy3kypmqvshwexa8",
+  //   },
+  //   base: [
+  //     {
+  //       native:
+  //         "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
+  //     },
+  //     {
+  //       native:
+  //         "ibc/3649CE0C8A2C79048D8C6F31FF18FA69C9BC7EB193512E0BD03B733011290445",
+  //     },
+  //   ],
+  //   sources: [
+  //     {
+  //       name: "neutron-1",
+  //       params: {
+  //         dex: "astroport",
+  //         contract_address:
+  //           "neutron1d73vc84e36d4mmm9dwqql4sty3fx4usjmupxewx36e4qudm5auqs0yryma",
+  //         underlying_tokens: [
+  //           {
+  //             native:
+  //               "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
+  //           },
+  //           {
+  //             native:
+  //               "ibc/3649CE0C8A2C79048D8C6F31FF18FA69C9BC7EB193512E0BD03B733011290445",
+  //           },
+  //         ],
+  //         swap_fee: 0.003, // todo - what is swap fee for pcl?
+  //       },
+  //     },
+  //   ],
+  //   decimals: 6,
+  // },
+  // {
+  //   name: "stTIA/TIA LP Token",
+  //   img_url: "",
+  //   asset: {
+  //     cw20: "neutron1jh2vt0zl8pxdfpvllwctpd07c7ct62qwjfk04nvpexfnwh8ram2sa260jp",
+  //   },
+  //   base: [
+  //     {
+  //       native:
+  //         "ibc/773B4D0A3CD667B2275D5A4A7A2F0909C0BA0F4059C0B9181E680DDF4965DCC7",
+  //     },
+  //     {
+  //       native:
+  //         "ibc/6569E05DEE32B339D9286A52BE33DFCEFC97267F23EF9CFDE0C055140967A9A5",
+  //     },
+  //   ],
+  //   sources: [
+  //     {
+  //       name: "neutron-1",
+  //       params: {
+  //         dex: "astroport",
+  //         contract_address:
+  //           "neutron18v0swe4fg2hdnc80zw74qfnjxulnwmw9f5uv99ukj2usrrpcgjyswslqc6",
+  //         underlying_tokens: [
+  //           {
+  //             native:
+  //               "ibc/773B4D0A3CD667B2275D5A4A7A2F0909C0BA0F4059C0B9181E680DDF4965DCC7",
+  //           },
+  //           {
+  //             native:
+  //               "ibc/6569E05DEE32B339D9286A52BE33DFCEFC97267F23EF9CFDE0C055140967A9A5",
+  //           },
+  //         ],
+  //         swap_fee: 0.003, // todo - what is swap fee for pcl?
+  //       },
+  //     },
+  //   ],
+  //   decimals: 6,
+  // },
   {
     name: "axlUSDC/USDT LP Token",
     img_url: "",
