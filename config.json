@@ -162,6 +162,9 @@
           },
           "osmo-test-5": {
             "native": "ibc/A8C2D23A1E6F95DA4E48BA349667E322BD7A6C996D8A4AAE8BA72E190F3D1477"
+          },
+          "neutron-1": {
+            "native": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9"
           }
         }
       },
@@ -191,6 +194,9 @@
         "assets": {
           "osmo-test-5": {
             "native": "ibc/B3504E092456BA618CC28AC671A71FB08C6CA0FD0BE7C8A5B5A3E2DD933CC9E4"
+          },
+          "neutron-1": {
+            "native": "ibc/B559A80D62249C8AA07A380E2A2BEA6E5CA9A6F079C912C3A9E9B494105E4F81"
           }
         }
       },
@@ -207,6 +213,22 @@
           },
           "osmo-test-4": {
             "native": "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901"
+          },
+          "neutron-1": {
+            "native": "ibc/B7864B03E1B9FD4F049243E92ABD691586F682137037A9F3FCA5222815620B3C"
+          }
+        }
+      },
+      {
+        "name": "stkAtom",
+        "symbol": "stkATOM",
+        "img_url": "",
+        "base": "USD",
+        "id": "stkatom",
+        "decimals": 6,
+        "assets": {
+          "neutron-1": {
+            "native": "ibc/3649CE0C8A2C79048D8C6F31FF18FA69C9BC7EB193512E0BD03B733011290445"
           }
         }
       },
@@ -383,6 +405,84 @@
           },
           "osmo-test-4": {
             "native": "ibc/A8CA5EE328FA10C9519DF6057DA1F69682D28F7D0F5CCC7ECB72E3DCA2D157A4"
+          }
+        }
+      },
+      {
+        "name": "Dydx",
+        "symbol": "DYDX",
+        "img_url": "",
+        "base": "USD",
+        "id": "dydx-chain",
+        "decimals": 6,
+        "assets": {
+          "neutron-1": {
+            "native": "ibc/2CB87BCE0937B1D1DFCEE79BE4501AAF3C265E923509AEAC410AD85D27F35130"
+          }
+        }
+      },
+      {
+        "name": "stDydx",
+        "symbol": "stDYDX",
+        "img_url": "",
+        "base": "USD",
+        "id": "stride-staked-dydx",
+        "decimals": 6,
+        "assets": {
+          "neutron-1": {
+            "native": "ibc/BAA1D21893B1D36865C6CA44D18F4ACF08BAD70CB6863C4722E0A61703808F77"
+          }
+        }
+      },
+      {
+        "name": "Celestia",
+        "symbol": "TIA",
+        "img_url": "",
+        "base": "USD",
+        "id": "celestia",
+        "decimals": 6,
+        "assets": {
+          "neutron-1": {
+            "native": "ibc/773B4D0A3CD667B2275D5A4A7A2F0909C0BA0F4059C0B9181E680DDF4965DCC7"
+          }
+        }
+      },
+      {
+        "name": "stTia",
+        "symbol": "stTIA",
+        "img_url": "",
+        "base": "USD",
+        "id": "stride-staked-tia",
+        "decimals": 6,
+        "assets": {
+          "neutron-1": {
+            "native": "ibc/6569E05DEE32B339D9286A52BE33DFCEFC97267F23EF9CFDE0C055140967A9A5"
+          }
+        }
+      },
+      {
+        "name": "Axelar USDT",
+        "symbol": "axlUSDT",
+        "img_url": "",
+        "base": "USD",
+        "id": "bridged-tether-axelar",
+        "decimals": 6,
+        "assets": {
+          "neutron-1": {
+            "native": "ibc/57503D7852EF4E1899FE6D71C5E81D7C839F76580F86F21E39348FC2BC9D7CE2"
+          }
+        }
+      },
+      {
+        "name": "Apollo",
+        "symbol": "APOLLO",
+        "img_url": "",
+        "base": "USD",
+        "id": "apollo-2",
+        "decimals": 6,
+        "assets": {
+          "neutron-1": {
+            "native": "factory/neutron154gg0wtm2v4h9ur8xg32ep64e8ef0g5twlsgvfeajqwghdryvyqsqhgk8e/APOLLO"
           }
         }
       }
@@ -3519,6 +3619,244 @@
                 "underlying_tokens": [
                   {
                     "native": "factory/neutron1ug740qrkquxzrk2hh29qrlx3sktkfml3je7juusc2te7xmvsscns0n2wry/wstETH"
+                  },
+                  {
+                    "native": "untrn"
+                  }
+                ],
+                "swap_fee": 0.003
+              }
+            }
+          ],
+          "decimals": 6
+        },
+        {
+          "name": "stATOM/ATOM LP Token",
+          "img_url": "",
+          "asset": {
+            "cw20": "neutron1y4330yyf0vc08scyq8a7rusl4j8p0pw98p4wvyqqkdu4aj6kv4pqxaa7na"
+          },
+          "base": [
+            {
+              "native": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9"
+            },
+            {
+              "native": "ibc/B7864B03E1B9FD4F049243E92ABD691586F682137037A9F3FCA5222815620B3C"
+            }
+          ],
+          "sources": [
+            {
+              "name": "neutron-1",
+              "params": {
+                "dex": "astroport",
+                "contract_address": "neutron1l7ny0rckx9rks2p2aq94wd74sehjczym6n9y4yax8lcy9s39uans4uga62",
+                "underlying_tokens": [
+                  {
+                    "native": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9"
+                  },
+                  {
+                    "native": "ibc/B7864B03E1B9FD4F049243E92ABD691586F682137037A9F3FCA5222815620B3C"
+                  }
+                ],
+                "swap_fee": 0.003
+              }
+            }
+          ],
+          "decimals": 6
+        },
+        {
+          "name": "axlUSDC/USDT LP Token",
+          "img_url": "",
+          "asset": {
+            "cw20": "neutron1kmuv6zmpr2nd3fnqefcffgfmhm74c8vhyerklaphrawyp3398gws74huny"
+          },
+          "base": [
+            {
+              "native": "ibc/F082B65C88E4B6D5EF1DB243CDA1D331D002759E938A0F5CD3FFDC5D53B3E349"
+            },
+            {
+              "native": "ibc/57503D7852EF4E1899FE6D71C5E81D7C839F76580F86F21E39348FC2BC9D7CE2"
+            }
+          ],
+          "sources": [
+            {
+              "name": "neutron-1",
+              "params": {
+                "dex": "astroport",
+                "contract_address": "neutron1adk7gupr0thjr3e6wcnlxr7ugclcg4cukv2np8la29dz38zuzymqjcv5s4",
+                "underlying_tokens": [
+                  {
+                    "native": "ibc/F082B65C88E4B6D5EF1DB243CDA1D331D002759E938A0F5CD3FFDC5D53B3E349"
+                  },
+                  {
+                    "native": "ibc/57503D7852EF4E1899FE6D71C5E81D7C839F76580F86F21E39348FC2BC9D7CE2"
+                  }
+                ],
+                "swap_fee": 0.0005
+              }
+            }
+          ],
+          "decimals": 6
+        },
+        {
+          "name": "APOLLO/wstETH LP Token",
+          "img_url": "",
+          "asset": {
+            "cw20": "neutron13vptqlpfpwpvy4hyqzaa2td3t35scctna2q45f56dsmpmugs40jq7w9rqc"
+          },
+          "base": [
+            {
+              "native": "factory/neutron154gg0wtm2v4h9ur8xg32ep64e8ef0g5twlsgvfeajqwghdryvyqsqhgk8e/APOLLO"
+            },
+            {
+              "native": "factory/neutron1ug740qrkquxzrk2hh29qrlx3sktkfml3je7juusc2te7xmvsscns0n2wry/wstETH"
+            }
+          ],
+          "sources": [
+            {
+              "name": "neutron-1",
+              "params": {
+                "dex": "astroport",
+                "contract_address": "neutron169vshmj6x7dlugd32zvwpv6ujwgz80d0l6xt8f5eufkn2dtvhk6s3ulgqv",
+                "underlying_tokens": [
+                  {
+                    "native": "factory/neutron154gg0wtm2v4h9ur8xg32ep64e8ef0g5twlsgvfeajqwghdryvyqsqhgk8e/APOLLO"
+                  },
+                  {
+                    "native": "factory/neutron1ug740qrkquxzrk2hh29qrlx3sktkfml3je7juusc2te7xmvsscns0n2wry/wstETH"
+                  }
+                ],
+                "swap_fee": 0.003
+              }
+            }
+          ],
+          "decimals": 6
+        },
+        {
+          "name": "stDYDX/DYDX LP Token",
+          "img_url": "",
+          "asset": {
+            "cw20": "neutron1u6cqvmnxdd0tv423c49esqxuahfr8kr2nsmzgtkszcct06vkejzqqnc55m"
+          },
+          "base": [
+            {
+              "native": "ibc/2CB87BCE0937B1D1DFCEE79BE4501AAF3C265E923509AEAC410AD85D27F35130"
+            },
+            {
+              "native": "ibc/BAA1D21893B1D36865C6CA44D18F4ACF08BAD70CB6863C4722E0A61703808F77"
+            }
+          ],
+          "sources": [
+            {
+              "name": "neutron-1",
+              "params": {
+                "dex": "astroport",
+                "contract_address": "neutron17wlm5hwarf77acc0wk0nvcsk38hcl25522e0kvvvzaqdgdt7y4ss78ds0v",
+                "underlying_tokens": [
+                  {
+                    "native": "ibc/2CB87BCE0937B1D1DFCEE79BE4501AAF3C265E923509AEAC410AD85D27F35130"
+                  },
+                  {
+                    "native": "ibc/BAA1D21893B1D36865C6CA44D18F4ACF08BAD70CB6863C4722E0A61703808F77"
+                  }
+                ],
+                "swap_fee": 0.003
+              }
+            }
+          ],
+          "decimals": 6
+        },
+        {
+          "name": "APOLLO/ASTRO LP Token",
+          "img_url": "",
+          "asset": {
+            "cw20": "neutron1wzvvmz8qlqu7cngyac99frs6sdes4tpuk2lk78daenm92jqaz8ss3cgjz9"
+          },
+          "base": [
+            {
+              "native": "factory/neutron154gg0wtm2v4h9ur8xg32ep64e8ef0g5twlsgvfeajqwghdryvyqsqhgk8e/APOLLO"
+            },
+            {
+              "native": "ibc/5751B8BCDA688FD0A8EC0B292EEF1CDEAB4B766B63EC632778B196D317C40C3A"
+            }
+          ],
+          "sources": [
+            {
+              "name": "neutron-1",
+              "params": {
+                "dex": "astroport",
+                "contract_address": "neutron1zhjrgpvu2th5t8w5ndfw9lwsqp95sgr46kf4j3jrcfe2lep0hlnqfczpjm",
+                "underlying_tokens": [
+                  {
+                    "native": "factory/neutron154gg0wtm2v4h9ur8xg32ep64e8ef0g5twlsgvfeajqwghdryvyqsqhgk8e/APOLLO"
+                  },
+                  {
+                    "native": "ibc/5751B8BCDA688FD0A8EC0B292EEF1CDEAB4B766B63EC632778B196D317C40C3A"
+                  }
+                ],
+                "swap_fee": 0.003
+              }
+            }
+          ],
+          "decimals": 6
+        },
+        {
+          "name": "APOLLO/USDC LP Token",
+          "img_url": "",
+          "asset": {
+            "cw20": "neutron127p6hzzvrms9vfw4xehs9gaxj3kyugvux4le88f96aqaf3nyjnuq2l22sr"
+          },
+          "base": [
+            {
+              "native": "factory/neutron154gg0wtm2v4h9ur8xg32ep64e8ef0g5twlsgvfeajqwghdryvyqsqhgk8e/APOLLO"
+            },
+            {
+              "native": "ibc/B559A80D62249C8AA07A380E2A2BEA6E5CA9A6F079C912C3A9E9B494105E4F81"
+            }
+          ],
+          "sources": [
+            {
+              "name": "neutron-1",
+              "params": {
+                "dex": "astroport",
+                "contract_address": "neutron15wal8wsy7mq37hagmrzchwmugpjzwlzrlw7pylkhlfuwukmc2kps722ems",
+                "underlying_tokens": [
+                  {
+                    "native": "factory/neutron154gg0wtm2v4h9ur8xg32ep64e8ef0g5twlsgvfeajqwghdryvyqsqhgk8e/APOLLO"
+                  },
+                  {
+                    "native": "ibc/B559A80D62249C8AA07A380E2A2BEA6E5CA9A6F079C912C3A9E9B494105E4F81"
+                  }
+                ],
+                "swap_fee": 0.003
+              }
+            }
+          ],
+          "decimals": 6
+        },
+        {
+          "name": "APOLLO/NTRN LP Token",
+          "img_url": "",
+          "asset": {
+            "cw20": "neutron1yy474ug5qn69twuaefzen64gfjyp5d6g0teeqgp7rugxl3lfxq3qtc0t09"
+          },
+          "base": [
+            {
+              "native": "factory/neutron154gg0wtm2v4h9ur8xg32ep64e8ef0g5twlsgvfeajqwghdryvyqsqhgk8e/APOLLO"
+            },
+            {
+              "native": "untrn"
+            }
+          ],
+          "sources": [
+            {
+              "name": "neutron-1",
+              "params": {
+                "dex": "astroport",
+                "contract_address": "neutron1fktxsflze70p7565yslwtth290zqad4agt4gpvjffy58h6raxvasz5etfw",
+                "underlying_tokens": [
+                  {
+                    "native": "factory/neutron154gg0wtm2v4h9ur8xg32ep64e8ef0g5twlsgvfeajqwghdryvyqsqhgk8e/APOLLO"
                   },
                   {
                     "native": "untrn"
