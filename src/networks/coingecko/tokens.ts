@@ -160,6 +160,10 @@ export const tokens: CoingeckoToken[] = [
         native:
           "ibc/A8C2D23A1E6F95DA4E48BA349667E322BD7A6C996D8A4AAE8BA72E190F3D1477",
       },
+      "neutron-1": {
+        native:
+          "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
+      },
     },
   },
   {
@@ -192,6 +196,10 @@ export const tokens: CoingeckoToken[] = [
         native:
           "ibc/B3504E092456BA618CC28AC671A71FB08C6CA0FD0BE7C8A5B5A3E2DD933CC9E4",
       },
+      "neutron-1": {
+        native:
+          "ibc/B559A80D62249C8AA07A380E2A2BEA6E5CA9A6F079C912C3A9E9B494105E4F81",
+      },
     },
   },
   {
@@ -209,6 +217,24 @@ export const tokens: CoingeckoToken[] = [
       "osmo-test-4": {
         native:
           "ibc/C140AFD542AE77BD7DCC83F13FDD8C5E5BB8C4929785E6EC2F4C636F98F17901",
+      },
+      "neutron-1": {
+        native:
+          "ibc/B7864B03E1B9FD4F049243E92ABD691586F682137037A9F3FCA5222815620B3C",
+      },
+    },
+  },
+  {
+    name: "stkAtom",
+    symbol: "stkATOM",
+    img_url: "",
+    base: "USD",
+    id: "stkatom",
+    decimals: 6,
+    assets: {
+      "neutron-1": {
+        native:
+          "ibc/3649CE0C8A2C79048D8C6F31FF18FA69C9BC7EB193512E0BD03B733011290445",
       },
     },
   },
@@ -407,6 +433,90 @@ export const tokens: CoingeckoToken[] = [
       "osmo-test-4": {
         native:
           "ibc/A8CA5EE328FA10C9519DF6057DA1F69682D28F7D0F5CCC7ECB72E3DCA2D157A4",
+      },
+    },
+  },
+  {
+    name: "Dydx",
+    symbol: "DYDX",
+    img_url: "",
+    base: "USD",
+    id: "dydx-chain",
+    decimals: 6,
+    assets: {
+      "neutron-1": {
+        native:
+          "ibc/2CB87BCE0937B1D1DFCEE79BE4501AAF3C265E923509AEAC410AD85D27F35130",
+      },
+    },
+  },
+  {
+    name: "stDydx",
+    symbol: "stDYDX",
+    img_url: "",
+    base: "USD",
+    id: "stride-staked-dydx",
+    decimals: 6,
+    assets: {
+      "neutron-1": {
+        native:
+          "ibc/BAA1D21893B1D36865C6CA44D18F4ACF08BAD70CB6863C4722E0A61703808F77",
+      },
+    },
+  },
+  {
+    name: "Celestia",
+    symbol: "TIA",
+    img_url: "",
+    base: "USD",
+    id: "celestia",
+    decimals: 6,
+    assets: {
+      "neutron-1": {
+        native:
+          "ibc/773B4D0A3CD667B2275D5A4A7A2F0909C0BA0F4059C0B9181E680DDF4965DCC7",
+      },
+    },
+  },
+  {
+    name: "stTia",
+    symbol: "stTIA",
+    img_url: "",
+    base: "USD",
+    id: "stride-staked-tia",
+    decimals: 6,
+    assets: {
+      "neutron-1": {
+        native:
+          "ibc/6569E05DEE32B339D9286A52BE33DFCEFC97267F23EF9CFDE0C055140967A9A5",
+      },
+    },
+  },
+  {
+    name: "Axelar USDT",
+    symbol: "axlUSDT",
+    img_url: "",
+    base: "USD",
+    id: "bridged-tether-axelar",
+    decimals: 6,
+    assets: {
+      "neutron-1": {
+        native:
+          "ibc/57503D7852EF4E1899FE6D71C5E81D7C839F76580F86F21E39348FC2BC9D7CE2",
+      },
+    },
+  },
+  {
+    name: "Apollo",
+    symbol: "APOLLO",
+    img_url: "",
+    base: "USD",
+    id: "apollo-2",
+    decimals: 6,
+    assets: {
+      "neutron-1": {
+        native:
+          "factory/neutron154gg0wtm2v4h9ur8xg32ep64e8ef0g5twlsgvfeajqwghdryvyqsqhgk8e/APOLLO",
       },
     },
   },
