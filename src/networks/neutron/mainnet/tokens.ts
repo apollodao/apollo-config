@@ -17,6 +17,31 @@ export const tokens: (Omit<Token, "sources"> & {
   sources: supported_data_sources[];
 })[] = [
   {
+    name: "Capped stTIA/TIA Vault Token",
+    img_url: "",
+    asset: {
+      native:
+        "factory/neutron1qzf6t478xuutq0ahkm07pl2y2tctreccrlafkrl38k4cafk3rgdq3lfky5/VaultToken/pcl/capped/stTIA/TIA",
+    },
+    base: {
+      cw20: "neutron1jh2vt0zl8pxdfpvllwctpd07c7ct62qwjfk04nvpexfnwh8ram2sa260jp",
+    },
+    sources: [
+      {
+        name: "neutron-1",
+        params: {
+          dex: "astroport",
+          contract_address:
+            "neutron1qzf6t478xuutq0ahkm07pl2y2tctreccrlafkrl38k4cafk3rgdq3lfky5",
+          base_token: {
+            cw20: "neutron1jh2vt0zl8pxdfpvllwctpd07c7ct62qwjfk04nvpexfnwh8ram2sa260jp",
+          },
+        },
+      },
+    ],
+    decimals: 12,
+  },
+  {
     name: "ASTRO/axlUSDC 0d Vault Token",
     img_url: "",
     asset: {
@@ -325,45 +350,45 @@ export const tokens: (Omit<Token, "sources"> & {
   //   ],
   //   decimals: 6,
   // },
-  // {
-  //   name: "stTIA/TIA LP Token",
-  //   img_url: "",
-  //   asset: {
-  //     cw20: "neutron1jh2vt0zl8pxdfpvllwctpd07c7ct62qwjfk04nvpexfnwh8ram2sa260jp",
-  //   },
-  //   base: [
-  //     {
-  //       native:
-  //         "ibc/773B4D0A3CD667B2275D5A4A7A2F0909C0BA0F4059C0B9181E680DDF4965DCC7",
-  //     },
-  //     {
-  //       native:
-  //         "ibc/6569E05DEE32B339D9286A52BE33DFCEFC97267F23EF9CFDE0C055140967A9A5",
-  //     },
-  //   ],
-  //   sources: [
-  //     {
-  //       name: "neutron-1",
-  //       params: {
-  //         dex: "astroport",
-  //         contract_address:
-  //           "neutron18v0swe4fg2hdnc80zw74qfnjxulnwmw9f5uv99ukj2usrrpcgjyswslqc6",
-  //         underlying_tokens: [
-  //           {
-  //             native:
-  //               "ibc/773B4D0A3CD667B2275D5A4A7A2F0909C0BA0F4059C0B9181E680DDF4965DCC7",
-  //           },
-  //           {
-  //             native:
-  //               "ibc/6569E05DEE32B339D9286A52BE33DFCEFC97267F23EF9CFDE0C055140967A9A5",
-  //           },
-  //         ],
-  //         swap_fee: 0.003, // todo - what is swap fee for pcl?
-  //       },
-  //     },
-  //   ],
-  //   decimals: 6,
-  // },
+  {
+    name: "stTIA/TIA LP Token",
+    img_url: "",
+    asset: {
+      cw20: "neutron1jh2vt0zl8pxdfpvllwctpd07c7ct62qwjfk04nvpexfnwh8ram2sa260jp",
+    },
+    base: [
+      {
+        native:
+          "ibc/773B4D0A3CD667B2275D5A4A7A2F0909C0BA0F4059C0B9181E680DDF4965DCC7",
+      },
+      {
+        native:
+          "ibc/6569E05DEE32B339D9286A52BE33DFCEFC97267F23EF9CFDE0C055140967A9A5",
+      },
+    ],
+    sources: [
+      {
+        name: "neutron-1",
+        params: {
+          dex: "astroport",
+          contract_address:
+            "neutron18v0swe4fg2hdnc80zw74qfnjxulnwmw9f5uv99ukj2usrrpcgjyswslqc6",
+          underlying_tokens: [
+            {
+              native:
+                "ibc/773B4D0A3CD667B2275D5A4A7A2F0909C0BA0F4059C0B9181E680DDF4965DCC7",
+            },
+            {
+              native:
+                "ibc/6569E05DEE32B339D9286A52BE33DFCEFC97267F23EF9CFDE0C055140967A9A5",
+            },
+          ],
+          swap_fee: 0.003, // todo - what is swap fee for pcl?
+        },
+      },
+    ],
+    decimals: 6,
+  },
   {
     name: "axlUSDC/USDT LP Token",
     img_url: "",

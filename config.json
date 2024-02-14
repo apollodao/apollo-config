@@ -3390,8 +3390,8 @@
         },
         {
           "label": "Locked Astroport Vault",
-          "id": 266,
-          "checksum": "8c40bc3e73b93d43423e3ebe4fe69b34b1bf46129acebc0f40a48bd9d53edc6e"
+          "id": 709,
+          "checksum": "d2f3e6ac9a1af422aa5be3701dbe417482720d862c2422684fd4ec8ce6929477"
         }
       ],
       "contracts": [
@@ -3415,9 +3415,39 @@
           "address": "neutron17vedy2clhctw0654k93m375ud7h5jsy8nj9gnlkjnyd4mcfnfrdql226al",
           "admin": "neutron1qnpwxhrgd8mmsfgql7df6kusgjr3wvm4trl05xu260seelwh845qtqqq9t",
           "code_id": 451
+        },
+        {
+          "label": "stTIA/TIA Capped LP Vault",
+          "description": "This Vault takes in stTIA/TIA Astroport PCL LP tokens and autocompounds any rewards back into the LP position. Deposits for will close after 14 days on 28th of February. You can withdraw from the Vault at any time for a 1% fee, but you will forfeit any STRD rewards you have accumulated. These will be distributed to remaining Vault users when they are claimed (beginning in August 2024).\n For more info, see the article: https://articles.apollo.farm/apollos-sttia-tia-vault-time-gated-entry/",
+          "address": "neutron1qzf6t478xuutq0ahkm07pl2y2tctreccrlafkrl38k4cafk3rgdq3lfky5",
+          "admin": "neutron1qnpwxhrgd8mmsfgql7df6kusgjr3wvm4trl05xu260seelwh845qtqqq9t",
+          "code_id": 709
         }
       ],
       "tokens": [
+        {
+          "name": "Capped stTIA/TIA Vault Token",
+          "img_url": "",
+          "asset": {
+            "native": "factory/neutron1qzf6t478xuutq0ahkm07pl2y2tctreccrlafkrl38k4cafk3rgdq3lfky5/VaultToken/pcl/capped/stTIA/TIA"
+          },
+          "base": {
+            "cw20": "neutron1jh2vt0zl8pxdfpvllwctpd07c7ct62qwjfk04nvpexfnwh8ram2sa260jp"
+          },
+          "sources": [
+            {
+              "name": "neutron-1",
+              "params": {
+                "dex": "astroport",
+                "contract_address": "neutron1qzf6t478xuutq0ahkm07pl2y2tctreccrlafkrl38k4cafk3rgdq3lfky5",
+                "base_token": {
+                  "cw20": "neutron1jh2vt0zl8pxdfpvllwctpd07c7ct62qwjfk04nvpexfnwh8ram2sa260jp"
+                }
+              }
+            }
+          ],
+          "decimals": 12
+        },
         {
           "name": "ASTRO/axlUSDC 0d Vault Token",
           "img_url": "",
@@ -3656,6 +3686,40 @@
                   },
                   {
                     "native": "ibc/B7864B03E1B9FD4F049243E92ABD691586F682137037A9F3FCA5222815620B3C"
+                  }
+                ],
+                "swap_fee": 0.003
+              }
+            }
+          ],
+          "decimals": 6
+        },
+        {
+          "name": "stTIA/TIA LP Token",
+          "img_url": "",
+          "asset": {
+            "cw20": "neutron1jh2vt0zl8pxdfpvllwctpd07c7ct62qwjfk04nvpexfnwh8ram2sa260jp"
+          },
+          "base": [
+            {
+              "native": "ibc/773B4D0A3CD667B2275D5A4A7A2F0909C0BA0F4059C0B9181E680DDF4965DCC7"
+            },
+            {
+              "native": "ibc/6569E05DEE32B339D9286A52BE33DFCEFC97267F23EF9CFDE0C055140967A9A5"
+            }
+          ],
+          "sources": [
+            {
+              "name": "neutron-1",
+              "params": {
+                "dex": "astroport",
+                "contract_address": "neutron18v0swe4fg2hdnc80zw74qfnjxulnwmw9f5uv99ukj2usrrpcgjyswslqc6",
+                "underlying_tokens": [
+                  {
+                    "native": "ibc/773B4D0A3CD667B2275D5A4A7A2F0909C0BA0F4059C0B9181E680DDF4965DCC7"
+                  },
+                  {
+                    "native": "ibc/6569E05DEE32B339D9286A52BE33DFCEFC97267F23EF9CFDE0C055140967A9A5"
                   }
                 ],
                 "swap_fee": 0.003

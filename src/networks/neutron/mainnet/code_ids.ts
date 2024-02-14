@@ -13,7 +13,7 @@ export const code_ids: CodeID[] = [
   },
   {
     label: "Locked Astroport Vault",
-    id: 266,
-    checksum: "8c40bc3e73b93d43423e3ebe4fe69b34b1bf46129acebc0f40a48bd9d53edc6e",
+    id: 709,
+    checksum: "d2f3e6ac9a1af422aa5be3701dbe417482720d862c2422684fd4ec8ce6929477",
   },
 ];
