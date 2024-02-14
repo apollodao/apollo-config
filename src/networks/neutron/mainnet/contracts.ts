@@ -24,5 +24,13 @@ export const contracts: Contract[] = [
       "neutron17vedy2clhctw0654k93m375ud7h5jsy8nj9gnlkjnyd4mcfnfrdql226al",
     admin: "neutron1qnpwxhrgd8mmsfgql7df6kusgjr3wvm4trl05xu260seelwh845qtqqq9t",
     code_id: 451,
+  },
+  {
+    label: "stTIA/TIA Capped LP Vault",
+    description: "This Vault takes in stTIA/TIA Astroport PCL LP tokens and autocompounds any rewards back into the LP position. Deposits for will close after 14 days on 28th of February. You can withdraw from the Vault at any time for a 1% fee, but you will forfeit any STRD rewards you have accumulated. These will be distributed to remaining Vault users when they are claimed (beginning in August 2024).\n For more info, see the article: https://articles.apollo.farm/apollos-sttia-tia-vault-time-gated-entry/",
+    address:
+      "neutron1qzf6t478xuutq0ahkm07pl2y2tctreccrlafkrl38k4cafk3rgdq3lfky5",
+    admin: "neutron1qnpwxhrgd8mmsfgql7df6kusgjr3wvm4trl05xu260seelwh845qtqqq9t",
+    code_id: 709,
   }
 ];
