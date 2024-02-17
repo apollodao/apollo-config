@@ -434,6 +434,9 @@ export const tokens: CoingeckoToken[] = [
         native:
           "ibc/A8CA5EE328FA10C9519DF6057DA1F69682D28F7D0F5CCC7ECB72E3DCA2D157A4",
       },
+      "neutron-1": {
+        native: "ibc/3552CECB7BCE1891DB6070D37EC6E954C972B1400141308FCD85FD148BD06DE5"
+      }
     },
   },
   {
