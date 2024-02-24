@@ -17,6 +17,31 @@ export const tokens: (Omit<Token, "sources"> & {
   sources: supported_data_sources[];
 })[] = [
   {
+    name: "(stTIA/TIA)VT/APOLLO 0d Vault Token",
+    img_url: "",
+    asset: {
+      native:
+        "factory/neutron19h6eltj6dem7a6jp6r2plwl95fgcryxeylvnm8ezlglezxzzkzrsnkj006/VaultToken/xyk/0d/stTIA-TIA-VT/APOLLO",
+    },
+    base: {
+      cw20: "neutron1y5gapx6wrmmy2llgtlpxhrd0ejf8x3pl925r0u66f62ae3k9qu0q26f8gr",
+    },
+    sources: [
+      {
+        name: "neutron-1",
+        params: {
+          dex: "astroport",
+          contract_address:
+            "neutron19h6eltj6dem7a6jp6r2plwl95fgcryxeylvnm8ezlglezxzzkzrsnkj006",
+          base_token: {
+            cw20: "neutron1y5gapx6wrmmy2llgtlpxhrd0ejf8x3pl925r0u66f62ae3k9qu0q26f8gr",
+          },
+        },
+      },
+    ],
+    decimals: 12,
+  },
+  {
     name: "Capped stTIA/TIA Vault Token",
     img_url: "",
     asset: {
@@ -381,6 +406,45 @@ export const tokens: (Omit<Token, "sources"> & {
             {
               native:
                 "ibc/6569E05DEE32B339D9286A52BE33DFCEFC97267F23EF9CFDE0C055140967A9A5",
+            },
+          ],
+          swap_fee: 0.003, // todo - what is swap fee for pcl?
+        },
+      },
+    ],
+    decimals: 6,
+  },
+  {
+    name: "(stTIA/TIA)VT/APOLLO LP Token",
+    img_url: "",
+    asset: {
+      cw20: "neutron1y5gapx6wrmmy2llgtlpxhrd0ejf8x3pl925r0u66f62ae3k9qu0q26f8gr",
+    },
+    base: [
+      {
+        native:
+          "factory/neutron1qzf6t478xuutq0ahkm07pl2y2tctreccrlafkrl38k4cafk3rgdq3lfky5/VaultToken/pcl/capped/stTIA/TIA",
+      },
+      {
+        native:
+          "factory/neutron154gg0wtm2v4h9ur8xg32ep64e8ef0g5twlsgvfeajqwghdryvyqsqhgk8e/APOLLO",
+      },
+    ],
+    sources: [
+      {
+        name: "neutron-1",
+        params: {
+          dex: "astroport",
+          contract_address:
+            "neutron1mwqu0y5lgdyxgev603py4u6xahcsaq4ekvf20gr9rwy2c5l4v9qqqj6rwe",
+          underlying_tokens: [
+            {
+              native:
+                "factory/neutron1qzf6t478xuutq0ahkm07pl2y2tctreccrlafkrl38k4cafk3rgdq3lfky5/VaultToken/pcl/capped/stTIA/TIA",
+            },
+            {
+              native:
+                "factory/neutron154gg0wtm2v4h9ur8xg32ep64e8ef0g5twlsgvfeajqwghdryvyqsqhgk8e/APOLLO",
             },
           ],
           swap_fee: 0.003, // todo - what is swap fee for pcl?

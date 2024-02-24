@@ -32,5 +32,12 @@ export const contracts: Contract[] = [
       "neutron1qzf6t478xuutq0ahkm07pl2y2tctreccrlafkrl38k4cafk3rgdq3lfky5",
     admin: "neutron1qnpwxhrgd8mmsfgql7df6kusgjr3wvm4trl05xu260seelwh845qtqqq9t",
     code_id: 709,
+  },
+  {
+    label: "(stTIA/TIA)VT/APOLLO Unlocked LP Vault",
+    description: "This Vault takes in (stTIA/TIA)VT/APOLLO Astroport LP tokens and autocompoiunds any rewards back into the LP position. There is no lockup period for this vault and funds can be withdrawn at any time. There is a 1% withdrawal fee which goes back to the remaining vault users. This vault also earns yield from the buy tax on the (stTIA/TIA)VT/APOLLO pool",
+    address: 'neutron19h6eltj6dem7a6jp6r2plwl95fgcryxeylvnm8ezlglezxzzkzrsnkj006',
+    admin: "neutron1qnpwxhrgd8mmsfgql7df6kusgjr3wvm4trl05xu260seelwh845qtqqq9t",
+    code_id: 714
   }
 ];
