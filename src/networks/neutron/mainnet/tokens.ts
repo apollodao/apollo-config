@@ -18,6 +18,7 @@ export const tokens: (Omit<Token, "sources"> & {
 })[] = [
   {
     name: "(stTIA/TIA)VT/APOLLO 0d Vault Token",
+    symbol: "((stTIA/TIA)VT/APOLLO)VT",
     img_url: "",
     asset: {
       native:
@@ -43,6 +44,7 @@ export const tokens: (Omit<Token, "sources"> & {
   },
   {
     name: "Capped stTIA/TIA Vault Token",
+    symbol: "(stTIA/TIA)VT",
     img_url: "",
     asset: {
       native:
@@ -68,6 +70,7 @@ export const tokens: (Omit<Token, "sources"> & {
   },
   {
     name: "ASTRO/axlUSDC 0d Vault Token",
+    symbol: "(ASTRO/axlUSDC)VT",
     img_url: "",
     asset: {
       native:
@@ -93,6 +96,7 @@ export const tokens: (Omit<Token, "sources"> & {
   },
   {
     name: "wstETH/axlWETH 7d Vault Token",
+    symbol: "(wstETH/axlWETH)VT",
     img_url: "",
     asset: {
       native:
@@ -118,6 +122,7 @@ export const tokens: (Omit<Token, "sources"> & {
   },
   {
     name: "NTRN/wstETH 7d Vault Token",
+    symbol: "(NTRN/wstETH)VT",
     img_url: "",
     asset: {
       native:

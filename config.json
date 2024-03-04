@@ -3437,6 +3437,7 @@
       "tokens": [
         {
           "name": "(stTIA/TIA)VT/APOLLO 0d Vault Token",
+          "symbol": "((stTIA/TIA)VT/APOLLO)VT",
           "img_url": "",
           "asset": {
             "native": "factory/neutron19h6eltj6dem7a6jp6r2plwl95fgcryxeylvnm8ezlglezxzzkzrsnkj006/VaultToken/xyk/0d/stTIA-TIA-VT/APOLLO"
@@ -3460,6 +3461,7 @@
         },
         {
           "name": "Capped stTIA/TIA Vault Token",
+          "symbol": "(stTIA/TIA)VT",
           "img_url": "",
           "asset": {
             "native": "factory/neutron1qzf6t478xuutq0ahkm07pl2y2tctreccrlafkrl38k4cafk3rgdq3lfky5/VaultToken/pcl/capped/stTIA/TIA"
@@ -3483,6 +3485,7 @@
         },
         {
           "name": "ASTRO/axlUSDC 0d Vault Token",
+          "symbol": "(ASTRO/axlUSDC)VT",
           "img_url": "",
           "asset": {
             "native": "factory/neutron135nkp0fth0vtertv7ngvkkgc4cwamp2tpnmjdlppat0047f9wjmqxeu9p8/VaultToken/xyk/0d/ASTRO/axlUSDC"
@@ -3506,6 +3509,7 @@
         },
         {
           "name": "wstETH/axlWETH 7d Vault Token",
+          "symbol": "(wstETH/axlWETH)VT",
           "img_url": "",
           "asset": {
             "native": "factory/neutron1yvhe4f0q3swtf37pkf9kku59l52nevr3trxs62vah004a08pkl8qlaccc7/VaultToken/pcl/7d/wstETH/axlWETH"
@@ -3529,6 +3533,7 @@
         },
         {
           "name": "NTRN/wstETH 7d Vault Token",
+          "symbol": "(NTRN/wstETH)VT",
           "img_url": "",
           "asset": {
             "native": "factory/neutron17vedy2clhctw0654k93m375ud7h5jsy8nj9gnlkjnyd4mcfnfrdql226al/VaultToken/pcl/7d/NTRN/wstETH"
