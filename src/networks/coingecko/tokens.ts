@@ -2,6 +2,19 @@ import { CoingeckoToken } from "../../types";
 
 export const tokens: CoingeckoToken[] = [
   {
+    name: "Dymension",
+    symbol: "DYM",
+    img_url: "",
+    base: "USD",
+    id: "dymension",
+    decimals: 18,
+    assets: {
+      "neutron-1": {
+        native: "ibc/4A6A46D4263F2ED3DCE9CF866FE15E6903FB5E12D87EB8BDC1B6B1A1E2D397B4"
+      }
+    }
+  },
+  {
     name: "Neutron",
     symbol: "NTRN",
     img_url: "https://stats.apollo.farm/tokens/ntrn.webp",

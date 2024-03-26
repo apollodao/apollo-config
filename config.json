@@ -3,6 +3,19 @@
     "name": "coingecko",
     "tokens": [
       {
+        "name": "Dymension",
+        "symbol": "DYM",
+        "img_url": "",
+        "base": "USD",
+        "id": "dymension",
+        "decimals": 18,
+        "assets": {
+          "neutron-1": {
+            "native": "ibc/4A6A46D4263F2ED3DCE9CF866FE15E6903FB5E12D87EB8BDC1B6B1A1E2D397B4"
+          }
+        }
+      },
+      {
         "name": "Neutron",
         "symbol": "NTRN",
         "img_url": "https://stats.apollo.farm/tokens/ntrn.webp",
@@ -3432,6 +3445,13 @@
           "address": "neutron19h6eltj6dem7a6jp6r2plwl95fgcryxeylvnm8ezlglezxzzkzrsnkj006",
           "admin": "neutron1qnpwxhrgd8mmsfgql7df6kusgjr3wvm4trl05xu260seelwh845qtqqq9t",
           "code_id": 714
+        },
+        {
+          "label": "stDYM/DYM Capped LP Vault",
+          "description": "This Vault takes in stDYM/DYM Astroport PCL LP tokens and autocompounds any rewards back into the LP position. Deposits for will close after 14 days on 10/04/2024. You can withdraw from the Vault at any time for a 1% fee, but you will forfeit any STRD rewards you have accumulated. These will be distributed to remaining Vault users when they are claimed (beginning in August 2024).",
+          "address": "neutron1epwhl0cpmh3kdapl6pvzexdff7c5u5crcempvu6e9h9k88f32tpss46zhh",
+          "admin": "neutron1qnpwxhrgd8mmsfgql7df6kusgjr3wvm4trl05xu260seelwh845qtqqq9t",
+          "code_id": 766
         }
       ],
       "tokens": [
@@ -3453,6 +3473,30 @@
                 "contract_address": "neutron19h6eltj6dem7a6jp6r2plwl95fgcryxeylvnm8ezlglezxzzkzrsnkj006",
                 "base_token": {
                   "cw20": "neutron1y5gapx6wrmmy2llgtlpxhrd0ejf8x3pl925r0u66f62ae3k9qu0q26f8gr"
+                }
+              }
+            }
+          ],
+          "decimals": 12
+        },
+        {
+          "name": "Capped stDYM/DYM Vault Token",
+          "symbol": "(stDYM/DYM)VT",
+          "img_url": "",
+          "asset": {
+            "native": "factory/neutron1epwhl0cpmh3kdapl6pvzexdff7c5u5crcempvu6e9h9k88f32tpss46zhh/VaultToken/pcl/0d/stDYM/DYM"
+          },
+          "base": {
+            "cw20": "neutron1xt60ngk9v9z05w7yn7xuj5503xcj78m488lw0kwlrq6png0w83uqt0vv2c"
+          },
+          "sources": [
+            {
+              "name": "neutron-1",
+              "params": {
+                "dex": "astroport",
+                "contract_address": "neutron1epwhl0cpmh3kdapl6pvzexdff7c5u5crcempvu6e9h9k88f32tpss46zhh",
+                "base_token": {
+                  "cw20": "neutron1xt60ngk9v9z05w7yn7xuj5503xcj78m488lw0kwlrq6png0w83uqt0vv2c"
                 }
               }
             }
@@ -3724,6 +3768,40 @@
                   },
                   {
                     "native": "ibc/B7864B03E1B9FD4F049243E92ABD691586F682137037A9F3FCA5222815620B3C"
+                  }
+                ],
+                "swap_fee": 0.003
+              }
+            }
+          ],
+          "decimals": 6
+        },
+        {
+          "name": "stDYM/DYM LP Token",
+          "img_url": "",
+          "asset": {
+            "cw20": "neutron1xt60ngk9v9z05w7yn7xuj5503xcj78m488lw0kwlrq6png0w83uqt0vv2c"
+          },
+          "base": [
+            {
+              "native": "ibc/4A6A46D4263F2ED3DCE9CF866FE15E6903FB5E12D87EB8BDC1B6B1A1E2D397B4"
+            },
+            {
+              "native": "ibc/8D0C1AC5A72FB7EC187632D01BACBB68EF743CA1AF16A15C00ACBB9CF49A0070"
+            }
+          ],
+          "sources": [
+            {
+              "name": "neutron-1",
+              "params": {
+                "dex": "astroport",
+                "contract_address": "neutron1f8y0jrk7kvlvn7ujvmnd2ed5a0zf6cdz7dzztjula5dgn8va5p3qu30aw5",
+                "underlying_tokens": [
+                  {
+                    "native": "ibc/4A6A46D4263F2ED3DCE9CF866FE15E6903FB5E12D87EB8BDC1B6B1A1E2D397B4"
+                  },
+                  {
+                    "native": "ibc/8D0C1AC5A72FB7EC187632D01BACBB68EF743CA1AF16A15C00ACBB9CF49A0070"
                   }
                 ],
                 "swap_fee": 0.003

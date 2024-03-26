@@ -43,6 +43,32 @@ export const tokens: (Omit<Token, "sources"> & {
     decimals: 12,
   },
   {
+    name: "Capped stDYM/DYM Vault Token",
+    symbol: "(stDYM/DYM)VT",
+    img_url: "",
+    asset: {
+      native:
+        "factory/neutron1epwhl0cpmh3kdapl6pvzexdff7c5u5crcempvu6e9h9k88f32tpss46zhh/VaultToken/pcl/0d/stDYM/DYM",
+    },
+    base: {
+      cw20: "neutron1xt60ngk9v9z05w7yn7xuj5503xcj78m488lw0kwlrq6png0w83uqt0vv2c",
+    },
+    sources: [
+      {
+        name: "neutron-1",
+        params: {
+          dex: "astroport",
+          contract_address:
+            "neutron1epwhl0cpmh3kdapl6pvzexdff7c5u5crcempvu6e9h9k88f32tpss46zhh",
+          base_token: {
+            cw20: "neutron1xt60ngk9v9z05w7yn7xuj5503xcj78m488lw0kwlrq6png0w83uqt0vv2c",
+          },
+        },
+      },
+    ],
+    decimals: 12,
+  },
+  {
     name: "Capped stTIA/TIA Vault Token",
     symbol: "(stTIA/TIA)VT",
     img_url: "",
@@ -380,6 +406,45 @@ export const tokens: (Omit<Token, "sources"> & {
   //   ],
   //   decimals: 6,
   // },
+  {
+    name: "stDYM/DYM LP Token",
+    img_url: "",
+    asset: {
+      cw20: "neutron1xt60ngk9v9z05w7yn7xuj5503xcj78m488lw0kwlrq6png0w83uqt0vv2c",
+    },
+    base: [
+      {
+        native:
+          "ibc/4A6A46D4263F2ED3DCE9CF866FE15E6903FB5E12D87EB8BDC1B6B1A1E2D397B4",
+      },
+      {
+        native:
+          "ibc/8D0C1AC5A72FB7EC187632D01BACBB68EF743CA1AF16A15C00ACBB9CF49A0070",
+      },
+    ],
+    sources: [
+      {
+        name: "neutron-1",
+        params: {
+          dex: "astroport",
+          contract_address:
+            "neutron1f8y0jrk7kvlvn7ujvmnd2ed5a0zf6cdz7dzztjula5dgn8va5p3qu30aw5",
+          underlying_tokens: [
+            {
+              native:
+                "ibc/4A6A46D4263F2ED3DCE9CF866FE15E6903FB5E12D87EB8BDC1B6B1A1E2D397B4",
+            },
+            {
+              native:
+                "ibc/8D0C1AC5A72FB7EC187632D01BACBB68EF743CA1AF16A15C00ACBB9CF49A0070",
+            },
+          ],
+          swap_fee: 0.003, // todo - what is swap fee for pcl?
+        },
+      },
+    ],
+    decimals: 6,
+  },
   {
     name: "stTIA/TIA LP Token",
     img_url: "",
