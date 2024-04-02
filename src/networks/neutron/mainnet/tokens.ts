@@ -245,6 +245,39 @@ export const tokens: (Omit<Token, "sources"> & {
     decimals: 6,
   },
   {
+    name: "AXL/NTRN PCL LP Token",
+    img_url: "",
+    asset: {
+      cw20: "neutron1vfekl4kt5q73s6g9qalkkxaegsdctmhqhl6gqx2znf7ltlaae4nsv60hy8",
+    },
+    base: [
+      { native: "untrn" },
+      {
+        native:
+          "ibc/C0E66D1C81D8AAF0E6896E05190FDFBC222367148F86AC3EA679C28327A763CD",
+      },
+    ],
+    sources: [
+      {
+        name: "neutron-1",
+        params: {
+          dex: "astroport",
+          contract_address:
+            "neutron194f0u63jenquqvxr5hj2glq4sdhx60arn8y86299c8qme6pspjesv444yd",
+          underlying_tokens: [
+            { native: "untrn" },
+            {
+              native:
+                "ibc/C0E66D1C81D8AAF0E6896E05190FDFBC222367148F86AC3EA679C28327A763CD",
+            },
+          ],
+          swap_fee: 0.003,
+        },
+      },
+    ],
+    decimals: 6,
+  },
+  {
     name: "wstETH/axlWETH LP Token",
     img_url: "",
     asset: {
