@@ -42,7 +42,7 @@ export const contracts: Contract[] = [
   },
   {
     label: "stDYM/DYM Capped LP Vault",
-    description: "This Vault takes in stDYM/DYM Astroport PCL LP tokens and autocompounds any rewards back into the LP position. Deposits for will close after 14 days on 10/04/2024. You can withdraw from the Vault at any time for a 1% fee, but you will forfeit any STRD rewards you have accumulated. These will be distributed to remaining Vault users when they are claimed (beginning in August 2024).",
+    description: "This Vault takes in stDYM/DYM Astroport PCL LP tokens and autocompounds any rewards back into the LP position. Deposits for will close on 01/05/2024. You can withdraw from the Vault at any time for a 1% fee, but you will forfeit any STRD rewards you have accumulated. These will be distributed to remaining Vault users when they are claimed (beginning in August 2024).",
     address:
       "neutron1epwhl0cpmh3kdapl6pvzexdff7c5u5crcempvu6e9h9k88f32tpss46zhh",
     admin: "neutron1qnpwxhrgd8mmsfgql7df6kusgjr3wvm4trl05xu260seelwh845qtqqq9t",
