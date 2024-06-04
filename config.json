@@ -4122,6 +4122,64 @@
             }
           ],
           "decimals": 6
+        },
+        {
+          "name": "nobleUSDC/NTRN 0d Vault Token",
+          "symbol": "(nobleUSDC/NTRN)VT",
+          "img_url": "",
+          "asset": {
+            "native": "factory/neutron14xx9hcw0cyw2vtxh586h5usymfyk06jnj677awhntrkxtm72amrsmj5fxt/VaultToken/pcl/0d/nobleUSDC/NTRN"
+          },
+          "base": {
+            "cw20": "neutron1wwz2em8h6pgmjj9xzrj9zz7ctgs82ryxv0797ry9ljh3ug7xdtsscyrctk"
+          },
+          "sources": [
+            {
+              "name": "neutron-1",
+              "params": {
+                "dex": "astroport",
+                "contract_address": "neutron14xx9hcw0cyw2vtxh586h5usymfyk06jnj677awhntrkxtm72amrsmj5fxt",
+                "base_token": {
+                  "cw20": "neutron1wwz2em8h6pgmjj9xzrj9zz7ctgs82ryxv0797ry9ljh3ug7xdtsscyrctk"
+                }
+              }
+            }
+          ],
+          "decimals": 12
+        },
+        {
+          "name": "nobleUSDC/NTRN LP Token",
+          "img_url": "",
+          "asset": {
+            "cw20": "neutron1wwz2em8h6pgmjj9xzrj9zz7ctgs82ryxv0797ry9ljh3ug7xdtsscyrctk"
+          },
+          "base": [
+            {
+              "native": "ibc/B559A80D62249C8AA07A380E2A2BEA6E5CA9A6F079C912C3A9E9B494105E4F81"
+            },
+            {
+              "native": "untrn"
+            }
+          ],
+          "sources": [
+            {
+              "name": "neutron-1",
+              "params": {
+                "dex": "astroport",
+                "contract_address": "neutron1q3rfmflhp79rz0sdjxdgf7t3x5twce9az6n0fegspkjstrax42kq0g96rn",
+                "underlying_tokens": [
+                  {
+                    "native": "ibc/B559A80D62249C8AA07A380E2A2BEA6E5CA9A6F079C912C3A9E9B494105E4F81"
+                  },
+                  {
+                    "native": "untrn"
+                  }
+                ],
+                "swap_fee": 0.003
+              }
+            }
+          ],
+          "decimals": 6
         }
       ],
       "nodes": [
