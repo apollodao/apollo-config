@@ -3455,7 +3455,7 @@
         },
         {
           "label": "nobleUSDC/NTRN 0d Vault",
-          "description": "",
+          "description": "This vault takes in NTRN/USDC Astroport PCL LP tokens and autocompounds any rewards back into the LP position.",
           "address": "neutron14xx9hcw0cyw2vtxh586h5usymfyk06jnj677awhntrkxtm72amrsmj5fxt",
           "admin": "neutron1qnpwxhrgd8mmsfgql7df6kusgjr3wvm4trl05xu260seelwh845qtqqq9t",
           "code_id": 766
