@@ -1,6 +1,7 @@
 {
   "name": "apollo-network-config",
   "version": "1.0.0",
+  "packageManager": "yarn@1.22.22",
   "description": "",
   "main": "index.js",
   "scripts": {
