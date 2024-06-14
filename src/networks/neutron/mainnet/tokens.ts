@@ -17,7 +17,7 @@ export const tokens: (Omit<Token, "sources"> & {
   sources: supported_data_sources[];
 })[] = [
   {
-    name: "(stTIA/TIA)VT/APOLLO 0d Vault Token",
+    name: "(stTIA/TIA)VT/APOLLO Vault Token",
     symbol: "((stTIA/TIA)VT/APOLLO)VT",
     img_url: "",
     asset: {
@@ -95,7 +95,7 @@ export const tokens: (Omit<Token, "sources"> & {
     decimals: 12,
   },
   {
-    name: "ASTRO/axlUSDC 0d Vault Token",
+    name: "ASTRO/axlUSDC Vault Token",
     symbol: "(ASTRO/axlUSDC)VT",
     img_url: "",
     asset: {
@@ -789,7 +789,7 @@ export const tokens: (Omit<Token, "sources"> & {
     decimals: 6,
   },
   {
-    name: "USDC/NTRN Unlocked Vault Token",
+    name: "USDC/NTRN Vault Token",
     symbol: "(USDC/NTRN)VT",
     img_url: "",
     asset: {
