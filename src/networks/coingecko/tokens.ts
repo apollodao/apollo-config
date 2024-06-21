@@ -10,9 +10,10 @@ export const tokens: CoingeckoToken[] = [
     decimals: 18,
     assets: {
       "neutron-1": {
-        native: "ibc/4A6A46D4263F2ED3DCE9CF866FE15E6903FB5E12D87EB8BDC1B6B1A1E2D397B4"
-      }
-    }
+        native:
+          "ibc/4A6A46D4263F2ED3DCE9CF866FE15E6903FB5E12D87EB8BDC1B6B1A1E2D397B4",
+      },
+    },
   },
   {
     name: "Neutron",
@@ -33,7 +34,7 @@ export const tokens: CoingeckoToken[] = [
     assets: {
       "neutron-1": {
         native:
-          "ibc/5751B8BCDA688FD0A8EC0B292EEF1CDEAB4B766B63EC632778B196D317C40C3A",
+          "factory/neutron1ffus553eet978k024lmssw0czsxwr97mggyv85lpcsdkft8v9ufsz3sa07/astro",
       },
       "pion-1": {
         native:
@@ -448,8 +449,9 @@ export const tokens: CoingeckoToken[] = [
           "ibc/A8CA5EE328FA10C9519DF6057DA1F69682D28F7D0F5CCC7ECB72E3DCA2D157A4",
       },
       "neutron-1": {
-        native: "ibc/3552CECB7BCE1891DB6070D37EC6E954C972B1400141308FCD85FD148BD06DE5"
-      }
+        native:
+          "ibc/3552CECB7BCE1891DB6070D37EC6E954C972B1400141308FCD85FD148BD06DE5",
+      },
     },
   },
   {
