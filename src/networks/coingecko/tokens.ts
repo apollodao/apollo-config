@@ -2,6 +2,20 @@ import { CoingeckoToken } from "../../types";
 
 export const tokens: CoingeckoToken[] = [
   {
+    name: "Mars",
+    symbol: "MARS",
+    img_url: "https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/mars-token.svg",
+    base: "USD",
+    id: "mars-protocol",
+    decimals: 6,
+    assets: {
+      "neutron-1": {
+        native:
+          "factory/neutron1ndu2wvkrxtane8se2tr48gv7nsm46y5gcqjhux/MARS",
+      },
+    },
+  },
+  {
     name: "Dymension",
     symbol: "DYM",
     img_url: "",

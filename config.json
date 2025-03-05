@@ -3,6 +3,19 @@
     "name": "coingecko",
     "tokens": [
       {
+        "name": "Mars",
+        "symbol": "MARS",
+        "img_url": "https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/mars-token.svg",
+        "base": "USD",
+        "id": "mars-protocol",
+        "decimals": 6,
+        "assets": {
+          "neutron-1": {
+            "native": "factory/neutron1ndu2wvkrxtane8se2tr48gv7nsm46y5gcqjhux/MARS"
+          }
+        }
+      },
+      {
         "name": "Dymension",
         "symbol": "DYM",
         "img_url": "",
@@ -40,7 +53,7 @@
         "decimals": 6,
         "assets": {
           "neutron-1": {
-            "native": "ibc/5751B8BCDA688FD0A8EC0B292EEF1CDEAB4B766B63EC632778B196D317C40C3A"
+            "native": "factory/neutron1ffus553eet978k024lmssw0czsxwr97mggyv85lpcsdkft8v9ufsz3sa07/astro"
           },
           "pion-1": {
             "native": "ibc/EFB00E728F98F0C4BBE8CA362123ACAB466EDA2826DC6837E49F4C1902F21BBA"
@@ -3463,7 +3476,7 @@
       ],
       "tokens": [
         {
-          "name": "(stTIA/TIA)VT/APOLLO 0d Vault Token",
+          "name": "(stTIA/TIA)VT/APOLLO Vault Token",
           "symbol": "((stTIA/TIA)VT/APOLLO)VT",
           "img_url": "",
           "asset": {
@@ -3535,7 +3548,7 @@
           "decimals": 12
         },
         {
-          "name": "ASTRO/axlUSDC 0d Vault Token",
+          "name": "ASTRO/axlUSDC Vault Token",
           "symbol": "(ASTRO/axlUSDC)VT",
           "img_url": "",
           "asset": {
@@ -4124,8 +4137,8 @@
           "decimals": 6
         },
         {
-          "name": "nobleUSDC/NTRN 0d Vault Token",
-          "symbol": "(nobleUSDC/NTRN)VT",
+          "name": "USDC/NTRN Vault Token",
+          "symbol": "(USDC/NTRN)VT",
           "img_url": "",
           "asset": {
             "native": "factory/neutron14xx9hcw0cyw2vtxh586h5usymfyk06jnj677awhntrkxtm72amrsmj5fxt/VaultToken/pcl/0d/nobleUSDC/NTRN"
@@ -4148,7 +4161,7 @@
           "decimals": 12
         },
         {
-          "name": "nobleUSDC/NTRN LP Token",
+          "name": "USDC/NTRN LP Token",
           "img_url": "",
           "asset": {
             "cw20": "neutron1wwz2em8h6pgmjj9xzrj9zz7ctgs82ryxv0797ry9ljh3ug7xdtsscyrctk"
